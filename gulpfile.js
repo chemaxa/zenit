@@ -14,8 +14,8 @@ console.info('CurrentPage: ', currentPage);
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
         server: {
-            baseDir: "./html",
-            index: currentPage + ".html"
+            baseDir: "./",
+            index: "html/"+currentPage + ".html"
         }
     });
     gulp.watch("./pug/**/*.pug", ['pug']);
@@ -25,7 +25,7 @@ gulp.task('serve', ['sass'], function () {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
-    return gulp.src("./sass/*.sass")
+    return gulp.src("./scss/*.scss")
         .pipe(sass({
             includePaths: sassPaths
         }))
