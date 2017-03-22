@@ -18,8 +18,16 @@
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
     "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "jquery": "^2.2.4",
+    "normalize-scss": "^6.0.0",
+    "reflex-grid": "^1.5.0",
     "sass-mediaqueries": "^1.6.1"
   }
 }

@@ -1,0 +1,16 @@
+//Settings
+@import '_settings';
+//Normalize
+@import 'normalize-scss/sass/normalize';
+//MQ mixin
+@import 'sass-mediaqueries/media-queries';
+//Import grid system
+@import 'reflex-grid/scss/reflex';
+//Pages
+@import 'pages/_complectacia';
+body {
+  background-color: #999;
+  @include screen(320px, 640px) {
+    background-color: #fff;
+  }
+}
