@@ -8,10 +8,5 @@
 @import 'reflex-grid/scss/reflex';
 //Pages
 @import 'pages/_complectacia';
-body {
-  background-color: #999;
-  @include screen(320px, 640px) {
-    background-color: #fff;
-  }
-  color: #fff;
-}
+//Blocks
+@import 'blocks/_grid';
