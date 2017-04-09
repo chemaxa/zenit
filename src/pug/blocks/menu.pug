@@ -1,0 +1,25 @@
+-
+ var menuItems = [
+  {'title': 'Главная', 'url': '#'},
+  {'title': 'Продукция', 'url': '#'},
+  {'title': 'Техническая информация', 'url': '#'},
+  {'title': 'Как купить', 'url': '#','subMenu':[
+    {'title': 'Заказ', 'url': '#'},
+    {'title': 'Оплата', 'url': '#'},
+    {'title': 'Получение', 'url': '#'},
+    {'title': 'Гарантия и возврат', 'url': '#'},
+    {'title': 'Партнеры', 'url': '#'}]
+  },
+  {'title': 'Контакты', 'url': '#'}]
+nav.menu
+  .logo__container
+    img.logo(src='img/logo.png')
+  ul.menu__list.menu__list_fluid
+    each item in menuItems
+      li.menu__item(class=item.subMenu ? 'menu__item_parent' : '') 
+        a.menu__link(href=item.url)=item.title
+        if item.subMenu
+          ul.menu__list_submenu
+            each subitem in item.subMenu
+              li.menu__item_submenu
+                a.menu__link_submenu(href=subitem.url)=subitem.title

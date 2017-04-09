@@ -2,12 +2,11 @@ include head
 body.page
   header.page__header
     block header
-    
+      include includes/header
   main.page__content
     block content
-
   footer.page__footer
     block footer
-      Some page footer content
+      include includes/footer
   // Bundle JS
   script(src='js/bundle.js')

@@ -18,6 +18,30 @@
 </html>
 <body class="page">
   <header class="page__header">
+    <div class="grid__container">
+      <nav class="menu">
+        <div class="logo__container"><img class="logo" src="img/logo.png"></div>
+        <ul class="menu__list menu__list_fluid">
+          <li class="menu__item"> <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item"> <a class="menu__link" href="#">Продукция</a>
+          </li>
+          <li class="menu__item"> <a class="menu__link" href="#">Техническая информация</a>
+          </li>
+          <li class="menu__item menu__item_parent"> <a class="menu__link" href="#">Как купить</a>
+            <ul class="menu__list_submenu">
+              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Заказ</a></li>
+              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Оплата</a></li>
+              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Получение</a></li>
+              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Гарантия и возврат</a></li>
+              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Партнеры</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"> <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page__content">
     <div class="grid">
@@ -26,12 +50,11 @@
           Block content
           aaa
           Content
-        </p>
+        </p><i class="fa fa-camera-retro">fa-camera-retro</i>
       </div>
     </div>
   </main>
-  <footer class="page__footer">
-    <Some>page footer content</Some>
+  <footer class="page__footer">Page footer
   </footer>
   <!-- Bundle JS-->
   <script src="js/bundle.js"></script>

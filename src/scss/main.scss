@@ -1,3 +1,5 @@
+// Palette
+@import '_palette';
 //Settings
 @import '_settings';
 //Normalize
@@ -5,8 +7,11 @@
 //MQ mixin
 @import 'sass-mediaqueries/media-queries';
 //Import grid system
+@import 'font-awesome/scss/font-awesome';
+//Import font-awesome
 @import 'reflex-grid/scss/reflex';
 //Pages
 @import 'pages/_complectacia';
 //Blocks
 @import 'blocks/_grid';
+@import 'blocks/_menu';

@@ -11,6 +11,7 @@ let rename = require('gulp-rename');
 let csso = require('gulp-csso');
 let sourcemaps = require('gulp-sourcemaps');
 let runSequence = require('run-sequence');
+let plumber = require('gulp-plumber');
 
 let params = {
     scssPaths: ['./node_modules', './src/scss/blocks', './src/scss/pages'],
@@ -21,11 +22,10 @@ let params = {
 console.info('CurrentPage: ', params.currentPage);
 
 
-
-
 // Compile scss into CSS & auto-inject into browsers
 gulp.task('scss', function () {
     return gulp.src(params.src + "/scss/main.scss")
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(scss({
             includePaths: params.scssPaths
@@ -42,6 +42,7 @@ gulp.task('scss', function () {
 
 gulp.task('pug', function () {
     return gulp.src(params.src + '/pug/pages/' + params.currentPage + '.pug')
+        .pipe(plumber())
         .pipe(pug({
             pretty: true,
             locals: {
@@ -53,7 +54,11 @@ gulp.task('pug', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src(['./node_modules/jquery/dist/jquery.js', params.src + '/js/**/*'])
+    return gulp.src([
+            './node_modules/jquery/dist/jquery.js',
+            params.src + '/js/**/*'
+        ])
+        .pipe(plumber())
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest(params.build + '/js'))
         .pipe(browserSync.stream());
@@ -65,7 +70,10 @@ gulp.task('images', function () {
 })
 
 gulp.task('fonts', function () {
-    return gulp.src(params.src + '/fonts/**/*')
+    return gulp.src([
+            './node_modules/font-awesome/fonts/*',
+            params.src + '/fonts/**/*'
+        ])
         .pipe(gulp.dest(params.build + '/fonts'))
 })
 
