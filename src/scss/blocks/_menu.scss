@@ -1,5 +1,8 @@
 .menu {
-  display: flex;
+  &_top {
+    font-size: 12px;
+    display: flex;
+  }
   &__list,
   &__list_submenu {
     margin: 0;
@@ -33,5 +36,9 @@
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
+  &__link {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

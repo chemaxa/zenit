@@ -4,6 +4,7 @@
 @import '_settings';
 //Normalize
 @import 'normalize-scss/sass/normalize';
+@include normalize();
 //MQ mixin
 @import 'sass-mediaqueries/media-queries';
 //Import grid system
@@ -13,5 +14,6 @@
 //Pages
 @import 'pages/_complectacia';
 //Blocks
+@import 'blocks/_page';
 @import 'blocks/_grid';
 @import 'blocks/_menu';
