@@ -19,27 +19,31 @@
 <body class="page">
   <header class="page__header">
     <div class="grid__container">
-      <nav class="menu menu_top">
-        <div class="logo__container"><img class="logo" src="img/logo.png"></div>
-        <ul class="menu__list menu__list_fluid">
-          <li class="menu__item"> <a class="menu__link" href="#">Главная</a>
-          </li>
-          <li class="menu__item"> <a class="menu__link" href="#">Продукция</a>
-          </li>
-          <li class="menu__item"> <a class="menu__link" href="#">Техническая информация</a>
-          </li>
-          <li class="menu__item menu__item_parent"> <a class="menu__link" href="#">Как купить</a>
-            <ul class="menu__list_submenu">
-              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Заказ</a></li>
-              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Оплата</a></li>
-              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Получение</a></li>
-              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Гарантия и возврат</a></li>
-              <li class="menu__item_submenu"><a class="menu__link_submenu" href="#">Партнеры</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"> <a class="menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <nav class="menu menu_top grid">
+        <div class="grid__col-md-2 grid__col-sm-2"><a class="logo__container" href="#"><img class="logo" src="img/logo.png"></a></div>
+        <div class="grid__col-md-8 grid__col-sm-8">
+          <ul class="menu__list menu__list_top">
+            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Главная</a>
+            </li>
+            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Продукция</a>
+            </li>
+            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Техническая информация</a>
+            </li>
+            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Как купить</a>
+              <ul class="menu__list_submenu">
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">Заказ</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">Оплата</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">Получение</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">Гарантия и возврат</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu menu__link_active" href="#">Партнеры</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid__col-md-1 grid__col-sm-1 grid--justify-center"><a class="fa fa-shopping-cart menu__icon_cart" href="#"></a></div>
+        <div class="grid__col-md-1 grid__col-sm-1 grid--justify-center"><a class="fa fa-search menu__icon_search" href="#"></a></div>
       </nav>
     </div>
   </header>
