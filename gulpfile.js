@@ -17,7 +17,7 @@ let params = {
     scssPaths: ['./node_modules', './src/scss/blocks', './src/scss/pages'],
     src: 'src',
     build: 'build',
-    currentPage: 'complectacia'
+    currentPage: 'product'
 };
 console.info('CurrentPage: ', params.currentPage);
 

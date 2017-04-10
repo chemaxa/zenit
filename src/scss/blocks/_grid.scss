@@ -8,6 +8,7 @@
         @include max-screen(map-get($breakpoints, lg)) {
             padding-left: 15px;
             padding-right: 15px;
+            max-width: 960px;
         }
     }
 }

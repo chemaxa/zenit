@@ -21,10 +21,10 @@ $base-line-height: 24px;
 $base-unit: 'em';
 $base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // The font sizes for h1-h6.
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
-$h4-font-size: 1    * $base-font-size;
+$h1-font-size: 1.7    * $base-font-size; // 32px
+$h2-font-size: 1.5  * $base-font-size; // 24
+$h3-font-size: 1.17 * $base-font-size; // 18,7
+$h4-font-size: 1    * $base-font-size; // 16
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
