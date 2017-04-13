@@ -1,6 +1,12 @@
 .product
   .grid
-    .grid__col-md-4
+    .grid__col-md-5.grid__col--bleed
       .grid__cell
         img.product__thumb(src='/img/'+currentPage+'/product-main.jpg')
-    
+    .grid__col-md-5.grid__col--bleed
+      table.product__tbl
+        caption.product__tbl-caption
+          |Характеристики
+        tr.product__tbl-row
+          td.product__tbl-cell
+    .grid__col-md-2.grid__col--bleed
