@@ -1,0 +1,8 @@
+.product {
+  &__link {
+    color: $black;
+  }
+  &__link_active {
+    color: $primary;
+  }
+}

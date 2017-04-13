@@ -1,12 +1,50 @@
+-
+ var productParams = [
+  {'param': 'наименование', 'value': 'Z-in A56 D200 830'},
+  {'param':'управление ', 'value': 'через фазовый  регулятор напряжения'},
+  {'param':'Pmax (Вт)', 'value': '23,2'},
+  {'param':'Ф (лм) ', 'value': '1466'},
+  {'param':'Тцв (К) ', 'value': '3000'}, 
+  {'param':'cos φ  ', 'value': '0,88'},
+  {'param':'артикул ', 'value': 'ze11003041'},
+  {'param':'*ies','icon':'fa fa-download' },
+  {'param':'паспорт', 'icon':'fa fa-download', 'active':true },
+  {'param':'монтажная инструкция ','icon':'fa fa-download'}]
+ var productEquipment=[
+  {'param':'гипсовый корпус','value':'1 шт.'},
+  {'param':'световой модуль','value':'1 шт.'},
+  {'param':'блок питания','value':'1 шт.'},
+  {'param':'крепежный элемент','value':'2 шт.'},
+  {'param':'винт М4 ','value':'4 шт.'},
+  {'param':'саморезы','value':'4 шт.'},
+  {'param':'шайба пружинная','value':'4 шт.'}]
+
 .product
   .grid
-    .grid__col-md-5.grid__col--bleed
+    .grid__col-md-4.grid__col--bleed
       .grid__cell
         img.product__thumb(src='/img/'+currentPage+'/product-main.jpg')
-    .grid__col-md-5.grid__col--bleed
+    .grid__col-md-4.grid__col--bleed
       table.product__tbl
         caption.product__tbl-caption
           |Характеристики
-        tr.product__tbl-row
-          td.product__tbl-cell
+        each item in productParams
+          tr.product__tbl-row
+            td.product__tbl-cell
+              =item.param
+            td.product__tbl-cell
+              if item.value
+                 =item.value
+              else
+                <a href="#" class="product__link #{item.active ? "product__link_active" : ""} #{item.icon}"></a>
+      table.product__tbl
+        caption.product__tbl-caption
+          |Комплектация
+        each item in productEquipment
+          tr.product__tbl-row
+            td.product__tbl-cell
+              =item.param
+            td.product__tbl-cell
+              =item.value
     .grid__col-md-2.grid__col--bleed
+       include availability

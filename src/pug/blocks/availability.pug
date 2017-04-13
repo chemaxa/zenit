@@ -1,0 +1,8 @@
+
+mixin pet(isAvailable)
+  .availability(class=isAvailable ? 'availability_available' : '')
+    if isAvailable
+      |Срок поставки
+      |3-4 недели
+    else
+      |В наличии
