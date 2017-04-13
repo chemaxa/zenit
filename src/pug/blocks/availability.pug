@@ -1,8 +1,8 @@
-
-mixin pet(isAvailable)
-  .availability(class=isAvailable ? 'availability_available' : '')
-    if isAvailable
+mixin availability(isAvailable)
+  .availability(class=isAvailable ? 'availability_available' : 'availability_notavailable')
+    if !isAvailable
       |Срок поставки
+      br
       |3-4 недели
     else
       |В наличии

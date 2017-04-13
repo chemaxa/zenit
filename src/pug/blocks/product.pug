@@ -4,8 +4,8 @@
   {'param':'управление ', 'value': 'через фазовый  регулятор напряжения'},
   {'param':'Pmax (Вт)', 'value': '23,2'},
   {'param':'Ф (лм) ', 'value': '1466'},
-  {'param':'Тцв (К) ', 'value': '3000'}, 
-  {'param':'cos φ  ', 'value': '0,88'},
+  {'param':'Тцв (К)', 'value': '3000'}, 
+  {'param':'cos φ', 'value': '0,88'},
   {'param':'артикул ', 'value': 'ze11003041'},
   {'param':'*ies','icon':'fa fa-download' },
   {'param':'паспорт', 'icon':'fa fa-download', 'active':true },
@@ -31,7 +31,7 @@
         each item in productParams
           tr.product__tbl-row
             td.product__tbl-cell
-              =item.param
+              span=item.param
             td.product__tbl-cell
               if item.value
                  =item.value
@@ -43,8 +43,18 @@
         each item in productEquipment
           tr.product__tbl-row
             td.product__tbl-cell
-              =item.param
+              span=item.param
             td.product__tbl-cell
               =item.value
     .grid__col-md-2.grid__col--bleed
-       include availability
+      +availability()
+      .product__qty
+        .product__qty-title Количество
+        i.fa.fa-minus.product__qty-cntr
+        span.product__qty-num
+          |1
+        i.fa.fa-plus.product__qty-cntr.active
+      h3.product__price
+        |8 594,80 р
+      button.button.product__button-buy
+        |Купить 

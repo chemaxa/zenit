@@ -1,4 +1,41 @@
 .product {
+  font-size: 12px;
+  &__tbl {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  &__tbl-caption {
+    font-weight: 400;
+    text-align: left;
+  }
+  &__tbl-cell:first-child {
+    vertical-align: bottom;
+  }
+  &__tbl-cell:last-child {
+    vertical-align: top;
+    padding-left: 15px;
+  }
+  &__tbl-cell:first-child>span {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__tbl-cell:first-child>span:after {
+    margin-left: 10px;
+    content: '............................................................';
+  }
+  &__qty-num {
+    border: 1px solid $black;
+    padding: 2px 5px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+  &__qty-cntr.active {
+    color: $primary;
+  }
   &__link {
     color: $black;
   }

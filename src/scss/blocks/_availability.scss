@@ -1,0 +1,27 @@
+.availability {
+  text-align: center;
+  position: relative;
+  font-size: 11px;
+  font-weight: 100;
+  max-width: 105px;
+  
+  &_available {
+    color: $success;
+  }
+  &_notavailable:before {
+    font: normal normal normal 9px/1 FontAwesome;
+    content: "\f111";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+  }
+  &_notavailable {
+    color: $muted;
+  }
+  &_available:before {
+      font: normal normal normal 9px/1 FontAwesome;
+      content: "\f111";
+  }
+}
