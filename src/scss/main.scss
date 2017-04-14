@@ -11,13 +11,11 @@
 @import 'font-awesome/scss/font-awesome';
 //Import font-awesome
 @import 'reflex-grid/scss/reflex';
-//Pages
-@import 'pages/_product';
 //Blocks
-@import 'blocks/_link';
-@import 'blocks/_page';
-@import 'blocks/_grid';
-@import 'blocks/_menu';
-@import 'blocks/_breadcrumbs';
-@import 'blocks/_product';
-@import 'blocks/_availability';
+@import 'link/_link';
+@import 'page/_page';
+@import 'grid/_grid';
+@import 'menu/_menu';
+@import 'breadcrumbs/_breadcrumbs';
+@import 'product/_product';
+@import 'availability/_availability';

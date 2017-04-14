@@ -14,7 +14,8 @@ let runSequence = require('run-sequence');
 let plumber = require('gulp-plumber');
 
 let params = {
-    scssPaths: ['./node_modules', './src/scss/blocks', './src/scss/pages'],
+    scssPaths: ['./node_modules', './src/scss', './src/components'],
+    pugBase: 'src',
     src: 'src',
     build: 'build',
     currentPage: 'product'
@@ -44,6 +45,7 @@ gulp.task('pug', function () {
     return gulp.src(params.src + '/pug/pages/' + params.currentPage + '.pug')
         .pipe(plumber())
         .pipe(pug({
+            basedir: params.pugBase,
             pretty: true,
             locals: {
                 currentPage: params.currentPage

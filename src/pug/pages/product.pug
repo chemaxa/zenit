@@ -1,10 +1,14 @@
-extends ../layout.pug
+extends /pug/layout.pug
+include /components/availability/availability
+include /components/breadcrumbs/breadcrumbs
+include /components/menu/menu
+include /components/product/product
 
 block content
   main.page__content.grid__container
-    include ../blocks/breadcrumbs
+    +breadcrumbs
     h1 A56 D200 830
-    include ../blocks/product
+    +product
   
 
     
