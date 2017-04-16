@@ -46,6 +46,9 @@
       max-width: 40px;
       text-align: center;
     }
+    &__qty-cntr {
+      color: $black;
+    }
     &__qty-cntr:hover {
       color: $primary;
     }

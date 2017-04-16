@@ -57,6 +57,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  &__link_top:hover {
+    color: $white;
+  }
   &__link_submenu {
     display: inline-block;
     color: $black;
