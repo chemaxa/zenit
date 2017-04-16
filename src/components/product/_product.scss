@@ -1,57 +1,113 @@
-.product {
-  font-size: 12px;
-  &__tbl {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-  }
-  &__tbl-caption {
-    font-weight: 400;
-    text-align: left;
-  }
-  &__tbl-cell:first-child {
-    vertical-align: bottom;
-  }
-  &__tbl-cell:last-child {
-    vertical-align: top;
-    padding-left: 15px;
-  }
-  &__tbl-cell:first-child>span {
-    display: inline-block;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  &__tbl-cell:first-child>span:after {
-    margin-left: 10px;
-    content: '............................................................';
-  }
-  &__qty {
-    text-align: center;
-  }
-  &__qty-num {
-    border: 1px solid $black;
-    padding: 2px 5px;
-    vertical-align: middle;
-    margin: 0 10px;
-  }
-  &__qty-cntr.active {
-    color: $primary;
-  }
-  &__price {
-    text-align: center;
-  }
-  &__link {
-    text-align: center;
-    color: $black;
+  .product {
     font-size: 12px;
-    font-weight: 500;
+    &__tbl {
+      margin-bottom: 18px;
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+    }
+    &__tbl-caption {
+      font-weight: 400;
+      text-align: left;
+    }
+    &__tbl-cell:first-child {
+      vertical-align: bottom;
+      line-height: 1;
+    }
+    &__tbl-cell:last-child {
+      vertical-align: top;
+      padding-left: 15px;
+    }
+    &__tbl-cell:first-child>span {
+      display: inline-block;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &__tbl-cell:first-child>span:after {
+      margin-left: 10px;
+      content: '............................................................';
+    }
+    &__qty {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    &__qty-title {
+      margin-bottom: 10px;
+    }
+    &__qty-num {
+      border: 1px solid $black;
+      padding: 2px 5px;
+      vertical-align: middle;
+      margin: 0 10px;
+      display: inline-block;
+      max-width: 40px;
+      text-align: center;
+    }
+    &__qty-cntr.active {
+      color: $primary;
+    }
+    &__button_buy {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__price {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    &__link {
+      text-align: center;
+      color: $black;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    &__link_active {
+      color: $primary;
+    }
+    &__link_text {
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__image {
+      padding-right: 15px;
+    }
+    &__thumb {
+      border: 1px solid $black;
+      margin-bottom: 30px;
+    }
+    &__switch {
+      position: relative;
+    }
+    &__switch-list {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      margin-right: 45px;
+      min-width: 50px;
+    }
+    &__switch-item {
+      border: 1px solid $black;
+      display: block;
+      margin-bottom: 24px;
+    }
+    &__switch-item_active {
+      border: 2px solid $black;
+    }
+    &__strip {
+      display: flex;
+      background-color: $bg-strip;
+      padding: 10px;
+      justify-content: space-between;
+    }
+    &__gallery {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 15px;
+    }
+    &__description-title {
+      margin-bottom: 20px;
+    }
   }
-  &__link_active {
-    color: $primary;
-  }
-  &__link_text {
-    margin-bottom: 20px;
-  }
-}

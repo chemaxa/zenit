@@ -19,46 +19,82 @@ mixin product
       {'param':'винт М4 ','value':'4 шт.'},
       {'param':'саморезы','value':'4 шт.'},
       {'param':'шайба пружинная','value':'4 шт.'}]
+  h1.product__title A56 D200 830
   .product
     .grid
       .grid__col-md-4.grid__col--bleed
         .grid__cell
-          img.product__thumb(src='/img/'+currentPage+'/product-main.jpg')
+          .product__image
+            .product__switch
+              img.product__thumb(src='/img/'+currentPage+'/product-main.jpg')
+              .product__switch-list
+                img.product__switch-item.product__switch-item_active(src='/img/'+currentPage+'/product__type-1.jpg')
+                img.product__switch-item(src='/img/'+currentPage+'/product__type-2.jpg')
+            .product__strip
+              span.product__strip-itm
+                |220-240 В
+              span.product__strip-itm
+                img(src='/img/'+currentPage+'/product__strip-itm.jpg')
+              span.product__strip-itm
+                |IP 20
+              span.product__strip-itm
+                |Ra > 80
+              span.product__strip-itm
+                |MAC 3
       .grid__col-md-4.grid__col--bleed
-        table.product__tbl
-          caption.product__tbl-caption
-            |Характеристики
-          each item in productParams
-            tr.product__tbl-row
-              td.product__tbl-cell
-                span=item.param
-              td.product__tbl-cell
-                if item.value
+        .grid__cell
+          table.product__tbl
+            caption.product__tbl-caption
+              |Характеристики
+            each item in productParams
+              tr.product__tbl-row
+                td.product__tbl-cell
+                  span=item.param
+                td.product__tbl-cell
+                  if item.value
+                    =item.value
+                  else
+                    <a href="#" class="product__link #{item.active ? "product__link_active" : ""} #{item.icon}"></a>
+          table.product__tbl
+            caption.product__tbl-caption
+              |Комплектация
+            each item in productEquipment
+              tr.product__tbl-row
+                td.product__tbl-cell
+                  span=item.param
+                td.product__tbl-cell
                   =item.value
-                else
-                  <a href="#" class="product__link #{item.active ? "product__link_active" : ""} #{item.icon}"></a>
-        table.product__tbl
-          caption.product__tbl-caption
-            |Комплектация
-          each item in productEquipment
-            tr.product__tbl-row
-              td.product__tbl-cell
-                span=item.param
-              td.product__tbl-cell
-                =item.value
       .grid__col-md-2.grid__col--bleed
-        +availability()
-        .product__qty
-          .product__qty-title Количество
-          i.fa.fa-minus.product__qty-cntr
-          span.product__qty-num
-            |1
-          i.fa.fa-plus.product__qty-cntr.active
-        h3.product__price
-          |8 594,80 р
-        button.button.button_primary(type="button")
-          |Купить 
-        a(href="#").link.product__link.product__link_text
-          |Перейти в корзину
-        a(href="#").link.product__link.product__link_text
-          |Продолжить покупки
+        .grid__cell
+          +availability()
+          .product__qty
+            .product__qty-title Количество
+            i.fa.fa-minus.product__qty-cntr
+            input.product__qty-num(type="text",value=1)
+            i.fa.fa-plus.product__qty-cntr.active
+          h3.product__price
+            |8 594,80 р
+          button.button.button_primary.product__button_buy(type="button")
+              |Купить 
+          a(href="#").link.product__link.product__link_text
+            |Перейти в корзину
+          a(href="#").link.product__link.product__link_text
+            |Продолжить покупки
+      .grid
+        .grid__col-md-8.grid__col--bleed
+          .product__gallery
+            .product__gallery-itm
+              img(src='/img/'+currentPage+'/product__gallery-1.jpg')
+            .product__gallery-itm
+              img(src='/img/'+currentPage+'/product__gallery-2.jpg')
+            .product__gallery-itm
+              img(src='/img/'+currentPage+'/product__gallery-3.jpg')
+            .product__gallery-itm
+              img(src='/img/'+currentPage+'/product__gallery-4.jpg')
+        .grid__col-md-4
+          .product__description-title
+            |О серии
+          .product__description
+             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem adipisci laboriosam magni 
+             | quo porro quas neque incidunt, reiciendis tempora sit vitae, aspernatur eveniet natus modi! 
+             | Explicabo maiores voluptate reprehenderit!

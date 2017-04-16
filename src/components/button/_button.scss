@@ -1,8 +1,9 @@
 .button {
   cursor: pointer;
-  padding: 12px;
+  padding: 12px 36px;
   border-radius: 5px;
   margin-bottom: 24px;
+  display: inline-block;
   &_primary {
     border: 1px solid $primary;
     color: $primary;

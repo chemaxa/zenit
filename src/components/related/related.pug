@@ -1,0 +1,10 @@
+mixin related
+  .related
+    .related__title
+      | Вас также может заинтересовать
+    ul.related__list
+     while n < 4
+      li.related__item
+          =n++
+        +availability()
+        img.related__thumb
