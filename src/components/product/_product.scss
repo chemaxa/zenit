@@ -27,6 +27,9 @@
     margin-left: 10px;
     content: '............................................................';
   }
+  &__qty {
+    text-align: center;
+  }
   &__qty-num {
     border: 1px solid $black;
     padding: 2px 5px;
@@ -36,10 +39,19 @@
   &__qty-cntr.active {
     color: $primary;
   }
+  &__price {
+    text-align: center;
+  }
   &__link {
+    text-align: center;
     color: $black;
+    font-size: 12px;
+    font-weight: 500;
   }
   &__link_active {
     color: $primary;
+  }
+  &__link_text {
+    margin-bottom: 20px;
   }
 }

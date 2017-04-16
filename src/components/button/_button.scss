@@ -1,0 +1,14 @@
+.button {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  &_primary {
+    border: 1px solid $primary;
+    color: $primary;
+    font-size: 12px;
+    font-weight: 400;
+    background: $white;
+    background: linear-gradient(to bottom, $white 0%, $white 49%, $button-bg 50%);
+  }
+}

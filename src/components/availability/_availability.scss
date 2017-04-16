@@ -1,10 +1,12 @@
 .availability {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   position: relative;
   font-size: 11px;
   font-weight: 100;
   max-width: 105px;
-  
+  min-width: 105px;
   &_available {
     color: $success;
   }
