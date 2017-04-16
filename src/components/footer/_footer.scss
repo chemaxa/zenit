@@ -1,0 +1,12 @@
+.footer {
+  &__item {
+    text-indent: -25px;
+    margin-left: 25px;
+  }
+  &__item:before {
+    padding-right: 15px;
+  }
+  &__icon:before {
+    font-size: 20px;
+  }
+}
