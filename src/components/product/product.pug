@@ -65,13 +65,15 @@ mixin product
                 td.product__tbl-cell
                   =item.value
       .grid__col-md-2.grid__col--bleed
-        .grid__cell
+        .grid__cell.u--txt-center
           +availability()
           .product__qty
             .product__qty-title Количество
-            i.fa.fa-minus.product__qty-cntr
+            a(href="#")
+              i.fa.fa-minus.product__qty-cntr
             input.product__qty-num(type="text",value=1)
-            i.fa.fa-plus.product__qty-cntr.active
+            a(href="#")
+              i.fa.fa-plus.product__qty-cntr
           h3.product__price
             |8 594,80 р
           button.button.button_primary.product__button_buy(type="button")

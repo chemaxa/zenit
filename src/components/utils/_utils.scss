@@ -1,0 +1,30 @@
+.u {
+  &--fl-right {
+    float: right;
+  }
+  &--fl-left {
+    float: left;
+  }
+  &--clearfix::before,
+  &--clearfix::after {
+    display: table;
+    content: ' ';
+  }
+  &--clearfix::after {
+    clear: both;
+  }
+  &--vrt-sm {
+    margin-bottom: 24px;
+  }
+  &--vrt-md {
+    margin-bottom: 60px;
+  }
+  &--txt-center {
+    text-align: center;
+  }
+  &--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

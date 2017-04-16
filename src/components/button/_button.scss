@@ -12,4 +12,7 @@
     background: $white;
     background: linear-gradient(to bottom, $white 0%, $white 49%, $button-bg 50%);
   }
+  &_primary:hover {
+    box-shadow: 0 0 2px $primary;
+  }
 }

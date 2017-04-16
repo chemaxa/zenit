@@ -3,11 +3,17 @@ include /components/availability/availability
 include /components/breadcrumbs/breadcrumbs
 include /components/menu/menu
 include /components/product/product
+include /components/related/related
+include /components/features/features
 
 block content
   main.page__content.grid__container
     +breadcrumbs
     +product
+    .u--vrt-md
+      +related
+    +features
   
 
+    
     

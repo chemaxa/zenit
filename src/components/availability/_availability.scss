@@ -1,6 +1,4 @@
 .availability {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 24px;
   text-align: center;
   position: relative;
@@ -8,6 +6,8 @@
   font-weight: 100;
   max-width: 105px;
   min-width: 105px;
+  min-height: 48px;
+  display: inline-block;
   &_available {
     color: $success;
   }
@@ -26,5 +26,6 @@
   &_available:before {
       font: normal normal normal 9px/1 FontAwesome;
       content: "\f111";
+      margin-right: 10px;
   }
 }

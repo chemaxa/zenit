@@ -1,5 +1,6 @@
   .product {
     font-size: 12px;
+    margin-bottom: 48px;
     &__tbl {
       margin-bottom: 18px;
       width: 100%;
@@ -45,7 +46,7 @@
       max-width: 40px;
       text-align: center;
     }
-    &__qty-cntr.active {
+    &__qty-cntr:hover {
       color: $primary;
     }
     &__button_buy {
@@ -62,9 +63,6 @@
       color: $black;
       font-size: 12px;
       font-weight: 500;
-    }
-    &__link_active {
-      color: $primary;
     }
     &__link_text {
       display: block;

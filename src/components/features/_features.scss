@@ -1,0 +1,11 @@
+.features {
+  border: 2px solid $black;
+  padding: 20px;
+  padding-bottom: 7px;
+  &__item {
+    text-align: center;
+  }
+  &__item:hover>&__icon {
+    color: $primary;
+  }
+}
