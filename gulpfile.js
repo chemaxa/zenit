@@ -98,8 +98,8 @@ function serve() {
         }
     });
     gulp.watch(params.src + "/js/**/*.js", ['js']);
-    gulp.watch(params.src + "/pug/**/*.pug", ['pug']);
-    gulp.watch(params.src + "/scss/**/*.scss", ['scss']);
+    gulp.watch(params.src + "/components/**/*.pug", ['pug']);
+    gulp.watch(params.src + "/components/**/*.scss", ['scss']);
 }
 gulp.task('serve', function () {
     runSequence('clean', 'scss', 'pug', 'fonts', 'images', 'js', serve)
