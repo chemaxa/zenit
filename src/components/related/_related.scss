@@ -17,14 +17,20 @@
   &__button+&__button {
     margin-right: 15px;
   }
-  &__icon_num {
-    display: block;
-  }
   &__icon {
     position: relative;
     color: $black;
     line-height: 30px;
     text-align: center;
+  }
+  &__icon_num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    background-color: $primary;
+    color: $white;
+    background-position: -10px center;
   }
   &__icon:after {
     position: absolute;
@@ -37,12 +43,21 @@
     border: 1px solid $black;
     border-radius: 50%;
   }
+  &__icon_num:after {
+    left: 0;
+    border-color: $primary;
+  }
+  &__icon_active,
   &__button:hover>&__icon {
     color: $primary;
   }
+  &__icon_active:after,
   &__button:hover>&__icon:after {
     border-color: $primary;
   }
+   &__icon_num:hover{
+     color: $white !important;
+   }
   &__thumb {
     margin-top: 5px;
     margin-bottom: 5px;
