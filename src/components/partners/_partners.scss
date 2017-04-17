@@ -1,0 +1,9 @@
+.partners {
+  border: 1px solid $black;
+  padding: 30px 40px;
+  &__title {
+    font-size: 18px;
+    color: $black;
+    font-weight: 600;
+  }
+}

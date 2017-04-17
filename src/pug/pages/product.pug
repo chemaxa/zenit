@@ -6,6 +6,7 @@ include /components/product/product
 include /components/related/related
 include /components/features/features
 include /components/newsblock/newsblock
+include /components/partners/partners
 
 block content
   main.page__content
@@ -18,7 +19,8 @@ block content
       .grid
         .grid__col-md-6
           +newsblock
-  
+        .grid__col-md-3.grid--align-content-center.grid--justify-center
+          +partners
 
     
     
