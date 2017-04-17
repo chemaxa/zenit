@@ -11,10 +11,16 @@ mixin related
             .grid__cell
               .related__item-header.u--clearfix
                 span.related__id ze11003007
-                a(href="#").related__button.u--fl-right
-                  i.fa.fa-search-plus.related__icon
-                a(href="#").related__button.u--fl-right
-                  i.fa.fa-bar-chart.related__icon
+                if n>2
+                  a(href="#").related__button.u--fl-right
+                    i.related__icon.related__icon_num 2
+                  a(href="#").related__button.u--fl-right
+                    i.fa.fa-bar-chart.related__icon
+                else
+                  a(href="#").related__button.u--fl-right
+                    i.fa.fa-search-plus.related__icon
+                  a(href="#").related__button.u--fl-right
+                    i.fa.fa-bar-chart.related__icon
               if n>2
                 +availability(true)
               else
