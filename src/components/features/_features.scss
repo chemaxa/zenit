@@ -1,7 +1,8 @@
 .features {
   border: 2px solid $black;
-  padding: 20px;
+  padding-top: 20px;
   padding-bottom: 7px;
+  max-width: 1140px;
   &__item {
     text-align: center;
   }

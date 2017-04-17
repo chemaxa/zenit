@@ -5,6 +5,8 @@
         margin-right: auto;
         margin-left: auto;
         max-width: map-get($breakpoints, lg);
+        padding-left: 15px;
+        padding-right: 15px;
         @include max-screen(map-get($breakpoints, lg)) {
             padding-left: 15px;
             padding-right: 15px;

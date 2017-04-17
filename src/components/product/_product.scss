@@ -1,6 +1,9 @@
   .product {
     font-size: 12px;
     margin-bottom: 48px;
+    &__title{
+      padding-left: 15px;
+    }
     &__tbl {
       margin-bottom: 18px;
       width: 100%;

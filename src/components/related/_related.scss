@@ -1,7 +1,6 @@
 .related {
-  &__list {
-    margin-left: -15px;
-    margin-right: -15px;
+  &__title{
+    padding-left: 15px;
   }
   &__item {
     background-color: $bg-related;

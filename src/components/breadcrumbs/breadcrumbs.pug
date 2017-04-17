@@ -5,12 +5,13 @@ mixin breadcrumbs
       {'title': 'A56'},
       {'title': 'D200'},
       {'title': 'A56 D200 830', 'url': '#'}]
-  nav.breadcrumbs
-    ul.breadcrumbs__list
-      each item in breadcrumbsItems
-        li.breadcrumbs__item
-          if !item.url
-            =item.title
-            |&nbsp;>&nbsp;
-          if item.url
-            a.breadcrumbs__link(href=item.url)=item.title
+  .grid__container      
+    nav.breadcrumbs
+      ul.breadcrumbs__list
+        each item in breadcrumbsItems
+          li.breadcrumbs__item
+            if !item.url
+              =item.title
+              |&nbsp;>&nbsp;
+            if item.url
+              a.breadcrumbs__link(href=item.url)=item.title

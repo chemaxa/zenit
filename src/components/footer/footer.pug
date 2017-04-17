@@ -1,19 +1,20 @@
 mixin footer
-  footer.page__footer
-    .grid
-      .grid__col-md-6.grid__col--bleed
-        .footer__item.fa.fa-map-marker.footer__icon
-          |Россия, Ленинградская область,
-          br
-          |поселок Новоселье, Институтская ул. д. 1
-        .footer__item.fa.fa-phone.footer__icon
-          |8 (812) 244 20 66
-        .footer__item.fa.fa-envelope.footer__icon
-          |info@zenit-stp.ru
-      .grid__col-md-6.grid__col--bleed
-        .grid__cell
-          i.fa.fa-facebook.footer__icon.footer__icon_circle
-          i.fa.fa-vk.footer__icon.footer__icon_circle
-          i.fa.fa-linkedin.footer__icon.footer__icon_circle
+  footer.page__footer.footer
+    .grid__container
+      .grid
+        .grid__col-md-6
+          .footer__item.fa.fa-map-marker.footer__icon
+            |Россия, Ленинградская область,
+            br
+            |поселок Новоселье, Институтская ул. д. 1
+          a(href="tel:88122442066").footer__item.fa.fa-phone.footer__icon
+            |8 (812) 244 20 66
+          a(href="mailto:info@zenit-stp.ru").footer__item.fa.fa-envelope.footer__icon
+            |info@zenit-stp.ru
+        .grid__col-md-6.grid--justify-end.grid--align-content-start.grid--direction-row
+          a(href="#").fa.fa-facebook.footer__icon.footer__icon_circle
+          a(href="#").fa.fa-vk.footer__icon.footer__icon_circle
+          a(href="#").fa.fa-linkedin.footer__icon.footer__icon_circle
+
           
         

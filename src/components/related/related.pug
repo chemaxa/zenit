@@ -1,41 +1,42 @@
 mixin related
-  - var n=0;
-  .related
-    h3.related__title
-      | Вас также может заинтересовать
-    ul.related__list.grid
-      while n < 4
-        .grid__col-md-3
-          li.related__item
-            -n++
-            .grid__cell
-              .related__item-header.u--clearfix
-                span.related__id ze11003007
+  .grid__container
+    - var n=0;
+    .related
+      h3.related__title
+        | Вас также может заинтересовать
+      ul.related__list.grid
+        while n < 4
+          .grid__col-md-3
+            li.related__item
+              -n++
+              .grid__cell
+                .related__item-header.u--clearfix
+                  span.related__id ze11003007
+                  if n>2
+                    a(href="#").related__button.u--fl-right
+                      i.related__icon.related__icon_num 2
+                    a(href="#").related__button.u--fl-right
+                      i.fa.fa-bar-chart.related__icon
+                  else
+                    a(href="#").related__button.u--fl-right
+                      i.fa.fa-search-plus.related__icon
+                    a(href="#").related__button.u--fl-right
+                      i.fa.fa-bar-chart.related__icon
                 if n>2
-                  a(href="#").related__button.u--fl-right
-                    i.related__icon.related__icon_num 2
-                  a(href="#").related__button.u--fl-right
-                    i.fa.fa-bar-chart.related__icon
+                  +availability(true)
                 else
-                  a(href="#").related__button.u--fl-right
-                    i.fa.fa-search-plus.related__icon
-                  a(href="#").related__button.u--fl-right
-                    i.fa.fa-bar-chart.related__icon
-              if n>2
-                +availability(true)
-              else
-                +availability()
-              .related__thumb
-                img(src='img/'+currentPage+'/product__related.jpg')
-              .related__item-title
-                |Z-in R25 100x100 830
-              .related__price
-                |6 052,36 руб.
-                a(href="#").related__button
-                  i.fa.fa-shopping-cart.related__icon
-    a.related__footer.related__button(href="#")
-      i.fa.fa-plus.related__footer-icon.related__icon
-      br
-      |Показать ещё 6 товаров
-      br
-      |Показано 6 из 100
+                  +availability()
+                .related__thumb
+                  img(src='img/'+currentPage+'/product__related.jpg')
+                .related__item-title
+                  |Z-in R25 100x100 830
+                .related__price
+                  |6 052,36 руб.
+                  a(href="#").related__button
+                    i.fa.fa-shopping-cart.related__icon
+      a.related__footer.related__button(href="#")
+        i.fa.fa-plus.related__footer-icon.related__icon
+        br
+        |Показать ещё 6 товаров
+        br
+        |Показано 6 из 100
