@@ -13,8 +13,11 @@
     text-indent: -25px;
     margin-left: 25px;
     margin-bottom: 9px;
+    font-family: $base-font-family;
+    font-weight: 100;
   }
   &__item:before {
+    font: 14px/1 FontAwesome;
     padding-right: 15px;
   }
   &__icon:before {
@@ -27,7 +30,7 @@
   &__item:last-child:before {
     padding-right: 10px;
   }
-  &__icon{
+  &__icon {
     color: $black;
   }
   &__icon_circle+&__icon_circle {

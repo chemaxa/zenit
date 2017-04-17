@@ -5,6 +5,7 @@ include /components/menu/menu
 include /components/product/product
 include /components/related/related
 include /components/features/features
+include /components/newsblock/newsblock
 
 block content
   main.page__content
@@ -13,6 +14,10 @@ block content
     .u--vrt-md
       +related
     +features
+    .grid__container
+      .grid
+        .grid__col-md-6
+          +newsblock
   
 
     
