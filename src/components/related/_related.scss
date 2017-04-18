@@ -1,98 +1,106 @@
 .related {
-  &__title{
-    padding-left: 15px;
-  }
-  &__item {
-    background-color: $bg-related;
-    border: 1px solid $black;
-    padding: 9px;
-  }
-  &__item .availability {
-    margin-bottom: 0;
-  }
-  &__item-header {
-    padding-right: 7px;
-  }
-  &__button+&__button {
-    margin-right: 15px;
-  }
-  &__icon {
-    position: relative;
-    color: $black;
-    line-height: 30px;
-    text-align: center;
-  }
-  &__icon_num {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: block;
-    background-color: $primary;
-    color: $white;
-    background-position: -10px center;
-  }
-  &__icon:after {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 0;
-    left: -7px;
-    content: '';
-    display: block;
-    border: 1px solid $black;
-    border-radius: 50%;
-  }
-  &__icon_num:after {
-    left: 0;
-    border-color: $primary;
-  }
-  &__icon_active,
-  &__button:hover>&__icon {
-    color: $primary;
-  }
-  &__icon_active:after,
-  &__button:hover>&__icon:after {
-    border-color: $primary;
-  }
-   &__icon_num:hover{
-     color: $white !important;
-   }
-  &__thumb {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  &__item-title,
-  &__price {
-    text-align: center;
-  }
-  &__price>&__button {
-    margin-left: 10px;
-  }
-  &__footer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 20%;
-    position: relative;
-    padding-left: 40px;
-    color: $black;
-  }
-  &__footer-icon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    padding-left: 5px;
-  }
-  &__footer-icon:after {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 3px;
-    left: 0;
-    content: '';
-    display: block;
-    border: 1px solid $black;
-    border-radius: 100%;
-  }
+    &__title {
+        padding-left: 10px;
+    }
+    &__id {
+        font-weight: 100;
+    }
+    &__item {
+        background-color: $bg-related;
+        border: 1px solid $black;
+        padding: 9px;
+    }
+    &__item-title{
+      display: block;
+      text-align: center;
+      color: $black;
+    }
+    &__item .availability {
+        margin-bottom: 0;
+    }
+    &__item-header {
+        padding-right: 7px;
+    }
+    &__button+&__button {
+        margin-right: 15px;
+    }
+    &__icon {
+        position: relative;
+        color: $black;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__icon_num {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        background-color: $primary;
+        color: $white;
+        background-position: -10px center;
+    }
+    &__icon:after {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: -7px;
+        content: '';
+        display: block;
+        border: 1px solid $black;
+        border-radius: 50%;
+    }
+    &__icon_num:after {
+        left: 0;
+        border-color: $primary;
+    }
+    &__icon_active,
+    &__button:hover>&__icon {
+        color: $primary;
+    }
+    &__icon_active:after,
+    &__button:hover>&__icon:after {
+        border-color: $primary;
+    }
+    &__icon_num:hover {
+        color: $white !important;
+    }
+    &__thumb {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    &__item-title,
+    &__price {
+        text-align: center;
+    }
+    &__price>&__button {
+        margin-left: 10px;
+    }
+    &__footer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 20%;
+        position: relative;
+        padding-left: 40px;
+        color: $black;
+    }
+    &__footer-icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding-left: 5px;
+    }
+    &__footer-icon:after {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        border: 1px solid $black;
+        border-radius: 100%;
+    }
 }

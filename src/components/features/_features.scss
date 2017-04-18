@@ -1,12 +1,16 @@
 .features {
-  border: 2px solid $black;
-  padding-top: 20px;
-  padding-bottom: 7px;
-  max-width: 1140px;
-  &__item {
-    text-align: center;
-  }
-  &__item:hover>&__icon {
-    color: $primary;
-  }
+    border: 2px solid $black;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    margin-left: 10px;
+    max-width: 1160px;
+    &__item {
+        text-align: center;
+    }
+    &__item:hover>&__icon {
+        color: $primary;
+    }
+    &__description {
+      font-weight: 100;
+    }
 }

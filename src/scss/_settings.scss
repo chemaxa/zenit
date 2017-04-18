@@ -62,8 +62,8 @@ $reflex-xlg: map-get($breakpoints, xlg);
 
 // Spacing
 // -------------------------
-$reflex-grid-spacing:       0em 1em !default;
-$reflex-cell-spacing:       1em !default;
+$reflex-grid-spacing:       0em 10px;
+$reflex-cell-spacing:       1em;
 
 $reflex-cell-spacing-sm:    ($reflex-cell-spacing / 2);
 $reflex-cell-spacing-md:    $reflex-cell-spacing;
