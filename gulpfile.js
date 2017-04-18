@@ -51,7 +51,7 @@ gulp.task('pug', function () {
                 currentPage: params.currentPage
             }
         }))
-        .pipe(gulp.dest(params.build + '/html'))
+        .pipe(gulp.dest(params.build + '/'))
         .pipe(browserSync.stream());
 });
 
@@ -94,7 +94,7 @@ function serve() {
     browserSync.init({
         server: {
             baseDir: "./" + params.build,
-            index: "/html/" + params.currentPage + ".html"
+            index: "/" + params.currentPage + ".html"
         }
     });
     gulp.watch(params.src + "/js/**/*.js", ['js']);
