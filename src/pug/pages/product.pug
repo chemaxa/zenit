@@ -7,6 +7,7 @@ include /components/related/related
 include /components/features/features
 include /components/newsblock/newsblock
 include /components/partners/partners
+include /components/subscribe/subscribe
 
 block content
   main.page__content
@@ -14,13 +15,16 @@ block content
     +product
     .u--vrt-md
       +related
-    +features
-    .grid__container
+    .u--vrt-sm
+      +features
+    .u--vrt-sm.grid__container
       .grid
         .grid__col-md-6
           +newsblock
         .grid__col-md-3
           +partners
+        .grid__col-md-3
+          +subscribe
 
     
     
