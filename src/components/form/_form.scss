@@ -1,0 +1,68 @@
+.form {
+  &__lbl {
+    position: relative;
+    text-indent: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  &__lbl:before {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid $black;
+  }
+  &__lbl:after {
+    position: absolute;
+    top: 2px;
+    left: -27px;
+    display: block;
+    visibility: hidden;
+    content: "\f00c";
+    width: 10px;
+    height: 10px;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+  [type="checkbox"]:checked+&__lbl:after {
+    visibility: visible;
+    color: $white;
+  }
+  [type="checkbox"]:checked+&__lbl:before {
+    background-color: $primary;
+    border: none;
+  }
+  &__input {
+    border: 1px solid $black;
+    border-radius: 3px;
+    padding: 9px 13px;
+    color: $muted;
+    font-size: 11px;
+    font-weight: 100;
+    margin-bottom: 12px;
+  }
+  &__input:active,
+  &__input:focus {
+    box-shadow: 0 0 0 2px $black;
+  }
+  &__input-wrapper {
+    position: relative;
+  }
+  &__input-wrapper &__input {
+    position: relative;
+    z-index: 1;
+    text-indent: 20px
+  }
+  &__input-wrapper:before {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-100%);
+    z-index: 2;
+  }
+  &__chkbx {
+    display: none;
+  }
+}

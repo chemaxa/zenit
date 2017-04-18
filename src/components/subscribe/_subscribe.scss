@@ -1,0 +1,18 @@
+.subscribe {
+  border: 1px solid $black;
+  padding: 20px 40px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {}
+  &__input,
+  &__input>input {
+    display: block;
+    width: 100%;
+  }
+  &__input:before {
+    color: $primary;
+  }
+}

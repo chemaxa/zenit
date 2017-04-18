@@ -13,14 +13,14 @@ mixin related
                 .related__item-header.u--clearfix
                   span.related__id ze11003007
                   if n>2
-                    a(href="#").related__button.u--fl-right
+                    a(href="#").related__button
                       i.related__icon.related__icon_num 2
-                    a(href="#").related__button.u--fl-right
+                    a(href="#").related__button
                       i.fa.fa-bar-chart.related__icon
                   else
-                    a(href="#").related__button.u--fl-right
+                    a(href="#").related__button
                       i.fa.fa-search-plus.related__icon
-                    a(href="#").related__button.u--fl-right
+                    a(href="#").related__button
                       i.fa.fa-bar-chart.related__icon
                 if n>2
                   +availability(true)
@@ -34,8 +34,9 @@ mixin related
                   |6 052,36 руб.
                   a(href="#").related__button
                     i.fa.fa-shopping-cart.related__icon
-      a.related__footer.related__button(href="#")
-        i.fa.fa-plus.related__footer-icon.related__icon
+      a.related__footer(href="#")
+        .related__button
+          i.fa.fa-plus.related__footer-icon.related__icon
         br
         |Показать ещё 6 товаров
         br
