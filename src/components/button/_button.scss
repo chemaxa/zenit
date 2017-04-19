@@ -1,19 +1,35 @@
 .button {
   cursor: pointer;
-  padding: 12px 36px;
+  padding: 1rem 3rem;
   border-radius: 5px;
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
   display: inline-block;
   line-height: 1;
+  color: $black;
+  outline: none;
+  border: 1px solid $black;
+  background-color: $white;
+  font-size: 1rem;
+  font-weight: 400;
+  &:hover {
+    box-shadow: 0 0 2px $black;
+    border-color: $black;
+  }
+  &_active {
+    border: 1px solid $primary;
+    color: $primary;
+  }
   &_primary {
     border: 1px solid $primary;
     color: $primary;
-    font-size: 12px;
-    font-weight: 400;
-    background: $white;
     background: linear-gradient(to bottom, $white 0%, $white 49%, $button-bg 50%);
   }
   &_primary:hover {
     box-shadow: 0 0 2px $primary;
+  }
+  &__group {
+    .button+.button {
+      margin-left: 15px;
+    }
   }
 }

@@ -22,4 +22,10 @@ mixin gallery
                   else                    
                     .gallery__item-description
                       |Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-  +pagination                      
+    +pagination()             
+    .grid__container.gallery__filter
+      h3.gallery__filter-title Подборка
+      .button__group
+        button(type="button").button.gallery__button Проекты
+        button(type="button").button.button_active.gallery__button Акции
+        button(type="button").button.gallery__button Идеи для дизайна
