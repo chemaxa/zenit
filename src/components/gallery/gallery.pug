@@ -1,5 +1,23 @@
 mixin gallery
+  - var n=0;
   section.gallery
     .grid__container      
         h1.gallery__title Новости
-        ul.grid
+        ul.grid.gallery__list
+          while n < 6
+            .grid__col-md-4
+              li.gallery__item
+                -n++
+                a(href="#").gallery__item-thumb-wrap
+                  img.gallery__item-thumb(src='img/'+currentPage+'/news__item-'+n+'.jpg')
+                .gallery__item-footer
+                  .gallery__item-date
+                    | 8 марта 2017
+                  a(href="#").gallery__item-title
+                    |Реализован новый объект: офис компании “Х”.
+                  if n<3
+                    .gallery__item-description
+                      |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam neque, dolore accusantium explicabo distinctio nihil inventore beatae. Tempore numquam, reprehenderit repudiandae minus expedita temporibus earum voluptas ipsum molestiae eaque.
+                  else                    
+                    .gallery__item-description
+                      |Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
