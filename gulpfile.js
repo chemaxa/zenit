@@ -12,13 +12,14 @@ let csso = require('gulp-csso');
 let sourcemaps = require('gulp-sourcemaps');
 let runSequence = require('run-sequence');
 let plumber = require('gulp-plumber');
+let argv = require('yargs').argv;
 
 let params = {
     scssPaths: ['./node_modules', './src/scss', './src/components'],
     pugBase: 'src',
     src: 'src',
     build: 'build',
-    currentPage: 'product'
+    currentPage: argv.page || 'product'
 };
 console.info('CurrentPage: ', params.currentPage);
 
