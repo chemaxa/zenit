@@ -1,7 +1,7 @@
 extends /pug/layout.pug
+
 include /components/breadcrumbs/breadcrumbs
-include /components/menu/menu
-include /components/product/product
+include /components/gallery/gallery
 include /components/related/related
 include /components/features/features
 include /components/newsblock/newsblock
@@ -11,7 +11,7 @@ include /components/subscribe/subscribe
 block content
   main.page__content
     +breadcrumbs
-    +product
+    +gallery
     .u--vrt-md
       +related
     .u--vrt-sm

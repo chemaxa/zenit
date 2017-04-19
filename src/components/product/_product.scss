@@ -1,5 +1,4 @@
   .product {
-      font-size: 12px;
       margin-bottom: 48px;
       &__title {
           padding-left: 10px;
@@ -15,12 +14,14 @@
           font-weight: 400;
           text-align: left;
       }
+      &__tbl-cell{
+          vertical-align: middle;
+      }
       &__tbl-cell:first-child {
-          vertical-align: bottom;
-          line-height: 1;
+          //vertical-align: bottom;
       }
       &__tbl-cell:last-child {
-          vertical-align: top;
+          //vertical-align: top;
           padding-left: 15px;
       }
       &__tbl-cell:first-child>span {

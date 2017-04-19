@@ -46,4 +46,7 @@
     vertical-align: middle;
     text-align-last: center;
   }
+  &__icon_circle:hover {
+    border-color: $primary;
+  }
 }

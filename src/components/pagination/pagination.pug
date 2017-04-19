@@ -1,0 +1,13 @@
+mixin pagination
+  - var n=0
+  .grid__container
+    nav.pagination
+      ul.pagination__list
+        while n < 5
+          if n==1
+            li.pagination__item.pagination__item_active
+              =n++
+          else
+            li.pagination__item
+              a.pagination__link(href="#")
+                =n++

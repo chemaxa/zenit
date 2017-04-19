@@ -10,6 +10,7 @@
         background-color: $bg-related;
         border: 1px solid $black;
         padding: 9px;
+        height: 100%;
     }
     &__item-title {
         display: block;
@@ -43,6 +44,10 @@
         background-color: $primary;
         color: $white;
         background-position: -10px center;
+        font-size: 14px;
+    }
+    &__icon:before{
+        font-size: 16px;
     }
     &__icon:after {
         position: absolute;

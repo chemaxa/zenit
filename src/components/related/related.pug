@@ -1,3 +1,4 @@
+include /components/availability/availability
 mixin related
   .grid__container
     - var n=0;
@@ -16,12 +17,12 @@ mixin related
                     a(href="#").related__button
                       i.related__icon.related__icon_num 2
                     a(href="#").related__button
-                      i.fa.fa-bar-chart.related__icon
+                      i.fa.fa-search-plus.related__icon
                   else
                     a(href="#").related__button
-                      i.fa.fa-search-plus.related__icon
-                    a(href="#").related__button
                       i.fa.fa-bar-chart.related__icon
+                    a(href="#").related__button
+                      i.fa.fa-search-plus.related__icon
                 if n>2
                   +availability(true)
                 else
