@@ -14,6 +14,7 @@ let runSequence = require('run-sequence');
 let plumber = require('gulp-plumber');
 let argv = require('yargs').argv;
 
+console.log(argv.page)
 let params = {
     scssPaths: ['./node_modules', './src/scss', './src/components'],
     pugBase: 'src',
@@ -21,8 +22,8 @@ let params = {
     build: 'build',
     currentPage: argv.page || 'product'
 };
-console.info('CurrentPage: ', params.currentPage);
 
+console.info('CurrentPage: ', params.currentPage);
 
 // Compile scss into CSS & auto-inject into browsers
 gulp.task('scss', function () {
@@ -90,6 +91,7 @@ gulp.task('clean', function () {
 gulp.task('build', function (done) {
     runSequence('clean', 'scss', 'pug', 'fonts', 'images', 'js', done)
 });
+
 // Static Server + watching scss/html files
 function serve() {
     browserSync.init({
@@ -99,9 +101,10 @@ function serve() {
         }
     });
     gulp.watch(params.src + "/js/**/*.js", ['js']);
-    gulp.watch([params.src + "/components/**/*.pug",params.src + "/pug/**/*.pug"], ['pug']);
-    gulp.watch([params.src + "/components/**/*.scss",params.src + "/scss/**/*.scss",], ['scss']);
+    gulp.watch([params.src + "/components/**/*.pug", params.src + "/pug/**/*.pug"], ['pug']);
+    gulp.watch([params.src + "/components/**/*.scss", params.src + "/scss/**/*.scss", ], ['scss']);
 }
+
 gulp.task('serve', function () {
     runSequence('clean', 'scss', 'pug', 'fonts', 'images', 'js', serve)
 });
