@@ -13,6 +13,8 @@
 @import 'font-awesome/scss/font-awesome';
 //Import font-awesome
 @import 'reflex-grid/scss/reflex';
+//Base
+@import '_base';
 //Blocks
 @import 'image/_image';
 @import 'link/_link';
@@ -31,4 +33,3 @@
 @import 'newsblock/_newsblock';
 @import 'partners/_partners';
 @import 'subscribe/_subscribe';
-
