@@ -10,3 +10,4 @@
 
 `gulp` - собирает,компилирует все стили и шаблоны в папку build, запускает dev server
 
+Готовые страницы:  [https://chemaxa.github.io/zenit/build](https://chemaxa.github.io/zenit/build)
