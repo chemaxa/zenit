@@ -12,17 +12,19 @@ let csso = require('gulp-csso');
 let sourcemaps = require('gulp-sourcemaps');
 let runSequence = require('run-sequence');
 let plumber = require('gulp-plumber');
+let fs = require('fs');
 let argv = require('yargs').argv;
 
-console.log(argv.page)
 let params = {
+    baseHref: '',
     scssPaths: ['./node_modules', './src/scss', './src/components'],
     pugBase: 'src',
     src: 'src',
     build: 'build',
-    currentPage: argv.page || 'product'
+    currentPage: argv.page || 'index'
 };
 
+let pages = fs.readdirSync(__dirname + '/src/pug/pages');
 console.info('CurrentPage: ', params.currentPage);
 
 // Compile scss into CSS & auto-inject into browsers
@@ -44,13 +46,14 @@ gulp.task('scss', function () {
 });
 
 gulp.task('pug', function () {
-    return gulp.src(params.src + '/pug/pages/' + params.currentPage + '.pug')
+    return gulp.src(params.src + '/pug/pages/*.pug')
         .pipe(plumber())
         .pipe(pug({
             basedir: params.pugBase,
             pretty: true,
             locals: {
-                currentPage: params.currentPage
+                baseHref: params.baseHref,
+                pages
             }
         }))
         .pipe(gulp.dest(params.build + '/'))
@@ -89,6 +92,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', function (done) {
+    params.baseHref = 'zenit/build/';
     runSequence('clean', 'scss', 'pug', 'fonts', 'images', 'js', done)
 });
 

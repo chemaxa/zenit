@@ -1,0 +1,16 @@
+extends /pug/layout.pug
+
+block pageTitle
+  title Index
+block header
+  h1.grid__container Список сверстанных страниц сайта
+
+block content
+  main.page__content
+    .grid__container
+      ul
+        each page in pages
+          li
+            a(href='/'+baseHref+page.slice(0,-4)+'.html')
+              =page.slice(0,-4)
+block footer
