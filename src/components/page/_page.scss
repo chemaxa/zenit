@@ -1,5 +1,11 @@
 .page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   &__header {
     background-color: $black;
+  }
+  &__content {
+    flex: 1;
   }
 }

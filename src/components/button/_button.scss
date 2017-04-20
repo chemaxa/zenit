@@ -1,6 +1,6 @@
 .button {
   cursor: pointer;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
   border-radius: 5px;
   margin-bottom: 2rem;
   display: inline-block;
@@ -26,6 +26,18 @@
   }
   &_primary:hover {
     box-shadow: 0 0 2px $primary;
+  }
+  &_text {
+    border: none;
+    background: transparent;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+  &_text:hover{
+    box-shadow: none;
+  } 
+  &_hollow {
+    background: transparent;
   }
   &__group {
     .button+.button {
