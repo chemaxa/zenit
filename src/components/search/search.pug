@@ -1,49 +1,66 @@
 mixin search
+  - var n=0;
   section.search
     .grid__container      
       h1.search__title Результаты поиска
       form.search__form
         .grid
-          .grid__col-md-9
+          .grid__col-md-9.grid--offset-right-1
             .grid__cell
-              input(type="text", placeholder="Поиск").form__input.icon-search.search__input
+              input(type="text", placeholder="Поиск").form__input.form__input_icon.icon-search-dark.search__input.grid__col-md-12
               .grid.grid--justify-end
-                .grid__col-md-3.grid__col--bleed
+                .grid__col-md-3
                   button(type="button").button.button_primary.button_hollow.search__button
                     |&nbsp;Сбросить
-                .grid__col-md-3.grid__col--bleed
+                .grid__col-md-3.grid__col--bleed-right
                   button(type="button").button.button_primary.button_hollow.search__button
                     |&nbsp;Найти
               |Сортировать по 
-              select.form__select.search__select
+              select.form__select.search__select.icon-arrow-down
                 option(value="1") увеличению цены
                 option(value="2") уменьшению цены
                 option(value="2") количество
               ul.search__list
-                li.search__item
-                  img(src='img/product/product__related.jpg').search__item-thumb
-                  a(href="#").search__item-link Z-in A56 D200 830 D1
-                  .search__item-description
-                    |Мощность 9,0 Вт, световой поток 548 лм, 
-                    |цветовая температура 3000Л, коэффициент 
-                    |мощности 0,75, 
-                  .search__item-vendor
-                    |Артикул  
-                    a(href="#").search__item-vendor-link ze11003007
-                  .search__item-price
-                    |6 052,36 руб
-                  button(type="button").button.button_primary
-                    |Купить
-          .grid__col-md-3
-            .grid__cell
-              .search__filter-title
-                |Фильтры
-              .grid__col-md-8.grid__col--bleed
-                button(type="button").button.search__button
-                  |Тип светильника
-              .search__filter-item
-                input(type="checkbox",id="chkbx",checked).form__chkbx
-                label.form__lbl(for="chkbx") Потолочный
-              .search__filter-item
-                input(type="checkbox",id="chkbx1",checked).form__chkbx
-                label.form__lbl(for="chkbx1") В стену
+                while n < 4
+                  li.search__item
+                    -n++
+                    .grid
+                      .grid__col-md-3
+                        .grid__cell
+                          img(src='img/product/product__related.jpg').search__item-thumb
+                      .grid__col-md-6
+                        a(href="#").search__item-title Z-in A56 D200 830 D1
+                        .search__item-description
+                          |Мощность 9,0 Вт, световой поток 548 лм, 
+                          |цветовая температура 3000Л, коэффициент 
+                          |мощности 0,75, 
+                        .search__item-vendor
+                          |Артикул  
+                          a(href="#").search__item-vendor-link ze11003007
+                      .grid__col-md-3.grid--align-center
+                        .search__item-price
+                          |6 052,36 руб
+                        button(type="button").button.button_primary.grid__col-md-7.grid--align-center
+                          |Купить
+          .grid__col-md-2
+            .search__filter-title
+              |Фильтры
+            .grid__col-md-12.grid__col--bleed
+              button(type="button").button.search__button
+                |Тип светильника
+            .search__filter-item
+              input(type="checkbox",id="chkbx",checked).form__chkbx
+              label.form__lbl(for="chkbx") Потолочный
+            .search__filter-item
+              input(type="checkbox",id="chkbx1",checked).form__chkbx
+              label.form__lbl(for="chkbx1") В стену
+            .grid__col-md-12.grid__col--bleed
+              button(type="button").button.search__button
+                |Стоимость
+            .search__filter-item
+              input(type="text",value="123.4").form__input.form__input_sm
+              |&nbsp; - &nbsp;
+              input(type="text",value="123").form__input.form__input_sm
+              |&nbsp; руб
+            .search__filter-item
+              input(type="range",min="1",max="100",step="1")

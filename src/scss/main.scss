@@ -17,6 +17,8 @@
 @import '_base';
 //Icons
 @import 'iconizr-svg-data';
+//Range styles mixin
+@import 'range-slider-sass/range';
 //Blocks
 @import 'icon/_icon';
 @import 'button/_button';
@@ -37,3 +39,4 @@
 @import 'gallery/_gallery';
 @import 'pagination/_pagination';
 @import 'basket/_basket';
+@import 'search/_search';

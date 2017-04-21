@@ -2,9 +2,37 @@
   &__title {
     padding-left: $reflex-cell-spacing;
   }
-  
   &__thumb {
     border: 1px solid $black;
   }
-  
+  &__input {
+    margin-bottom: 2rem;
+  }
+  &__filter-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__filter-item {
+    margin-bottom: 1rem;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    list-style-type: none;
+    border: 1px solid $black;
+    padding: 2rem 4rem 2rem 0;
+    margin-bottom: 2rem;
+  }
+  &__item-title,
+  &__item-price {
+    margin-bottom: 2rem;
+  }
+  &__item-description {
+    margin-bottom: 1.5rem;
+  }
+  &__select {
+    margin-bottom: 2rem;
+  }
 }

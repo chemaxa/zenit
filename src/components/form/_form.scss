@@ -42,11 +42,25 @@
     color: $muted;
     font-size: 11px;
     font-weight: 100;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
+  }
+  &__input_sm {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 10px;
+    font-weight: 100;
+    max-width: 4rem;
+    padding: 10px;
+    line-height: 1;
+    border-radius: 0;
   }
   &__input:active,
   &__input:focus {
     box-shadow: 0 0 0 2px $black;
+  }
+  &__input_icon {
+    text-indent: 70px;
+    background-position: 2rem center;
   }
   &__input-wrapper {
     position: relative;
@@ -66,4 +80,30 @@
   &__chkbx {
     display: none;
   }
+  &__select {
+    margin-bottom: 1rem;
+    font-size: 11px;
+    font-weight: 100;
+    border: 1px solid $black;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    background-position: 95% center;
+  }
+}
+
+input[type=range] {
+  @include input-type-range;
+  &::-webkit-slider-thumb {
+    margin-top: -15px;
+  }
+  &::-ms-fill-upper {
+    opacity: 0.7;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }

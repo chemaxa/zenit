@@ -11,10 +11,13 @@
             max-width: 960px;
         }
     }
-    &__col-bleed-left {
+    &__col--bleed-left {
         padding-left: 0 !important;
     }
-    &__col-bleed-right {
+    &__col--bleed-right {
         padding-right: 0 !important;
+    }
+    &--offset-right-1 {
+        margin-right: 8.333333%;
     }
 }
