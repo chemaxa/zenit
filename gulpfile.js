@@ -21,7 +21,7 @@ let params = {
     pugBase: 'src',
     src: 'src',
     build: 'build',
-    currentPage: argv.page || 'index'
+    currentPage: argv.page || '*'
 };
 
 let pages = fs.readdirSync(__dirname + '/src/pug/pages');
@@ -46,7 +46,7 @@ gulp.task('scss', function () {
 });
 
 gulp.task('pug', function () {
-    return gulp.src(params.src + '/pug/pages/*.pug')
+    return gulp.src(params.src + '/pug/pages/'+params.currentPage+'.pug')
         .pipe(plumber())
         .pipe(pug({
             basedir: params.pugBase,
