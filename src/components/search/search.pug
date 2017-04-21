@@ -1,0 +1,49 @@
+mixin search
+  section.search
+    .grid__container      
+      h1.search__title Результаты поиска
+      form.search__form
+        .grid
+          .grid__col-md-9
+            .grid__cell
+              input(type="text", placeholder="Поиск").form__input.icon-search.search__input
+              .grid.grid--justify-end
+                .grid__col-md-3.grid__col--bleed
+                  button(type="button").button.button_primary.button_hollow.search__button
+                    |&nbsp;Сбросить
+                .grid__col-md-3.grid__col--bleed
+                  button(type="button").button.button_primary.button_hollow.search__button
+                    |&nbsp;Найти
+              |Сортировать по 
+              select.form__select.search__select
+                option(value="1") увеличению цены
+                option(value="2") уменьшению цены
+                option(value="2") количество
+              ul.search__list
+                li.search__item
+                  img(src='img/product/product__related.jpg').search__item-thumb
+                  a(href="#").search__item-link Z-in A56 D200 830 D1
+                  .search__item-description
+                    |Мощность 9,0 Вт, световой поток 548 лм, 
+                    |цветовая температура 3000Л, коэффициент 
+                    |мощности 0,75, 
+                  .search__item-vendor
+                    |Артикул  
+                    a(href="#").search__item-vendor-link ze11003007
+                  .search__item-price
+                    |6 052,36 руб
+                  button(type="button").button.button_primary
+                    |Купить
+          .grid__col-md-3
+            .grid__cell
+              .search__filter-title
+                |Фильтры
+              .grid__col-md-8.grid__col--bleed
+                button(type="button").button.search__button
+                  |Тип светильника
+              .search__filter-item
+                input(type="checkbox",id="chkbx",checked).form__chkbx
+                label.form__lbl(for="chkbx") Потолочный
+              .search__filter-item
+                input(type="checkbox",id="chkbx1",checked).form__chkbx
+                label.form__lbl(for="chkbx1") В стену

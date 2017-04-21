@@ -1,0 +1,10 @@
+.search {
+  &__title {
+    padding-left: $reflex-cell-spacing;
+  }
+  
+  &__thumb {
+    border: 1px solid $black;
+  }
+  
+}

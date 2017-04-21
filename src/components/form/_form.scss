@@ -1,8 +1,9 @@
 .form {
   &__lbl {
     position: relative;
-    text-indent: 30px;
-    margin-bottom: 12px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding-left: 30px;
     cursor: pointer;
   }
   &__lbl:before {
@@ -18,7 +19,7 @@
   &__lbl:after {
     position: absolute;
     top: 2px;
-    left: -27px;
+    left: 4px;
     display: block;
     visibility: hidden;
     content: "\f00c";

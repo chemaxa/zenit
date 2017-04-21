@@ -1,0 +1,15 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+include /components/search/search
+
+block pageTitle
+  title Search
+
+block content
+  main.page__content
+    +breadcrumbs
+    +search
+
+    
+    
