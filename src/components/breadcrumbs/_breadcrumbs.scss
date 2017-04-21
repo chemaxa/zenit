@@ -1,7 +1,7 @@
 .breadcrumbs {
   padding-top: 40px;
   padding-bottom: 16px;
-  padding-left: 10px;
+  padding-left: $reflex-cell-spacing;
   font-weight: 100;
   &__list {
     margin: 0;

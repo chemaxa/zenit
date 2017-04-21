@@ -1,6 +1,6 @@
 .gallery {
   &__title {
-    padding-left: 10px;
+    padding-left: $reflex-cell-spacing;
   }
   &__item {
     border: 1px solid $black;

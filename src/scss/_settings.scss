@@ -43,8 +43,38 @@ $reflex-lg: map-get($breakpoints, lg);
 $reflex-xlg: map-get($breakpoints, xlg);
 // Spacing
 // -------------------------
-$reflex-grid-spacing: 0em 10px;
-$reflex-cell-spacing: 1em;
+$reflex-cell-spacing: 10px;
+$reflex-grid-spacing: 0em $reflex-cell-spacing;
 $reflex-cell-spacing-sm: ($reflex-cell-spacing / 2);
 $reflex-cell-spacing-md: $reflex-cell-spacing;
 $reflex-cell-spacing-lg: ($reflex-cell-spacing * 2);
+
+//Range styler
+// The draghandle
+$thumb-color: $black; 
+
+$thumb-radius: 0% ;
+$thumb-height: 25px;
+$thumb-width: 3px;
+
+$thumb-border-width: 0;
+$thumb-border-color: $black;
+
+$thumb-shadow-size: 0;
+$thumb-shadow-blur: 1px;
+$thumb-shadow-color: $black;
+
+// The range
+$track-color: $primary;
+
+$track-radius: 0px;
+$track-width: auto;
+$track-height: 9px;
+
+$track-border-width: 0px;
+$track-border-color: $black;
+
+$track-shadow-size: 0px;
+$track-shadow-blur: 0px;
+$track-shadow-color: rgba(0,0,0,.0);
+

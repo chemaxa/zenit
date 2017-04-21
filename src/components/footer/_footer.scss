@@ -1,6 +1,6 @@
 .footer {
   border-top: 3px solid $black;
-  padding-top: 12px;
+  padding-top: 1rem;
   &__item:first-child {
     text-indent: -30px;
     margin-left: 30px;
@@ -33,20 +33,7 @@
   &__icon {
     color: $black;
   }
-  &__icon_circle+&__icon_circle {
+  &__icon_share+&__icon_share {
     margin-left: 25px;
-  }
-  &__icon_circle {
-    width: 30px;
-    height: 30px;
-    border: 1px solid $black;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    vertical-align: middle;
-    text-align-last: center;
-  }
-  &__icon_circle:hover {
-    border-color: $primary;
   }
 }

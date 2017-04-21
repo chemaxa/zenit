@@ -1,6 +1,5 @@
 .menu {
   &_top {
-    font-size: 12px;
     display: flex;
     align-items: center;
   }
@@ -68,10 +67,5 @@
   }
   &__link_active {
     color: $primary;
-  }
-  &__icon_cart,
-  &__icon_search {
-    color: $white;
-    font-size: 28px;
   }
 }

@@ -5,16 +5,19 @@
         margin-right: auto;
         margin-left: auto;
         max-width: map-get($breakpoints, lg);
-        padding: $reflex-grid-spacing;
+        padding: $reflex-cell-spacing;
         @include max-screen(map-get($breakpoints, lg)) {
-            padding: $reflex-grid-spacing;
+            padding: $reflex-cell-spacing;
             max-width: 960px;
         }
     }
-    &__col-bleed-left {
+    &__col--bleed-left {
         padding-left: 0 !important;
     }
-    &__col-bleed-right {
+    &__col--bleed-right {
         padding-right: 0 !important;
+    }
+    &--offset-right-1 {
+        margin-right: 8.333333%;
     }
 }

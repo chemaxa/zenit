@@ -1,10 +1,10 @@
   .product {
-      margin-bottom: 48px;
+      margin-bottom: 4rem;
       &__title {
-          padding-left: 10px;
+          padding-left: $reflex-cell-spacing;
       }
       &__tbl {
-          margin-bottom: 18px;
+          margin-bottom: 1.5rem;
           width: 100%;
           table-layout: fixed;
           border-collapse: collapse;
@@ -14,7 +14,7 @@
           font-weight: 400;
           text-align: left;
       }
-      &__tbl-cell{
+      &__tbl-cell {
           vertical-align: middle;
       }
       &__tbl-cell:first-child {
@@ -37,7 +37,7 @@
       }
       &__qty {
           text-align: center;
-          margin-bottom: 24px;
+          margin-bottom: 2rem;
       }
       &__qty-title {
           margin-bottom: 10px;
@@ -67,13 +67,12 @@
       }
       &__price {
           text-align: center;
-          margin-bottom: 24px;
+          margin-bottom: 2rem;
           font-weight: 400;
       }
       &__link {
           text-align: center;
           color: $black;
-          font-size: 12px;
           font-weight: 500;
       }
       &__link_text {
@@ -81,7 +80,7 @@
           margin-bottom: 20px;
       }
       &__image {
-          padding-right: 15px;
+          padding-right: $reflex-cell-spacing;
       }
       &__thumb {
           border: 1px solid $black;
@@ -100,7 +99,7 @@
       &__switch-item {
           border: 1px solid $black;
           display: block;
-          margin-bottom: 24px;
+          margin-bottom: 2rem;
       }
       &__switch-item_active {
           border: 2px solid $black;

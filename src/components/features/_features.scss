@@ -2,7 +2,7 @@
     border: 2px solid $black;
     padding-top: 20px;
     padding-bottom: 7px;
-    margin-left: 10px;
+    margin-left: $reflex-cell-spacing;
     max-width: 1160px;
     &__title {
         font-size: 14px;
@@ -18,7 +18,7 @@
         margin-bottom: 17px;
     }
     &__description {
-        font-size: 12px;
+        font-size: 1rem;
         font-weight: 100;
     }
 }
