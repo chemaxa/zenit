@@ -17,12 +17,12 @@ mixin related
                     a(href="#").related__button
                       i.related__icon.related__icon_num 2
                     a(href="#").related__button
-                      i.fa.fa-search-plus.related__icon
+                      i.icon-loupe.related__icon
                   else
                     a(href="#").related__button
-                      i.fa.fa-bar-chart.related__icon
+                      i.icon-compare.related__icon
                     a(href="#").related__button
-                      i.fa.fa-search-plus.related__icon
+                      i.i.icon-loupe.related__icon
                 if n>2
                   +availability(true)
                 else
@@ -34,7 +34,7 @@ mixin related
                 .related__price
                   |6 052,36 руб.
                   a(href="#").related__button
-                    i.fa.fa-shopping-cart.related__icon
+                    i.icon-basket_circle-dark.related__icon.related__icon
       a.related__footer(href="#")
         .related__button
           i.fa.fa-plus.related__footer-icon.related__icon
