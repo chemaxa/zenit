@@ -58,6 +58,7 @@
     &__button:hover>&__icon:after {
         border-color: $primary;
     }
+    &__button:hover>&__icon_num,
     &__icon_num:hover {
         color: $white !important;
     }

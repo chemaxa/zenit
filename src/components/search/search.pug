@@ -6,9 +6,9 @@ mixin search
         h1.search__title Результаты поиска
       form.search__form
         .grid
-          .grid__col-md-9.grid--offset-right-1
-            .grid__cell
-              block search__content
+          block search__content
+            .grid__col-md-9.grid--offset-right-1
+              .grid__cell
                 input(type="text", placeholder="Поиск").form__input.form__input_icon.icon-search-dark.search__input.grid__col-md-12
                 .grid.grid--justify-end
                   .grid__col-md-3

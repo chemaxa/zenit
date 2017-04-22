@@ -1,6 +1,7 @@
 extends /pug/pages/search.pug
 
 include /components/search__im/search__im
+include /components/related/related
 
 block pageTitle
   title Интернет-магазин
@@ -11,5 +12,6 @@ block search__title
 block search__content
     +search__im
 
-    
-    
+block related-content
+  .u--vrt-sm
+    +related
