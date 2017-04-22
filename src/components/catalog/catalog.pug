@@ -1,0 +1,99 @@
+mixin catalog
+  - var n=0;
+  section.catalog
+    .grid__container      
+      h1.catalog__title Каталог
+      <!-- Потому что эти олухи не сделали нормальной сетки сука -->
+      .catalog__grid
+        .catalog__col
+          .catalog__subtitle.catalog__list-title
+            |Серия
+          ul.catalog__list
+            while n < 6
+              li.catalog__list-item
+                -n++
+                a(href="#").catalog__list-item-thumb
+                  img(src='img/catalog/catalog__list-item-thumb.jpg')
+                  .catalog__list-item-description
+                    |A 56
+        .catalog__col
+          .tabs
+            .tabs__head.catalog__tabs-head
+              span.catalog__subtitle.catalog__subtitle_tabs
+                |Размеры
+              a(href="#tab-1").tabs__title.tabs__title_active
+                |D200
+              a(href="#tab-2").tabs__title
+                |D100
+            .tabs__body.catalog__tabs-body(id="tab-1")
+              .catalog__thumb_main
+                img(src='img/catalog/catalog__thumb_main.jpg').catalog__thumb
+              .catalog__item-content
+                .catalog__thumb-list
+                  img(src='img/catalog/catalog__thumb-1.jpg').catalog__thumb
+                  img(src='img/catalog/catalog__thumb-2.jpg').catalog__thumb
+                  img(src='img/catalog/catalog__thumb-3.jpg').catalog__thumb
+                .catalog__description
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi nisi ducimus ea mollitia maiores vitae odio doloremque quo quam 
+                  |excepturi dolorum, voluptas, magnam delectus consequatur repellat eius vel quos.
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nihil harum hic expedita assumenda animi nostrum eveniet, tenetur quaerat, 
+                  |enim perspiciatis ducimus corrupti sed cumque? Nisi illum ea blanditiis atque?
+              table.catalog__tbl
+                thead.catalog__tbl-head
+                  th.catalog__tbl-cell Наименование
+                  th.catalog__tbl-cell Pmax (Вт)
+                  th.catalog__tbl-cell Ф (лм)
+                  th.catalog__tbl-cell Тцв (К)
+                  th.catalog__tbl-cell cos φ 
+                  th.catalog__tbl-cell артикул
+                  th.catalog__tbl-cell *ies
+                  th.catalog__tbl-cell паспорт
+                  th.catalog__tbl-cell стоимость
+                  th.catalog__tbl-cell 
+                tbody.catalog__tbl-body
+                  tr.catalog__tbl-row
+                    td(colspan="9").catalog__tbl-cell
+                      |без управления световым потоком
+                  tr.catalog__tbl-row
+                    td.catalog__tbl-cell
+                      a(href="#") Z-in A56 D100 830
+                    td.catalog__tbl-cell
+                      |23,2
+                    td.catalog__tbl-cell
+                      |1466
+                    td.catalog__tbl-cell
+                      |3000
+                    td.catalog__tbl-cell
+                      |0,88
+                    td.catalog__tbl-cell
+                      |ze11003041
+                    td.catalog__tbl-cell
+                      a(href="#").icon-download.icon-download-dims
+                    td.catalog__tbl-cell
+                      a(href="#").icon-download.icon-download-dims
+                    td.catalog__tbl-cell
+                      |8 594,80 р
+                    td.catalog__tbl-cell
+                      button(type="button").button.button_icon.icon-basket_circle.icon-basket_circle-dims.catalog__button
+                  tr.catalog__tbl-row
+                    td.catalog__tbl-cell
+                      a(href="#") Z-in A56 D100 830
+                    td.catalog__tbl-cell
+                      |23,2
+                    td.catalog__tbl-cell
+                      |1466
+                    td.catalog__tbl-cell
+                      |3000
+                    td.catalog__tbl-cell
+                      |0,88
+                    td.catalog__tbl-cell
+                      |ze11003041
+                    td.catalog__tbl-cell
+                      a(href="#").icon-download.icon-download-dims
+                    td.catalog__tbl-cell
+                      a(href="#").icon-download.icon-download-dims
+                    td.catalog__tbl-cell
+                      |8 594,80 р
+                    td.catalog__tbl-cell
+                      button(type="button").button.button_icon.icon-basket_circle.icon-basket_circle-dims.catalog__button
+                      

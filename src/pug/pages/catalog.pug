@@ -1,15 +1,16 @@
 extends /pug/layout.pug
 
 include /components/breadcrumbs/breadcrumbs
-include /components/search/search
+include /components/catalog/catalog
+include /components/related/related
 
 block pageTitle
-  title Поиск
+  title Каталог
 
 block content
   main.page__content
     +breadcrumbs
-    +search
+    +catalog
 
     
     
