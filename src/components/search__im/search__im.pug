@@ -1,0 +1,37 @@
+include /components/availability/availability
+mixin search__im
+  - var n=0;
+  |Сортировать по 
+  select.form__select.search__select.icon-arrow-down
+    option(value="1") увеличению цены
+    option(value="2") уменьшению цены
+    option(value="2") количество
+  .im.grid
+    while n < 10
+      li.grid__col-md-6
+        -n++
+        .grid__cell.im__item
+          .im__item-header.u--clearfix
+            span.im__id ze11003007
+            if n>2
+              a(href="#").im__button
+                i.im__icon.im__icon_num 2
+              a(href="#").im__button
+                i.icon-loupe.im__icon
+            else
+              a(href="#").im__button
+                i.icon-compare.im__icon
+              a(href="#").im__button
+                i.i.icon-loupe.im__icon
+          if n>2
+            +availability(true)
+          else
+            +availability()
+          .im__thumb
+            img(src='img/product/product__related.jpg')
+          a(href="#").im__item-title
+            |Z-in R25 100x100 830
+          .im__price
+            |6 052,36 руб.
+            a(href="#").im__button
+              i.icon-basket_circle-dark.im__icon.im__icon
