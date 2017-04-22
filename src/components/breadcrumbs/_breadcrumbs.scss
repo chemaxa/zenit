@@ -7,10 +7,11 @@
     margin: 0;
     padding: 0;
   }
-  &__item{
+  &__item {
     display: inline-block;
   }
-  &__link{
+  &__link,
+  &__link:visited {
     color: $primary;
   }
 }

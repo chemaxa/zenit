@@ -50,7 +50,8 @@
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
   }
-  &__link_top {
+  &__link_top,
+  &__link_top:visited {
     display: inline-block;
     color: $white;
     padding-top: 20px;
