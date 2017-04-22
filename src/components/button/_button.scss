@@ -4,6 +4,7 @@
   border-radius: 5px;
   margin-bottom: 2rem;
   display: inline-block;
+  vertical-align: middle;
   line-height: 1;
   color: $black;
   outline: none;
@@ -33,11 +34,16 @@
     vertical-align: middle;
     margin-bottom: 0;
   }
-  &_text:hover{
+  &_text:hover {
     box-shadow: none;
-  } 
+  }
   &_hollow {
     background: transparent;
+  }
+  &_icon,
+  &_icon:hover {
+    border-color: transparent;
+    box-shadow: none;
   }
   &__group {
     .button+.button {

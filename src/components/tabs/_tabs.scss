@@ -1,0 +1,18 @@
+.tabs {
+  &__head {}
+  &__title {
+    display: inline-block;
+    vertical-align: baseline;
+    color: $primary;
+    font-size: 1.16rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 1rem 3rem 1.5rem;
+    margin-top: -1.5rem;
+    border: 1px solid transparent;
+  }
+  &__title_active {
+    border: 1px solid $primary
+  }
+  &__body {}
+}

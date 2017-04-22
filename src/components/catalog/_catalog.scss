@@ -1,0 +1,119 @@
+.catalog {
+  &__title {
+    padding-left: $reflex-cell-spacing;
+  }
+  &__subtitle {
+    font-size: 1.16rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  &__subtitle_tabs {
+    margin-right: 10rem;
+  }
+  /** grid **/
+  &__grid {
+    padding-left: $reflex-cell-spacing;
+    padding-right: $reflex-cell-spacing;
+    @extend .u--clearfix;
+  }
+  &__col {
+    float: left;
+  }
+  &__col:first-child {
+    width: 11%;
+  }
+  &__col:last-child {
+    width: 89%;
+  }
+  /** List  **/
+  &__list {
+    padding: 0;
+    padding-top: 1.75rem;
+    border-top: 3px solid $black;
+    border-right: 3px solid $black;
+    padding-right: 1.75rem;
+  }
+  &__list-item {
+    display: block;
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  &__list-item-thumb {
+    display: inline-block;
+  }
+  &__list-item-thumb>img {
+    border: 1px solid $black;
+  }
+  &__list-item-thumb:hover>img {
+    border: 1px solid $primary;
+  }
+  &__list-title,
+  &__list-item-description {
+    text-align: center;
+  }
+  /** Tabs **/
+  &__tabs-head {}
+  &__tabs-body {
+    padding-top: 1.75rem;
+    padding-left: 1.75rem;
+    margin-top: -1px;
+    border-top: 3px solid $black;
+  }
+  /** Thumbs **/
+  &__thumb_main {
+    padding: 50px 60px;
+    border: 1px solid $black;
+  }
+  &__thumb_main,
+  &__item-content {
+    @extend .u--inline-middle;
+  }
+  &__item-content {
+    max-width: 75%;
+    vertical-align: top;
+  }
+  &__thumb-list &__thumb {
+    margin-left: 2rem;
+    vertical-align: top;
+  }
+  &__description {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  /** Table **/
+  &__tbl {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  &__tbl-head {
+    border: 1px solid $black;
+  }
+  &__tbl-head &__tbl-cell:first-child {
+    padding-left: 40px;
+    text-align: left;
+  }
+  &__tbl-head &__tbl-cell:last-child {
+    text-align: left;
+    padding-left: 30px;
+  }
+  &__tbl-cell {
+    padding: 1rem;
+  }
+  &__tbl-body {}
+  &__tbl-body &__tbl-row:nth-child(3n+2) {
+    //1,4...
+    background-color: $tbl-light;
+  }
+  &__tbl-body &__tbl-row:nth-child(3n+3) {
+    //2,5...
+    background-color: $tbl-dark;
+  }
+  &__tbl-body &__tbl-cell:first-child {
+    padding-left: 40px;
+  }
+  &__button {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+}

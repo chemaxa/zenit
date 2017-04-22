@@ -26,7 +26,9 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-a {
+a,
+a:visited {
+  color: $black;
   text-decoration: none;
 }
 
