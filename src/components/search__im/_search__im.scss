@@ -18,7 +18,7 @@
     height: 100%;
     margin-bottom: 20px;
   }
-  [class*="grid__col-"]:nth-child(2n+1) {
+  [class*="grid__col-"]:nth-child(3n+1) {
     @include max-screen(map-get($breakpoints, md)) {
       padding-left: $reflex-cell-spacing;
     }
@@ -60,6 +60,7 @@
     border-radius: 50%;
     vertical-align: middle;
     line-height: 36px;
+    font-style: normal;
   }
   &__icon_num:after {
     border-color: $primary;
@@ -164,7 +165,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 20%;
+    max-width: 30%;
     position: relative;
     padding-left: 40px;
     color: $black;

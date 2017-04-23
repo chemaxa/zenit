@@ -7,6 +7,7 @@
     display: table;
     width: 100%;
     transition: all 0.7s ease;
+    table-layout: fixed;
     @include max-screen(map-get($breakpoints, md)) {
       display: flex;
       max-height: 0;
@@ -66,6 +67,9 @@
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
+  &__link_top {
+    white-space: nowrap;
   }
   &__link_top,
   &__link_top:visited {

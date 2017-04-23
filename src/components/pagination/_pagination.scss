@@ -1,5 +1,5 @@
 .pagination {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   &__list {
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
     vertical-align: middle;
   }
   &__item:hover {
-    box-shadow: 0 0 0 2px $black;
+    border-color: $primary;
   }
   &__item:hover>&__link {
     color: $primary;

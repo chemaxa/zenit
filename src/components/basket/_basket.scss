@@ -45,6 +45,14 @@
       display: block;
     }
   }
+  &__tbl-cell_price,
+  &__tbl-cell_qty,
+  &__tbl-cell_summ {
+    text-align: center;
+    @include max-screen(map-get($breakpoints, md)) {
+      text-align: left;
+    }
+  }
   &__tbl-body &__tbl-cell {
     &:before {
       content: attr(data-th);

@@ -22,7 +22,7 @@
     color: $primary;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   &__item-date {
     font-size: 11px;
@@ -32,5 +32,9 @@
   &__item-description {
     font-size: 11px;
     font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
   }
 }

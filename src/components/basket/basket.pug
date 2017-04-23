@@ -7,14 +7,16 @@ mixin basket
           .grid__cell
             .grid.grid--justify-end
               .grid__col-md-4.grid__col--bleed
-                button(type="button").button.button_primary.button_hollow.basket__button
+                button(type="button").button.button_hollow.basket__button
                   i.fa.fa-plus.icon.icon_circle.icon_xs
                   |&nbsp;добавить товар по артикулу
             table.basket__tbl
               thead.basket__tbl-head.u--hd-xs.u--hd-xxs.u--hd-sm
                 tr.basket__tbl-row
-                  th(colspan="2").basket__tbl-cell
+                  th.basket__tbl-cell
                     |Товар
+                  th.basket__tbl-cell
+                    |Наименование
                   th.basket__tbl-cell
                     |Цена
                   th.basket__tbl-cell
@@ -30,13 +32,13 @@ mixin basket
                       a(href="#") Z-in A56 D200 830 D1
                     div Артикул 
                       a(href="#") ze11003041
-                  td(data-th="Цена:").basket__tbl-cell 
+                  td(data-th="Цена:").basket__tbl-cell.basket__tbl-cell_price
                     |8 594,80 руб.
-                  td(data-th="Количество:").basket__tbl-cell.u--no-wrap
+                  td(data-th="Количество:").basket__tbl-cell.u--no-wrap.basket__tbl-cell_qty
                       a(href="#").fa.fa-minus.product__qty-cntr
                       input.product__qty-num(type="text",value=1)
                       a(href="#").fa.fa-plus.product__qty-cntr
-                  td(data-th="Сумма:").basket__tbl-cell                   
+                  td(data-th="Сумма:").basket__tbl-cell.basket__tbl-cell_summ
                     |8 594,80 руб.
                   td.basket__tbl-cell                   
                     button(type="button").button.button_text.button_primary
@@ -44,7 +46,7 @@ mixin basket
         .grid__col-md-3
           .grid__cell
             .grid__col-md-8.grid__col--bleed
-              button(type="button").button.button_primary.button_hollow.basket__button
+              button(type="button").button.button_hollow.basket__button
                 |Очистить корзину
             .basket__bill
               .basket__bill-title 

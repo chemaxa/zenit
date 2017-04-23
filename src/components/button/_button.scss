@@ -13,11 +13,13 @@
   font-size: 1rem;
   font-weight: 400;
   &:hover {
-    box-shadow: 0 0 2px $black;
+    box-shadow: 0 0 0 2px $black;
     border-color: $black;
   }
-  &_active {
-    border: 1px solid $primary;
+  &_active,
+  &_active:hover {
+    box-shadow: none;
+    border: 2px solid $primary;
     color: $primary;
   }
   &_primary {
@@ -26,7 +28,8 @@
     background: linear-gradient(to bottom, $white 0%, $white 49%, $button-bg 50%);
   }
   &_primary:hover {
-    box-shadow: 0 0 2px $primary;
+    border-color: $primary;
+    box-shadow: 0 0 0 2px $primary;
   }
   &_text {
     border: none;
@@ -41,8 +44,9 @@
     background: transparent;
   }
   &_hollow:hover {
-    box-shadow: 0 0 2px $primary;
+    box-shadow: 0 0 0 2px $primary;
     border-color: $primary;
+    color: $primary;
   }
   &_icon,
   &_icon:hover {

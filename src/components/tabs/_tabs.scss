@@ -20,6 +20,9 @@
   &__title_active,
   &__title_active:visited {
     border: 1px solid $primary;
+    color: $black;
+  }
+  &__title:hover {
     color: $primary;
   }
   &__body {}
