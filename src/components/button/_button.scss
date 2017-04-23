@@ -44,8 +44,9 @@
     background: transparent;
   }
   &_hollow:hover {
-    box-shadow: 0 0 2px $primary;
+    box-shadow: 0 0 0 2px $primary;
     border-color: $primary;
+    color: $primary;
   }
   &_icon,
   &_icon:hover {

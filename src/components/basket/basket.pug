@@ -7,14 +7,16 @@ mixin basket
           .grid__cell
             .grid.grid--justify-end
               .grid__col-md-4.grid__col--bleed
-                button(type="button").button.button_primary.button_hollow.basket__button
+                button(type="button").button.button_hollow.basket__button
                   i.fa.fa-plus.icon.icon_circle.icon_xs
                   |&nbsp;добавить товар по артикулу
             table.basket__tbl
               thead.basket__tbl-head.u--hd-xs.u--hd-xxs.u--hd-sm
                 tr.basket__tbl-row
-                  th(colspan="2").basket__tbl-cell
+                  th.basket__tbl-cell
                     |Товар
+                  th.basket__tbl-cell
+                    |Наименование
                   th.basket__tbl-cell
                     |Цена
                   th.basket__tbl-cell
@@ -44,7 +46,7 @@ mixin basket
         .grid__col-md-3
           .grid__cell
             .grid__col-md-8.grid__col--bleed
-              button(type="button").button.button_primary.button_hollow.basket__button
+              button(type="button").button.button_hollow.basket__button
                 |Очистить корзину
             .basket__bill
               .basket__bill-title 
