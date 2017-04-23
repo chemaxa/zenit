@@ -50,8 +50,11 @@
     box-shadow: none;
   }
   &__group {
-    .button+.button {
-      margin-left: 15px;
+    .button {
+      margin-right: 15px;
+    }
+    .button:last-child {
+      margin-right: 0;
     }
   }
 }
