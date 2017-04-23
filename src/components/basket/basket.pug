@@ -11,7 +11,7 @@ mixin basket
                   i.fa.fa-plus.icon.icon_circle.icon_xs
                   |&nbsp;добавить товар по артикулу
             table.basket__tbl
-              thead.basket__tbl-head
+              thead.basket__tbl-head.u--hd-xs.u--hd-xxs.u--hd-sm
                 tr.basket__tbl-row
                   th(colspan="2").basket__tbl-cell
                     |Товар
@@ -25,18 +25,18 @@ mixin basket
                 tr.basket__tbl-row
                   td.basket__tbl-cell
                     img(src='img/product/product__related.jpg').basket__thumb
-                  td.basket__tbl-cell
+                  td(data-th="Товар:").basket__tbl-cell
                     div Светильник 
                       a(href="#") Z-in A56 D200 830 D1
                     div Артикул 
                       a(href="#") ze11003041
-                  td.basket__tbl-cell 
+                  td(data-th="Цена:").basket__tbl-cell 
                     |8 594,80 руб.
-                  td.basket__tbl-cell.u--no-wrap
+                  td(data-th="Количество:").basket__tbl-cell.u--no-wrap
                       a(href="#").fa.fa-minus.product__qty-cntr
                       input.product__qty-num(type="text",value=1)
                       a(href="#").fa.fa-plus.product__qty-cntr
-                  td.basket__tbl-cell                   
+                  td(data-th="Сумма:").basket__tbl-cell                   
                     |8 594,80 руб.
                   td.basket__tbl-cell                   
                     button(type="button").button.button_text.button_primary
