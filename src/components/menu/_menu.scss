@@ -6,6 +6,22 @@
   &__list_top {
     display: table;
     width: 100%;
+    transition: all 0.7s ease;
+    @include max-screen(map-get($breakpoints, md)) {
+      display: flex;
+      max-height: 0;
+      opacity: 0;
+      position: absolute;
+    }
+  }
+  &__list_top-visible {
+    @include max-screen(map-get($breakpoints, md)) {
+      display: flex;
+      position: static;
+      flex-direction: column;
+      max-height: 500px;
+      opacity: 1;
+    }
   }
   &__list,
   &__list_submenu {
@@ -41,6 +57,7 @@
     cursor: pointer;
     background-color: $dark-grey;
   }
+  &__list_submenu-visible,
   &__item_parent:hover>&__list_submenu {
     visibility: visible;
     /* shows sub-menu */
@@ -68,5 +85,30 @@
   }
   &__link_active {
     color: $primary;
+  }
+  &__logo {
+    @include max-screen(map-get($breakpoints, md)) {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  &__icon_bars {
+    margin-top: 10px;
+  }
+  &__icon_down {
+    vertical-align: middle;
+    padding: 0 10px;
+  }
+  &__item_parent {
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 65px;
+    }
+  }
+  &__icon {
+    color: $white;
+    font-size: 2.1rem;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin: 10px;
+    }
   }
 }

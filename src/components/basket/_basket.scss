@@ -12,26 +12,51 @@
   &__tbl-head &__tbl-cell:first-child {
     padding-left: 50px;
     text-align: left;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 0;
+      text-align: center;
+    }
   }
   &__tbl-head &__tbl-cell:last-child {
     text-align: left;
     padding-left: 30px;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 0;
+      text-align: center;
+    }
   }
   &__tbl-cell {
     padding: 1rem;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding: 0.5rem;
+    }
   }
   &__tbl-body {}
   &__tbl-row {}
   &__tbl-body &__tbl-cell:first-child {
     padding-left: 0;
   }
+  &__tbl,
+  &__tbl-head,
+  &__tbl-body,
+  &__tbl-row,
+  &__tbl-cell {
+    @include max-screen(map-get($breakpoints, md)) {
+      display: block;
+      text-align: center;
+    }
+  }
   &__thumb {
     border: 1px solid $black;
+    min-width: 50px;
   }
   &__bill {
     margin-top: 1px;
     border: 1px solid $black;
     padding: 24px 20px;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-bottom: 2rem;
+    }
   }
   &__bill-title {
     text-align: center;

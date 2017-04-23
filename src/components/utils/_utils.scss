@@ -34,4 +34,32 @@
     display: inline-block;
     vertical-align: middle;
   }
+  &--hd-lg {
+    @include min-screen(map-get($breakpoints, lg)) {
+      display: none !important;
+    }
+  }
+  &--hd-md {
+    @include min-screen(map-get($breakpoints, md)) {
+      display: none !important;
+    }
+  }
+  &--hd-sm {
+    @include screen(map-get($breakpoints, sm), map-get($breakpoints, md)) {
+      display: none !important;
+    }
+  }
+  &--hd-xs {
+    @include screen(map-get($breakpoints, xs), map-get($breakpoints, sm)) {
+      display: none !important;
+    }
+  }
+  &--hd-xxs {
+    @include screen(0, map-get($breakpoints, xs)) {
+      display: none !important;
+    }
+  }
+  &--no-wrap {
+    white-space: nowrap;
+  }
 }
