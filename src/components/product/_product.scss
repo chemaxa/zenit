@@ -97,12 +97,21 @@
           min-width: 50px;
       }
       &__switch-item {
-          border: 1px solid $black;
           display: block;
           margin-bottom: 2rem;
+          border: 1px solid $black;
+          padding: 0;
+          cursor: pointer;
       }
       &__switch-item_active {
           border: 2px solid $black;
+      }
+      &__switch-item_active:hover {
+          border-color: $primary;
+      }
+      &__switch-item_default:hover {
+          border-color: $primary;
+          box-shadow: 0 0 0 2px $primary;
       }
       &__strip {
           font-size: 11px;

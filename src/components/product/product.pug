@@ -31,8 +31,10 @@ mixin product
               .product__switch
                 img.product__thumb(src='img/product/product-main.jpg')
                 .product__switch-list
-                  img.product__switch-item.product__switch-item_active(src='img/product/product__type-1.jpg')
-                  img.product__switch-item(src='img/product/product__type-2.jpg')
+                  button(type="button").product__switch-item.product__switch-item_active
+                    img(src='img/product/product__type-1.jpg')
+                  button(type="button").product__switch-item.product__switch-item_default
+                    img(src='img/product/product__type-2.jpg')
               .product__strip
                 span.product__strip-itm
                   |220-240 В
