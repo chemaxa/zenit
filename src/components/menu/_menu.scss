@@ -110,5 +110,8 @@
     @include max-screen(map-get($breakpoints, md)) {
       margin: 10px;
     }
+    @include max-screen(map-get($breakpoints, md)) {
+      margin: 10px 5px;
+    }
   }
 }

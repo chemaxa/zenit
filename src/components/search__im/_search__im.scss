@@ -18,6 +18,14 @@
     height: 100%;
     margin-bottom: 20px;
   }
+  [class*="grid__col-"]:nth-child(2n+1) {
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: $reflex-cell-spacing;
+    }
+    @include min-screen(map-get($breakpoints, md)) {
+      padding-left: 0px;
+    }
+  }
   &__item-title {
     display: block;
     text-align: center;
@@ -107,7 +115,7 @@
     border: 2px solid $primary;
     transition: all 0.5s ease;
     transform: translateX(-50%);
-    width: 274px;
+    width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,6 +123,13 @@
     padding: 40px;
     z-index: 5;
     cursor: default;
+    @include max-screen(map-get($breakpoints, md)) {
+      left: -100%;
+    }
+    @include max-screen(map-get($breakpoints, xs)) {
+      width: 265px;
+      left: -80%;
+    }
   }
   &__tooltip:after,
   &__tooltip:before {
@@ -126,6 +141,12 @@
     width: 0;
     position: absolute;
     pointer-events: none;
+    @include max-screen(map-get($breakpoints, md)) {
+      left: 70%;
+    }
+    @include max-screen(map-get($breakpoints, xs)) {
+      left: 68%;
+    }
   }
   &__tooltip:after {
     border-color: transparent;
@@ -147,6 +168,10 @@
     position: relative;
     padding-left: 40px;
     color: $black;
+    @include max-screen(map-get($breakpoints, md)) {
+      max-width: 60%;
+      margin-bottom: 1rem;
+    }
   }
   &__footer-icon {
     position: absolute;
