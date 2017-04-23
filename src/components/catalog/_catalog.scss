@@ -60,10 +60,10 @@
     display: inline-block;
   }
   &__list-item-thumb>img {
-    border: 1px solid $black;
+    border: 2px solid $black;
   }
   &__list-item-thumb:hover>img {
-    border: 1px solid $primary;
+    border: 2px solid $primary;
   }
   &__list-title,
   &__list-item-description {
