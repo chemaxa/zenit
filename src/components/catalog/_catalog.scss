@@ -35,8 +35,8 @@
   &__list {
     padding: 0;
     padding-top: 1.75rem;
-    border-top: 3px solid $black;
-    border-right: 3px solid $black;
+    border-top: 2px solid $black;
+    border-right: 2px solid $black;
     padding-right: 1.75rem;
     @include max-screen(map-get($breakpoints, md)) {
       border-right: none;
@@ -75,7 +75,7 @@
     padding-top: 1.75rem;
     padding-left: 1.75rem;
     margin-top: -1px;
-    border-top: 3px solid $black;
+    border-top: 2px solid $black;
     @include max-screen(map-get($breakpoints, md)) {
       padding-left: 0;
     }
