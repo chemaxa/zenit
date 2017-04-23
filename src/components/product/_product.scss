@@ -106,12 +106,15 @@
       }
       &__strip {
           font-size: 11px;
-          display: flex;
+          display: table;
+          width: 100%;
           background-color: $bg-strip;
-          padding: 7px 15px;
-          justify-content: space-between;
           line-height: 1;
-          align-content: center;
+          vertical-align: middle;
+      }
+      &__strip-itm {
+          display: table-cell;
+          padding: 7px 15px;
           vertical-align: middle;
       }
       &__gallery {
