@@ -25,6 +25,14 @@ mixin catalog
                 |D200
               a(href="#tab-2").tabs__title
                 |D100
+              a(href="#tab-1").tabs__title
+                |D200
+              a(href="#tab-2").tabs__title
+                |D100
+              a(href="#tab-1").tabs__title
+                |D200
+              a(href="#tab-2").tabs__title
+                |D100
             .tabs__body.catalog__tabs-body(id="tab-1")
               .catalog__thumb_main
                 img(src='img/catalog/catalog__thumb_main.jpg').catalog__thumb
@@ -39,7 +47,7 @@ mixin catalog
                   |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nihil harum hic expedita assumenda animi nostrum eveniet, tenetur quaerat, 
                   |enim perspiciatis ducimus corrupti sed cumque? Nisi illum ea blanditiis atque?
               table.catalog__tbl
-                thead.catalog__tbl-head
+                thead.catalog__tbl-head.u--hd-xxs.u--hd-xs.u--hd-sm
                   th.catalog__tbl-cell Наименование
                   th.catalog__tbl-cell Pmax (Вт)
                   th.catalog__tbl-cell Ф (лм)
@@ -55,45 +63,44 @@ mixin catalog
                     td(colspan="9").catalog__tbl-cell
                       |без управления световым потоком
                   tr.catalog__tbl-row
-                    td.catalog__tbl-cell
+                    td(data-th="Наименование:").catalog__tbl-cell
                       a(href="#") Z-in A56 D100 830
-                    td.catalog__tbl-cell
+                    td(data-th="Pmax (Вт):").catalog__tbl-cell
                       |23,2
-                    td.catalog__tbl-cell
+                    td(data-th="Ф (лм):").catalog__tbl-cell
                       |1466
-                    td.catalog__tbl-cell
+                    td(data-th="Тцв (К):").catalog__tbl-cell
                       |3000
-                    td.catalog__tbl-cell
+                    td(data-th="cos φ:").catalog__tbl-cell
                       |0,88
-                    td.catalog__tbl-cell
+                    td(data-th="артикул:").catalog__tbl-cell
                       |ze11003041
-                    td.catalog__tbl-cell
+                    td(data-th="*ies:").catalog__tbl-cell
                       a(href="#").icon-download.icon-download-dims
-                    td.catalog__tbl-cell
+                    td(data-th="паспорт:").catalog__tbl-cell
                       a(href="#").icon-download.icon-download-dims
-                    td.catalog__tbl-cell
+                    td(data-th="стоимость:").catalog__tbl-cell
                       |8 594,80 р
-                    td.catalog__tbl-cell
+                    td(data-th="Добавить в корзину:").catalog__tbl-cell
                       button(type="button").button.button_icon.icon-basket_circle.icon-basket_circle-dims.catalog__button
                   tr.catalog__tbl-row
-                    td.catalog__tbl-cell
+                    td(data-th="Наименование:").catalog__tbl-cell
                       a(href="#") Z-in A56 D100 830
-                    td.catalog__tbl-cell
+                    td(data-th="Pmax (Вт):").catalog__tbl-cell
                       |23,2
-                    td.catalog__tbl-cell
+                    td(data-th="Ф (лм):").catalog__tbl-cell
                       |1466
-                    td.catalog__tbl-cell
+                    td(data-th="Тцв (К):").catalog__tbl-cell
                       |3000
-                    td.catalog__tbl-cell
+                    td(data-th="cos φ:").catalog__tbl-cell
                       |0,88
-                    td.catalog__tbl-cell
+                    td(data-th="артикул:").catalog__tbl-cell
                       |ze11003041
-                    td.catalog__tbl-cell
+                    td(data-th="*ies:").catalog__tbl-cell
                       a(href="#").icon-download.icon-download-dims
-                    td.catalog__tbl-cell
+                    td(data-th="паспорт:").catalog__tbl-cell
                       a(href="#").icon-download.icon-download-dims
-                    td.catalog__tbl-cell
+                    td(data-th="стоимость:").catalog__tbl-cell
                       |8 594,80 р
-                    td.catalog__tbl-cell
+                    td(data-th="Добавить в корзину:").catalog__tbl-cell
                       button(type="button").button.button_icon.icon-basket_circle.icon-basket_circle-dims.catalog__button
-                      

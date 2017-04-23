@@ -1,18 +1,26 @@
 .tabs {
   &__head {}
-  &__title {
+  &__title,
+  &__title:visited {
     display: inline-block;
     vertical-align: baseline;
-    color: $primary;
+    color: $black;
     font-size: 1.16rem;
     font-weight: 100;
     text-transform: uppercase;
     padding: 1rem 3rem 1.5rem;
     margin-top: -1.5rem;
     border: 1px solid transparent;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+    }
   }
-  &__title_active {
-    border: 1px solid $primary
+  &__title_active,
+  &__title_active:visited {
+    border: 1px solid $primary;
+    color: $primary;
   }
   &__body {}
 }

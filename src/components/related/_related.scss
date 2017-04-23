@@ -11,6 +11,9 @@
         border: 1px solid $black;
         padding: 9px;
         height: 100%;
+        @include max-screen(map-get($breakpoints, md)) {
+            margin-bottom: 1rem;
+        }
     }
     &__item-title {
         display: block;
@@ -82,6 +85,10 @@
         position: relative;
         padding-left: 40px;
         color: $black;
+        @include max-screen(map-get($breakpoints, md)) {
+            max-width: 60%;
+            margin-bottom: 1rem;
+        }
     }
     &__footer-icon {
         position: absolute;

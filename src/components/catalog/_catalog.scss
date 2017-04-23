@@ -9,6 +9,9 @@
   }
   &__subtitle_tabs {
     margin-right: 10rem;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-right: 1rem;
+    }
   }
   /** grid **/
   &__grid {
@@ -18,6 +21,9 @@
   }
   &__col {
     float: left;
+    @include max-screen(map-get($breakpoints, md)) {
+      width: 100% !important;
+    }
   }
   &__col:first-child {
     width: 11%;
@@ -32,11 +38,23 @@
     border-top: 3px solid $black;
     border-right: 3px solid $black;
     padding-right: 1.75rem;
+    @include max-screen(map-get($breakpoints, md)) {
+      border-right: none;
+    }
   }
   &__list-item {
     display: block;
     list-style-type: none;
     margin-bottom: 1rem;
+    @include max-screen(map-get($breakpoints, md)) {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+  &__list-item:last-child {
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-right: 0;
+    }
   }
   &__list-item-thumb {
     display: inline-block;
@@ -58,11 +76,17 @@
     padding-left: 1.75rem;
     margin-top: -1px;
     border-top: 3px solid $black;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 0;
+    }
   }
   /** Thumbs **/
   &__thumb_main {
     padding: 50px 60px;
     border: 1px solid $black;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-bottom: 1rem;
+    }
   }
   &__thumb_main,
   &__item-content {
@@ -75,11 +99,18 @@
   &__thumb-list &__thumb {
     margin-left: 2rem;
     vertical-align: top;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
   }
   &__description {
     padding-top: 1rem;
     padding-left: 2rem;
     font-weight: 100;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 0;
+    }
   }
   /** Table **/
   &__tbl {
@@ -97,6 +128,9 @@
   &__tbl-head &__tbl-cell:last-child {
     text-align: left;
     padding-left: 30px;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 0;
+    }
   }
   &__tbl-cell {
     padding: 1rem;
@@ -112,6 +146,34 @@
   }
   &__tbl-body &__tbl-cell:first-child {
     padding-left: 40px;
+  }
+  &__tbl-head &__tbl-cell:first-child,
+  &__tbl-head &__tbl-cell:last-child,
+  &__tbl-body &__tbl-cell:first-child {
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 1rem;
+    }
+  }
+  &__tbl,
+  &__tbl-body,
+  &__tbl-row,
+  &__tbl-cell {
+    @include max-screen(map-get($breakpoints, md)) {
+      display: block; //text-align: center;
+    }
+  }
+  &__tbl-body &__tbl-cell {
+    &:before {
+      content: attr(data-th);
+      display: inline-block;
+      margin-right: 1rem;
+      @include min-screen(map-get($breakpoints, md)) {
+        display: none;
+      }
+    }
+  }
+  &__tbl-body &__tbl-cell[colspan]:before{
+    display: none;
   }
   &__button {
     background-color: transparent;

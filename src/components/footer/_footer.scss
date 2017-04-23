@@ -1,6 +1,9 @@
 .footer {
   border-top: 3px solid $black;
   padding-top: 1rem;
+  @include max-screen(map-get($breakpoints, md)) {
+    padding-bottom: 1rem;
+  }
   &__item:first-child {
     text-indent: -30px;
     margin-left: 30px;
