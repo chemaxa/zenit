@@ -20,8 +20,10 @@
   <header class="page__header">
     <div class="grid__container">
       <nav class="menu menu_top grid">
-        <div class="grid__col-md-2 grid__col-sm-2 grid__col--bleed"><a class="logo__container" href="#"><img class="logo" src="img/logo.png"></a></div>
-        <div class="grid__col-md-8 grid__col-sm-8">
+        <div class="grid__col-md-2 grid__col-sm-12 grid__col-xs-12">
+          <div class="grid__cell"><a class="menu__logo" href="#"><img src="img/logo.png"></a><i class="fa fa-bars menu__icon menu__icon_bars u--hd-md u--fl-right" data-toggler data-toggle=".menu__list_top" data-toggle-class="menu__list_top-visible"></i><a class="icon-basket_light icon-basket_light-dims menu__icon menu__icon_cart u--hd-md u--fl-right" href="#"></a><a class="icon-search icon-search-dims menu__icon menu__icon_search u--hd-md u--fl-right" href="#"></a></div>
+        </div>
+        <div class="grid__col-md-8 grid__col-sm-12 grid__col-xs-12">
           <ul class="menu__list menu__list_top">
             <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Главная</a>
             </li>
@@ -29,7 +31,7 @@
             </li>
             <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Техническая информация</a>
             </li>
-            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Как купить</a>
+            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Как купить</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
               <ul class="menu__list_submenu">
                 <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">Заказ</a></li>
                 <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">Оплата</a></li>
@@ -42,8 +44,8 @@
             </li>
           </ul>
         </div>
-        <div class="grid__col-md-1 grid__col-sm-1 grid--justify-center"><a class="icon-basket_light icon-basket_light-dims menu__icon_cart" href="#"></a></div>
-        <div class="grid__col-md-1 grid__col-sm-1 grid--justify-center"><a class="icon-search icon-search-dims menu__icon_search" href="#"></a></div>
+        <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs"><a class="icon-basket_light icon-basket_light-dims menu__icon menu__icon_cart" href="#"></a></div>
+        <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs"><a class="icon-search icon-search-dims menu__icon menu__icon_search" href="#"></a></div>
       </nav>
     </div>
   </header>
@@ -93,7 +95,7 @@
           </div>
           <div class="catalog__col">
             <div class="tabs">
-              <div class="tabs__head catalog__tabs-head"><span class="catalog__subtitle catalog__subtitle_tabs">Размеры</span><a class="tabs__title tabs__title_active" href="#tab-1">D200</a><a class="tabs__title" href="#tab-2">D100</a></div>
+              <div class="tabs__head catalog__tabs-head"><span class="catalog__subtitle catalog__subtitle_tabs">Размеры</span><a class="tabs__title tabs__title_active" href="#tab-1">D200</a><a class="tabs__title" href="#tab-2">D100</a><a class="tabs__title" href="#tab-1">D200</a><a class="tabs__title" href="#tab-2">D100</a><a class="tabs__title" href="#tab-1">D200</a><a class="tabs__title" href="#tab-2">D100</a></div>
               <div class="tabs__body catalog__tabs-body" id="tab-1">
                 <div class="catalog__thumb_main"><img class="catalog__thumb" src="img/catalog/catalog__thumb_main.jpg"/></div>
                 <div class="catalog__item-content">
@@ -106,7 +108,7 @@
                   </div>
                 </div>
                 <table class="catalog__tbl">
-                  <thead class="catalog__tbl-head">
+                  <thead class="catalog__tbl-head u--hd-xxs u--hd-xs u--hd-sm">
                     <th class="catalog__tbl-cell">Наименование</th>
                     <th class="catalog__tbl-cell">Pmax (Вт)</th>
                     <th class="catalog__tbl-cell">Ф (лм)</th>
@@ -123,30 +125,30 @@
                       <td class="catalog__tbl-cell" colspan="9">без управления световым потоком</td>
                     </tr>
                     <tr class="catalog__tbl-row">
-                      <td class="catalog__tbl-cell"><a href="#">Z-in A56 D100 830</a></td>
-                      <td class="catalog__tbl-cell">23,2</td>
-                      <td class="catalog__tbl-cell">1466</td>
-                      <td class="catalog__tbl-cell">3000</td>
-                      <td class="catalog__tbl-cell">0,88</td>
-                      <td class="catalog__tbl-cell">ze11003041</td>
-                      <td class="catalog__tbl-cell"><a class="icon-download icon-download-dims" href="#"></a></td>
-                      <td class="catalog__tbl-cell"><a class="icon-download icon-download-dims" href="#"></a></td>
-                      <td class="catalog__tbl-cell">8 594,80 р</td>
-                      <td class="catalog__tbl-cell">
+                      <td class="catalog__tbl-cell" data-th="Наименование:"><a href="#">Z-in A56 D100 830</a></td>
+                      <td class="catalog__tbl-cell" data-th="Pmax (Вт):">23,2</td>
+                      <td class="catalog__tbl-cell" data-th="Ф (лм):">1466</td>
+                      <td class="catalog__tbl-cell" data-th="Тцв (К):">3000</td>
+                      <td class="catalog__tbl-cell" data-th="cos φ:">0,88</td>
+                      <td class="catalog__tbl-cell" data-th="артикул:">ze11003041</td>
+                      <td class="catalog__tbl-cell" data-th="*ies:"><a class="icon-download icon-download-dims" href="#"></a></td>
+                      <td class="catalog__tbl-cell" data-th="паспорт:"><a class="icon-download icon-download-dims" href="#"></a></td>
+                      <td class="catalog__tbl-cell" data-th="стоимость:">8 594,80 р</td>
+                      <td class="catalog__tbl-cell" data-th="Добавить в корзину:">
                         <button class="button button_icon icon-basket_circle icon-basket_circle-dims catalog__button" type="button"></button>
                       </td>
                     </tr>
                     <tr class="catalog__tbl-row">
-                      <td class="catalog__tbl-cell"><a href="#">Z-in A56 D100 830</a></td>
-                      <td class="catalog__tbl-cell">23,2</td>
-                      <td class="catalog__tbl-cell">1466</td>
-                      <td class="catalog__tbl-cell">3000</td>
-                      <td class="catalog__tbl-cell">0,88</td>
-                      <td class="catalog__tbl-cell">ze11003041</td>
-                      <td class="catalog__tbl-cell"><a class="icon-download icon-download-dims" href="#"></a></td>
-                      <td class="catalog__tbl-cell"><a class="icon-download icon-download-dims" href="#"></a></td>
-                      <td class="catalog__tbl-cell">8 594,80 р</td>
-                      <td class="catalog__tbl-cell">
+                      <td class="catalog__tbl-cell" data-th="Наименование:"><a href="#">Z-in A56 D100 830</a></td>
+                      <td class="catalog__tbl-cell" data-th="Pmax (Вт):">23,2</td>
+                      <td class="catalog__tbl-cell" data-th="Ф (лм):">1466</td>
+                      <td class="catalog__tbl-cell" data-th="Тцв (К):">3000</td>
+                      <td class="catalog__tbl-cell" data-th="cos φ:">0,88</td>
+                      <td class="catalog__tbl-cell" data-th="артикул:">ze11003041</td>
+                      <td class="catalog__tbl-cell" data-th="*ies:"><a class="icon-download icon-download-dims" href="#"></a></td>
+                      <td class="catalog__tbl-cell" data-th="паспорт:"><a class="icon-download icon-download-dims" href="#"></a></td>
+                      <td class="catalog__tbl-cell" data-th="стоимость:">8 594,80 р</td>
+                      <td class="catalog__tbl-cell" data-th="Добавить в корзину:">
                         <button class="button button_icon icon-basket_circle icon-basket_circle-dims catalog__button" type="button"></button>
                       </td>
                     </tr>
