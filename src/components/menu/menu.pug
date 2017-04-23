@@ -13,20 +13,25 @@ mixin menu
       },
       {'title': 'Контакты', 'url': '#'}]
   nav.menu.menu_top.grid
-    .grid__col-md-2.grid__col-sm-2.grid__col--bleed
-      a.logo__container(href='#')
-        img.logo(src='img/logo.png')
-    .grid__col-md-8.grid__col-sm-8
+    .grid__col-md-2.grid__col-sm-12.grid__col-xs-12
+      .grid__cell
+        a.menu__logo(href='#')
+          img(src='img/logo.png')
+        i(data-toggler,data-toggle=".menu__list_top",data-toggle-class="menu__list_top-visible").fa.fa-bars.menu__icon.menu__icon_bars.u--hd-md.u--fl-right
+        a.icon-basket_light.icon-basket_light-dims.menu__icon.menu__icon_cart(href='#').u--hd-md.u--fl-right
+        a.icon-search.icon-search-dims.menu__icon.menu__icon_search(href='#').u--hd-md.u--fl-right
+    .grid__col-md-8.grid__col-sm-12.grid__col-xs-12
       ul.menu__list.menu__list_top
         each item in menuItems
           li.menu__item.menu__item_top(class=item.subMenu ? 'menu__item_parent' : '') 
             a.menu__link.menu__link_top(href=item.url)=item.title
             if item.subMenu
+              i.fa.fa-chevron-down.menu__icon.menu__icon_down.u--hd-md(data-toggler,data-toggle=".menu__list_submenu",data-toggle-class="menu__list_submenu-visible")
               ul.menu__list_submenu
                 each subitem in item.subMenu
                   li.menu__item.menu__item_submenu
                     a.menu__link.menu__link_submenu(class=subitem.active ? 'menu__link_active' : '',href=subitem.url)=subitem.title
-    .grid__col-md-1.grid__col-sm-1.grid--justify-center
-      a.icon-basket_light.icon-basket_light-dims.menu__icon_cart(href='#')
-    .grid__col-md-1.grid__col-sm-1.grid--justify-center
-      a.icon-search.icon-search-dims.menu__icon_search(href='#')
+    .grid__col-md-1.grid__col-sm-12.grid__col-xs-12.grid--justify-center.grid--align-center.u--hd-sm.u--hd-xs.u--hd-xxs
+      a.icon-basket_light.icon-basket_light-dims.menu__icon.menu__icon_cart(href='#')
+    .grid__col-md-1.grid__col-sm-12.grid__col-xs-12.grid--justify-center.grid--align-center.u--hd-sm.u--hd-xs.u--hd-xxs
+      a.icon-search.icon-search-dims.menu__icon.menu__icon_search(href='#')

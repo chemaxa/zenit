@@ -4,6 +4,12 @@
     padding-bottom: 7px;
     margin-left: $reflex-cell-spacing;
     max-width: 1160px;
+    @include max-screen(map-get($breakpoints, md)) {
+        margin-bottom: 1rem;
+        max-width: calc(100% - 2*#{$reflex-cell-spacing});
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__title {
         font-size: 14px;
     }
