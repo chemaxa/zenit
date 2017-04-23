@@ -30,13 +30,13 @@ mixin basket
                       a(href="#") Z-in A56 D200 830 D1
                     div Артикул 
                       a(href="#") ze11003041
-                  td(data-th="Цена:").basket__tbl-cell 
+                  td(data-th="Цена:").basket__tbl-cell.basket__tbl-cell_price
                     |8 594,80 руб.
-                  td(data-th="Количество:").basket__tbl-cell.u--no-wrap
+                  td(data-th="Количество:").basket__tbl-cell.u--no-wrap.basket__tbl-cell_qty
                       a(href="#").fa.fa-minus.product__qty-cntr
                       input.product__qty-num(type="text",value=1)
                       a(href="#").fa.fa-plus.product__qty-cntr
-                  td(data-th="Сумма:").basket__tbl-cell                   
+                  td(data-th="Сумма:").basket__tbl-cell.basket__tbl-cell_summ
                     |8 594,80 руб.
                   td.basket__tbl-cell                   
                     button(type="button").button.button_text.button_primary
