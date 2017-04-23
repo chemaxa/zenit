@@ -20,16 +20,25 @@
   <header class="page__header">
     <div class="grid__container">
       <nav class="menu menu_top grid">
-        <div class="grid__col-md-2 grid__col-sm-12 grid__col-xs-12">
+        <div class="grid__col-md-2 grid__col-sm-12 grid__col-xs-12 grid__col--bleed">
           <div class="grid__cell"><a class="menu__logo" href="#"><img src="img/logo.png"></a><i class="fa fa-bars menu__icon menu__icon_bars u--hd-md u--fl-right" data-toggler data-toggle=".menu__list_top" data-toggle-class="menu__list_top-visible"></i><a class="icon-basket_light icon-basket_light-dims menu__icon menu__icon_cart u--hd-md u--fl-right" href="#"></a><a class="icon-search icon-search-dims menu__icon menu__icon_search u--hd-md u--fl-right" href="#"></a></div>
         </div>
-        <div class="grid__col-md-8 grid__col-sm-12 grid__col-xs-12">
+        <div class="grid__col-md-8 grid__col-sm-12 grid__col-xs-12 grid__col--bleed">
           <ul class="menu__list menu__list_top">
             <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Главная</a>
             </li>
-            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Продукция</a>
+            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Продукция</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
+              <ul class="menu__list_submenu">
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">пототолочные</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">настенные</a></li>
+              </ul>
             </li>
-            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Техническая информация</a>
+            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Техническая информация</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
+              <ul class="menu__list_submenu">
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">комплектация</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">управление</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">и что-то еще сейчас не помню</a></li>
+              </ul>
             </li>
             <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Как купить</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
               <ul class="menu__list_submenu">
@@ -45,7 +54,7 @@
           </ul>
         </div>
         <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs"><a class="icon-basket_light icon-basket_light-dims menu__icon menu__icon_cart" href="#"></a></div>
-        <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs"><a class="icon-search icon-search-dims menu__icon menu__icon_search" href="#"></a></div>
+        <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs grid__col--bleed"><a class="icon-search icon-search-dims menu__icon menu__icon_search" href="#"></a></div>
       </nav>
     </div>
   </header>
@@ -141,7 +150,7 @@
         </div>
       </div>
     </section>
-    <div class="u--vrt-md">
+    <div class="u--vrt-sm">
       <div class="grid__container">
         <div class="related">
           <h3 class="related__title">Вас также может заинтересовать</h3>
@@ -194,31 +203,8 @@
                 </div>
               </li>
             </div>
-          </ul><a class="related__footer" href="#">
-            <div class="related__button"><i class="fa fa-plus related__footer-icon related__icon"></i></div><br/>Показать ещё 6 товаров<br/><span class="u--txt-thin">Показано 6 из 100</span></a>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="u--vrt-sm">
-      <div class="grid__container">
-        <section class="features grid">
-          <div class="features__item grid__col-md-3"><i class="icon-car icon-car-dims u--centered features__icon"></i>
-            <div class="features__title">Удобная доставка</div>
-            <div class="features__description">Бесплатная доставка по <br/>СПб</div>
-          </div>
-          <div class="features__item grid__col-md-3"><i class="icon-map-marker icon-map-marker-dims u--centered features__icon"></i>
-            <div class="features__title">Пункт самовывоза</div>
-            <div class="features__description">Можно забрать со склада</div>
-          </div>
-          <div class="features__item grid__col-md-3"><i class="icon-card icon-card-dims u--centered features__icon"></i>
-            <div class="features__title">Оплата удобным способом</div>
-            <div class="features__description">Оплачивать можно наличными,<br/>кредитными картами или по <br/>безналичному расчету</div>
-          </div>
-          <div class="features__item grid__col-md-3"><i class="icon-cog icon-cog-dims u--centered features__icon"></i>
-            <div class="features__title">Гарантийное обслуживание</div>
-            <div class="features__description">Быстрая замена оборудования<br/>при гарантийном случае</div>
-          </div>
-        </section>
       </div>
     </div>
     <div class="u--vrt-sm grid__container">

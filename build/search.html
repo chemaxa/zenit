@@ -20,16 +20,25 @@
   <header class="page__header">
     <div class="grid__container">
       <nav class="menu menu_top grid">
-        <div class="grid__col-md-2 grid__col-sm-12 grid__col-xs-12">
+        <div class="grid__col-md-2 grid__col-sm-12 grid__col-xs-12 grid__col--bleed">
           <div class="grid__cell"><a class="menu__logo" href="#"><img src="img/logo.png"></a><i class="fa fa-bars menu__icon menu__icon_bars u--hd-md u--fl-right" data-toggler data-toggle=".menu__list_top" data-toggle-class="menu__list_top-visible"></i><a class="icon-basket_light icon-basket_light-dims menu__icon menu__icon_cart u--hd-md u--fl-right" href="#"></a><a class="icon-search icon-search-dims menu__icon menu__icon_search u--hd-md u--fl-right" href="#"></a></div>
         </div>
-        <div class="grid__col-md-8 grid__col-sm-12 grid__col-xs-12">
+        <div class="grid__col-md-8 grid__col-sm-12 grid__col-xs-12 grid__col--bleed">
           <ul class="menu__list menu__list_top">
             <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Главная</a>
             </li>
-            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Продукция</a>
+            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Продукция</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
+              <ul class="menu__list_submenu">
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">пототолочные</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">настенные</a></li>
+              </ul>
             </li>
-            <li class="menu__item menu__item_top"> <a class="menu__link menu__link_top" href="#">Техническая информация</a>
+            <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Техническая информация</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
+              <ul class="menu__list_submenu">
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">комплектация</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">управление</a></li>
+                <li class="menu__item menu__item_submenu"><a class="menu__link menu__link_submenu" href="#">и что-то еще сейчас не помню</a></li>
+              </ul>
             </li>
             <li class="menu__item menu__item_top menu__item_parent"> <a class="menu__link menu__link_top" href="#">Как купить</a><i class="fa fa-chevron-down menu__icon menu__icon_down u--hd-md" data-toggler data-toggle=".menu__list_submenu" data-toggle-class="menu__list_submenu-visible"></i>
               <ul class="menu__list_submenu">
@@ -45,7 +54,7 @@
           </ul>
         </div>
         <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs"><a class="icon-basket_light icon-basket_light-dims menu__icon menu__icon_cart" href="#"></a></div>
-        <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs"><a class="icon-search icon-search-dims menu__icon menu__icon_search" href="#"></a></div>
+        <div class="grid__col-md-1 grid__col-sm-12 grid__col-xs-12 grid--justify-center grid--align-center u--hd-sm u--hd-xs u--hd-xxs grid__col--bleed"><a class="icon-search icon-search-dims menu__icon menu__icon_search" href="#"></a></div>
       </nav>
     </div>
   </header>
@@ -76,10 +85,10 @@
                 <input class="form__input form__input_icon icon-search-dark search__input grid__col-md-12" type="text" placeholder="Поиск"/>
                 <div class="grid grid--justify-end">
                   <div class="grid__col-md-3">
-                    <button class="button button_primary button_hollow search__button" type="button">&nbsp;Сбросить</button>
+                    <button class="button button_hollow search__button" type="button">&nbsp;Сбросить</button>
                   </div>
                   <div class="grid__col-md-3 grid__col--bleed-right">
-                    <button class="button button_primary button_hollow search__button" type="button">&nbsp;Найти</button>
+                    <button class="button button_hollow search__button" type="button">&nbsp;Найти</button>
                   </div>
                 </div>Сортировать по 
                 <select class="form__select search__select icon-arrow-down">
@@ -192,7 +201,7 @@
               </div>
               <div class="grid grid--justify-end">
                 <div class="grid__col-md-7 grid__col--bleed">
-                  <button class="button button_primary button_hollow search__button grid--align-center" type="button">Подобрать</button>
+                  <button class="button button_hollow search__button grid--align-center" type="button">Подобрать</button>
                 </div>
               </div>
             </div>
