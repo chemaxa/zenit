@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include max-screen(map-get($breakpoints, md)) {
+    margin-bottom: 1rem;
+  }
   &__title {}
   &__input,
   &__input>input {

@@ -1,6 +1,9 @@
 .newsblock {
   border: 1px solid $black;
   padding: 30px 40px;
+  @include max-screen(map-get($breakpoints, md)) {
+    margin-bottom: 1rem;
+  }
   &__title {
     color: $black;
     font-size: 18px;
