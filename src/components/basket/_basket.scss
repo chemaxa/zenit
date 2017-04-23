@@ -43,7 +43,16 @@
   &__tbl-cell {
     @include max-screen(map-get($breakpoints, md)) {
       display: block;
-      text-align: center;
+    }
+  }
+  &__tbl-body &__tbl-cell {
+    &:before {
+      content: attr(data-th);
+      display: inline-block;
+      margin-right: 1rem;
+      @include min-screen(map-get($breakpoints, md)) {
+        display: none;
+      }
     }
   }
   &__thumb {
