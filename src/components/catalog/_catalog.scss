@@ -123,7 +123,6 @@
   }
   &__tbl-head &__tbl-cell:first-child {
     padding-left: 40px;
-    text-align: left;
   }
   &__tbl-head &__tbl-cell:last-child {
     text-align: left;
@@ -134,6 +133,11 @@
   }
   &__tbl-cell {
     padding: 1rem;
+    text-align: center;
+  }
+  td[colspan="9"]:first-child{
+    text-align: left;
+    padding-left: 73px;
   }
   &__tbl-body {}
   &__tbl-body &__tbl-row:nth-child(3n+2) {
@@ -154,12 +158,14 @@
       padding-left: 1rem;
     }
   }
+  
   &__tbl,
   &__tbl-body,
   &__tbl-row,
   &__tbl-cell {
     @include max-screen(map-get($breakpoints, md)) {
-      display: block; //text-align: center;
+      display: block; 
+      text-align: left;
     }
   }
   &__tbl-body &__tbl-cell {
