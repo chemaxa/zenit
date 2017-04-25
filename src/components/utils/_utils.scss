@@ -23,7 +23,7 @@
     text-align: left;
   }
   &--txt-center {
-    text-align: center;
+    text-align: center !important;
   }
   &--centered {
     display: block;
@@ -32,6 +32,9 @@
   }
   &--txt-thin {
     font-weight: 100;
+  }
+  &--txt-bold {
+    font-weight: 600;
   }
   &--inline-middle {
     display: inline-block;
