@@ -21,9 +21,11 @@
   }
   &--txt-left {
     text-align: left;
+    text-align-last: left;
   }
   &--txt-center {
     text-align: center !important;
+    text-align-last: center;
   }
   &--centered {
     display: block;
