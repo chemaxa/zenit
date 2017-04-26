@@ -1,0 +1,23 @@
+.types {
+  &__title {
+    padding-left: $reflex-cell-spacing;
+  }
+  &__container {
+    margin-bottom: 2rem;
+  }
+  &__header {
+    max-width: 222px;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 18px;
+    font-weight: 100;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item {
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-bottom: 2rem;
+    }
+  }
+}
