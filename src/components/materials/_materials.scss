@@ -1,0 +1,37 @@
+.materials {
+  &__title {
+    padding-left: $reflex-cell-spacing;
+  }
+  &__description {
+    margin-top: 9rem;
+    font-weight: 100;
+    margin-bottom: 17rem;
+    @include max-screen(map-get($breakpoints, md)) {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+    }
+  }
+  &__name {
+    margin-top: 2rem;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__item:first-child {
+    padding-left: $reflex-cell-spacing;
+    @include max-screen(map-get($breakpoints, md)) {
+      padding-left: 0;
+    }
+  }
+  &__item img {
+    max-height: 240px;
+  }
+  &__icon {
+    font-size: 36px;
+    color: #d2dfb1;
+  }
+  &__subtitle{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
