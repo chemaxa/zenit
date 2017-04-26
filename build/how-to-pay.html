@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Корзина</title>
+    <title>Как оплатить</title>
     <!--Bundle css-->
     <link rel="stylesheet" href="css/bundle.css">
     <base href="/zenit/build/">
@@ -75,65 +75,26 @@
         </ul>
       </nav>
     </div>
-    <section class="basket">
-      <div class="grid__container">     
-        <h1 class="basket__title">Корзина</h1>
-        <div class="grid">
-          <div class="grid__col-md-9">
-            <div class="grid__cell">
-              <div class="grid grid--justify-end">
-                <div class="grid__col-md-4 grid__col--bleed">
-                  <button class="button button_hollow basket__button" type="button"><i class="fa fa-plus icon icon_circle icon_xs"></i>&nbsp;добавить товар по артикулу</button>
-                </div>
-              </div>
-              <table class="basket__tbl">
-                <thead class="basket__tbl-head u--hd-xs u--hd-xxs u--hd-sm">
-                  <tr class="basket__tbl-row">
-                    <th class="basket__tbl-cell">Товар</th>
-                    <th class="basket__tbl-cell">Наименование</th>
-                    <th class="basket__tbl-cell">Цена</th>
-                    <th class="basket__tbl-cell">Количество</th>
-                    <th class="basket__tbl-cell" colspan="2">Сумма</th>
-                  </tr>
-                </thead>
-                <tbody class="basket__tbl-body">
-                  <tr class="basket__tbl-row">
-                    <td class="basket__tbl-cell"><img class="basket__thumb" src="img/product/product__related.jpg"/></td>
-                    <td class="basket__tbl-cell" data-th="Товар:">
-                      <div>Светильник <a href="#">Z-in A56 D200 830 D1</a></div>
-                      <div>Артикул <a href="#">ze11003041</a></div>
-                    </td>
-                    <td class="basket__tbl-cell basket__tbl-cell_price" data-th="Цена:">8 594,80 руб.</td>
-                    <td class="basket__tbl-cell u--no-wrap basket__tbl-cell_qty" data-th="Количество:"><a class="fa fa-minus product__qty-cntr" href="#"></a>
-                      <input class="product__qty-num" type="text" value="1"/><a class="fa fa-plus product__qty-cntr" href="#"></a>
-                    </td>
-                    <td class="basket__tbl-cell basket__tbl-cell_summ" data-th="Сумма:">8 594,80 руб.</td>
-                    <td class="basket__tbl-cell">                  
-                      <button class="button button_text button_primary" type="button">удалить</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+    <div class="grid__container">
+      <h1 class="how-to__title">Как оплатить</h1>
+      <section class="grid how-to grid">
+        <div class="grid__col-md-10 grid__col-sm-12 grid__col-xs-12">
+          <div class="grid">
+            <div class="grid__col-md-2"></div>
+            <div class="grid__col-md-10 how-to__description"><span class="u--txt-bold">Вы можете оплатить наши товары любым удобным для вас способом:            </span></div>
           </div>
-          <div class="grid__col-md-3">
-            <div class="grid__cell">
-              <div class="grid__col-md-8 grid__col--bleed">
-                <button class="button button_hollow basket__button" type="button">Очистить корзину</button>
-              </div>
-              <div class="basket__bill">
-                <div class="basket__bill-title">
-                   Ваш заказ</div>
-                <div class="basket__bill-item"><span class="basket__bill-key">Всего товаров</span><span class="basket__bill-val">3 шт.</span></div>
-                <div class="basket__bill-item"><span class="basket__bill-key">Сумма</span><span class="basket__bill-val">25 768 руб.</span></div><a class="basket__bill-promo" href="#">Применить промокод</a>
-                <div class="basket__bill-item"><span class="basket__bill-key">К оплате</span><span class="basket__bill-val">25 768 руб.</span></div>
-                <button class="button button_primary basket__button grid__col-md-7 u--centered" type="button">Оформить заказ</button>
-              </div>
-            </div>
+          <div class="grid">
+            <div class="grid__col-md-2"><i class="fa fa-map-marker how-to__icon"></i></div>
+            <div class="grid__col-md-10 how-to__description"><span class="u--txt-bold">При получении. </span><span class="u--txt-thin">Вы можете оплатить покупку наличными или по банковской карте при получении товара на складе или с доставкой.</span></div>
+          </div>
+          <div class="grid">
+            <div class="grid__col-md-2">       <i class="fa fa-hand-pointer-o how-to__icon"></i></div>
+            <div class="grid__col-md-10 how-to__description"><span class="u--txt-bold">На сайте.</span><span class="u--txt-thin">Мы принимаем к оплате банковские карты и электронные деньги.</span></div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="grid__col-md-2 grid__col-sm-12 grid__col-xs-12 grid--justify-end"><a class="button button_primary u--txt-center u--vrt-md" href="#">Перейти к каталогу</a></div>
+      </section>
+    </div>
   </main>
   <footer class="page__footer footer">
     <div class="grid__container">
