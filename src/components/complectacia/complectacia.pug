@@ -6,10 +6,10 @@ mixin complectacia
       .grid
         while n < 9
           if n>7
-            .complectacia__item.grid__col-md-3.grid__col--bleed.grid--justify-center
+            .complectacia__item.grid__col-md-3.grid__col--bleed
                 -n++
                 .complectacia__description 
-                |* Комплект поставки варьируется в зависимости от размера светильника
+                  |* Комплект поставки варьируется в зависимости от размера светильника
                 
           else
             .complectacia__item.grid__col-md-3.grid__col--bleed.grid--justify-center
