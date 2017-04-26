@@ -1,0 +1,39 @@
+.complectacia {
+  padding-left: $reflex-cell-spacing;
+  margin-bottom: 20rem;
+  &__title {
+    margin-bottom: 3rem;
+  }
+  &__item+&__item {
+    border-left: none;
+    @include max-screen(map-get($breakpoints, md)) {
+      border-top: none !important;
+    }
+  }
+  &__item:nth-child(5),
+  &__item {
+    padding: 2rem;
+    border: 1px solid $black;
+    max-height: 295px;
+    min-height: 295px;
+  }
+  &__item {
+    @include max-screen(map-get($breakpoints, md)) {
+      border: 1px solid $black !important;
+    }
+  }
+  &__item:nth-child(-n+4) {
+    border-bottom: none;
+  }
+  &__item:nth-child(n+3) &__thumb {
+    margin-top: 60px;
+  }
+  &__item:last-child {
+    border-right: none;
+    border-bottom: none;
+  }
+  &__description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}

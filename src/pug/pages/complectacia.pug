@@ -1,0 +1,15 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+include /components/complectacia/complectacia
+
+block pageTitle
+  title Комплектация
+
+block content
+  main.page__content
+    +breadcrumbs
+    +complectacia
+
+    
+    

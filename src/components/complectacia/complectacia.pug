@@ -1,0 +1,20 @@
+mixin complectacia
+  - var n=1;
+  section.complectacia
+    .grid__container      
+      h1.complectacia__title Комплектация
+      .grid
+        while n < 9
+          if n>7
+            .complectacia__item.grid__col-md-3.grid__col--bleed
+                -n++
+                .complectacia__description 
+                  |* Комплект поставки варьируется в зависимости от размера светильника
+                
+          else
+            .complectacia__item.grid__col-md-3.grid__col--bleed.grid--justify-center
+                .grid__cell.u--txt-center
+                  img(src='img/complectacia/complectacia-' + n + '.jpg').complectacia__thumb
+                -n++
+                .complectacia__description Гипсовый корпус 
+                .complectacia__qty 1 шт

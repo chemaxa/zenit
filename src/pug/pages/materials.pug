@@ -1,0 +1,52 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+
+block pageTitle
+  title Используемые материалы
+
+block content
+   main.page__content
+    +breadcrumbs
+    .grid__container
+      h1.materials__title Используемые материалы
+      section.materials
+        .grid
+          .grid__col-md-3.materials__item.grid__col--bleed
+            img.grid__cell-img(src='img/materials/material-1.jpg')
+            .materials__name
+              |Алюминий
+          .grid__col-md-3.materials__item.grid__col--bleed
+            img.grid__cell-img(src='img/materials/material-2.jpg')
+            .materials__name
+              |Нержавеющая сталь
+          .grid__col-md-3.materials__item.grid__col--bleed
+            img.grid__cell-img(src='img/materials/material-3.png')
+            .materials__name
+              |Гипс
+          .grid__col-md-3.materials__item.grid__col--bleed
+            img.grid__cell-img(src='img/materials/material-4.jpg')
+            .materials__name
+              |Органическое стекло
+        .materials__description
+          .grid
+            .grid__col-md-12
+              i.fa.fa-recycle.materials__icon
+              .u--txt-bold.materials__subtitle Технологичность и экологичность
+            .grid__col-md-6 
+              |Природный материал гипс, из которого выполнен корпус светильника, а также 
+              |отсутствие в световом приборе элементов, содержащих вредные вещества, 
+              |позволяют назвать данную серию экологичной. 
+              |Технологичность обеспечивается высокоэффективной светодиодной платой в
+              |сочетании с грамотно подобранной оптикой, блоком управления с возможностью 
+              |изменения светового потока.
+              |Простые и эстетичные формы гипсовых светильников вписываются практически 
+              |в любой интерьер, предоставляя возможность свету проникнуть в помещение.
+            .grid__col-md-6
+              |Производство светильника Z-in основано на отечественных элементах и 
+              |материалах, за исключением позиций, по которым зарубежные аналоги пока 
+              |превосходят российские по качеству и эффективности.
+              |Гипс - негорючий и огнестойкий материал, удовлетворяющий самым строгим 
+              |требованиям пожарной безопасности, что повышает безопасность светильника.
+    
+    

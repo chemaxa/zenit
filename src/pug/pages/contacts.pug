@@ -1,0 +1,30 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+
+block pageTitle
+  title Контакты
+
+block content
+  main.page__content
+    +breadcrumbs
+    .grid__container
+      h1.contacts__title Контакты
+      section.grid.contacts
+        .grid__col-md-8.grid--offset-right-1.grid__col-sm-12.grid__col-xs-12
+          //- Только для демо
+          img.grid__cell-img(src='img/contacts/map.jpg')
+        form.grid__col-md-3.grid__col-sm-12.grid__col-xs-12
+          label.form__label Написать сообщение
+            textarea(type="text").form__textarea.contacts__textarea.form__input_full
+          label.form__label.contacts__label Ваше имя
+            input(type="text").form__input.contacts__input.form__input_full
+          label.form__label.contacts__label Электронная почта
+            input(type="email").form__input.contacts__input.form__input_full
+          label.form__label.contacts__label Телефон
+            input(type="tel").form__input.contacts__input.form__input_full
+          .grid__col-md-6.grid--align-self-end.grid__col--bleed
+            button(type="submit").button.button_primary.u--txt-center.contacts__button Отправить
+
+    
+    

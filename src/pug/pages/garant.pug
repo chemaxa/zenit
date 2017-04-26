@@ -1,0 +1,39 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+
+block pageTitle
+  title Гарантия и возврат
+
+block content
+  main.page__content
+    +breadcrumbs
+    .grid__container
+      h1.garant__title Гарантия и возврат
+      section.grid.garant.grid
+        .grid__col-md-2.grid__col-sm-12.grid__col-xs-12
+          a(href="#").button.button_hollow.grid__col-md-7.u--txt-center Скачать
+        .grid__col-md-8.grid__col-sm-12.grid__col-xs-12
+          .grid
+            .grid__col-md-2
+              i.fa.fa-heart.garant__icon
+            .grid__col-md-10.garant__description
+              span.u--txt-bold Условия гарантийного обслуживания.
+              span.u--txt-thin Мы всегда выполняем гарантийные обязательства.
+          .grid
+            .grid__col-md-2
+              i.fa.fa-refresh.garant__icon
+            .grid__col-md-10.garant__description
+              span.u--txt-bold Условия замены оборудования.
+              span.u--txt-thin Мы можем поменять бракованный товар на аналогичный.
+          .grid
+            .grid__col-md-2        
+              i.fa.fa-cog.garant__icon
+            .grid__col-md-10.garant__description
+              span.u--txt-bold Установка и настройка. 
+              span.u--txt-thin При покупке нашего оборудования у вас есть возможность оставить заявку на выполнение работ по его установке и настройке. Специалист приедет к вам в любое удобное для вас время.
+        .grid__col-md-2.grid__col-sm-12.grid__col-xs-12
+          a(href="#").button.button_primary.u--txt-center Перейти к каталогу
+
+    
+    

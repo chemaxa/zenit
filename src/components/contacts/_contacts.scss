@@ -1,0 +1,10 @@
+.contacts {
+  &__title {
+    padding-left: $reflex-cell-spacing;
+  }
+  &__input {}
+  &__textarea {
+    height: 170px;
+  }
+  &__label {}
+}

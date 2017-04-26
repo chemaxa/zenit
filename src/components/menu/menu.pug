@@ -1,5 +1,6 @@
 mixin menu  
   -
+    var id=0;
     var menuItems = [
       {'title': 'Главная', 'url': '#'},
       {'title': 'Продукция', 'url': '#','subMenu':[
@@ -31,8 +32,9 @@ mixin menu
           li.menu__item.menu__item_top(class=item.subMenu ? 'menu__item_parent' : '') 
             a.menu__link.menu__link_top(href=item.url)=item.title
             if item.subMenu
-              i.fa.fa-chevron-down.menu__icon.menu__icon_down.u--hd-md(data-toggler,data-toggle=".menu__list_submenu",data-toggle-class="menu__list_submenu-visible")
-              ul.menu__list_submenu
+              i.fa.fa-chevron-down.menu__icon.menu__icon_down.u--hd-md(data-toggler,data-toggle='#'+id,data-toggle-class="menu__list_submenu-visible")
+              ul.menu__list_submenu(id=id)
+                -id++
                 each subitem in item.subMenu
                   li.menu__item.menu__item_submenu
                     a.menu__link.menu__link_submenu(class=subitem.active ? 'menu__link_active' : '',href=subitem.url)=subitem.title

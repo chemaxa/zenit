@@ -1,0 +1,25 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+
+block pageTitle
+  title Типы управления
+
+block content
+  main.page__content
+    +breadcrumbs
+    .grid__container
+      h1.types__title Типы управления
+      section.grid.types
+        .grid__col-md-12
+          .grid__cell.types__container
+            header.types__header
+              | Светильник Z-in может поставляться как с обычным блоком питания, так и с диммируемым, что позволяет удовлетворить любые требования заказчика. 
+            img(src='img/types/types.jpg')
+        .grid__col-md-3.grid--offset-right-1.types__item.types__item_1
+              |Для стандартного использования.
+        .grid__col-md-3.grid--offset-right-1.types__item.types__item_2
+              | D1 - для изменения светового потока светильника при помощи фазового регулятора напряжения. 
+        .grid__col-md-3.grid--offset-right-1.types__item.types__item_3
+              | D2 - для построения более сложных сцен освещения, с блоками питания, работающими по протоколу DALI.
+
