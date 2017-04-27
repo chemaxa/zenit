@@ -1,11 +1,63 @@
 .carousel {
-    &__list {}
-    &__item {}
-    &__controls {}
-    &__control {}
-    &__control_prev {}
-    &__control_next {}
-    &__dots {}
-    &__dot {}
-    &__dot_active {}
+    position: relative;
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        border: 1px solid $black;
+        list-style-type: none;
+    }
+    &__controls {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+    }
+    &__control {
+        position: absolute;
+        width: 45px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #2c2929;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAACzklEQVRIS2OUlZIKEJOQbGDAAX79+vXn85fPLg8ePPiATQmjgoKCABsr68uGplY2aRlpDDUzps9gePjg/sRjx44UYDUAJGhlZTNBXkExf9nSRRhq7j94yODh5vrr1+/f4thcwQjSAXPF7HkL2OxsrDAMKS6tYDh88MD806dPJqFLgg2AuUJWTi57xfKlLOiKQK6wt7JiYP7/T/HBixcPkOXhBoBcwcrC+mLO/AXsuFxx/OihzcePH/fDagBIUFdbt0NLV7eYFFfAXQALCwF+gQcTp0zlx+WKM6dO7Tx0aL8HzBUoBoAEzc3Ns4SFRSdt3bqZGVtYeHt6/vn+4b0qLCwwDABpMtA3+FBWUcUfGRGKESM9fRMZ1q1ZffT48aM2IEmsBoBcwcrKNvnw4UNM6Ca8ffeBwdba6s/nD59dn7x4cgCrAeAA1dF9V1ldK4jLFSuWLr549txZA5wGyEpIJ8gqKc4+evQwRroAucLexurvx/efXXAaAHKFsZHJo+LSMllcrtiwbu1NvAZYWlpusrS28+3t7sAIzC3bdjAU5ef9xGmAgoSEwl9GpvsHjx1jUFSQxzAgIjL6z7XLl3txGmBn57jDxMzMHZvth44cY8jPyf544eIFAawGgGznFBC8ffjoMRZhIQEM2729ff++ffs67+TJk9OwGmBpaX0kKCTUuqQoH0Pz8hWrGbo62sC2Y01IMhIyDrwCvLtx2W5ra/fv9+9fuSDbsRpgbGR8ISI6Vh+X7a1NTW+vXr8igjUzgWznFxTYe/DIYSZsfre2tv3z+N791Mcvni7AaoC1te2NgKBgdVy293Z3PT577owc1gIFn+2gpOvn6/vn0b0H4AyE1QCQ7dk5uer4ku3Ro4c1sBaqhDOO7b+P7z84o9sOjwVtTZ031XV1wrhsX7Nq5dWTJ4/rYCQKUIECsp2B8f98bJIwsf//mRyx2Q6SBwBixUe68dndpQAAAABJRU5ErkJggg==');
+    }
+    &__control_prev {
+        left: 0;
+        transform: rotate(180deg);
+    }
+    &__control_next {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    &__dots {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    &__dot {
+        display: inline-block;
+        outline: none;
+        border: 1px solid $black;
+        cursor: pointer;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: $white;
+        padding: 0;
+        margin: 0;
+    }
+    &__dot+&__dot {
+        margin-left: 2rem;
+    }
+    &__dot_active {
+        background-color: $primary;
+    }
 }

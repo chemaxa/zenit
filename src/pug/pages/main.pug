@@ -12,31 +12,47 @@ block pageTitle
 block content
   main.page__content
     .grid__container      
-      h1.main__title 
+      h1.main-page__title 
        img(src='img/main-logo.png') 
        |архитектурные гипсовые светильники.
       // Set true for controls left-right
-      +carousel(true)
-        img(src='img/carousel-1.jpg')
-      a(href="#").button 
-        |Скачать брошюру
-      .main__about-title 
+      .u--vrt-md
+        +carousel(true)
+          .u--txt-center
+            img(src='img/carousel-1.jpg')
+      .u--txt-center.u--vrt-xsm
+        a(href="#").button 
+          |Скачать брошюру
+    .main-page__about-title
+      .grid__container      
         |О компании
-      .main__about-description
+    .grid__container      
+      .main-page__about-description
         |Компания «Зенит СТП» производит светодиодные гипсовые светильники, предназначенные для монтажа в гипсокартонный потолок. 
         |Преимуществом данных светильников является то, что после завершения всех отделочных работ светильник полностью сливается с потолком  - отсутствуют какие-либо 
         |пластиковые или металлические рамки.  При производстве большое значение уделяется подбору качественных комплектующих, выходному контролю - это позволяет 
         |предоставлять 5 лет гарантии на оборудование. 
-      // Set true for controls left-right
-      +carousel(false)
-        .grid
-          .grid__col-md-8
-            img.grid__cell-img(src='img/carousel-2.jpg')
-          .grid__col-md-4
-            h3.main__carousel-title
-            | Пункт самовывоза
-            .main__carousel-description
-               |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit laudantium, quibusdam pariatur minus vero ipsam iure eveniet tempore, inventore rem! 
-               |Consequuntur cum delectus magni minus dicta minima molestiae! Inventore, rem.
-            a(href="#").button
-              |Подробнее
+      .u--vrt-sm
+        // Set true for controls left-right
+        +carousel(false)
+          .grid
+            .grid__col-md-8
+              img.grid__cell-img(src='img/carousel-2.jpg')
+            .grid__col-md-4.grid--align-self-center 
+              h3.main-page__carousel-title
+              | Пункт самовывоза
+              .main-page__carousel-description
+                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit laudantium, quibusdam pariatur minus vero ipsam iure eveniet tempore, inventore rem! 
+                |Consequuntur cum delectus magni minus dicta minima molestiae! Inventore, rem.
+              a(href="#").button
+                |Подробнее
+    //- .u--vrt-sm
+    //-   +features
+    //- .u--vrt-sm.grid__container
+    //-   .grid
+    //-     .grid__col-md-6
+    //-       +newsblock
+    //-     .grid__col-md-3
+    //-       +partners
+    //-     .grid__col-md-3
+    //-       +subscribe

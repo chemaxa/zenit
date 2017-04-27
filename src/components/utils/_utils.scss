@@ -13,11 +13,17 @@
   &--clearfix::after {
     clear: both;
   }
+  &--vrt-xsm {
+    margin-bottom: 1rem;
+  }
   &--vrt-sm {
-    margin-bottom: 24px;
+    margin-bottom: 2rem;
   }
   &--vrt-md {
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
+  }
+  &--vrt-lg {
+    margin-bottom: 5rem;
   }
   &--txt-left {
     text-align: left;
