@@ -1,0 +1,12 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+include /components/steps/steps
+
+block pageTitle
+  title Оформление заказа
+
+block content
+  main.page__content
+    +breadcrumbs
+    +steps

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Главная</title>
+    <title>Оформление заказа</title>
     <!--Bundle css-->
     <link rel="stylesheet" href="css/bundle.css">
     <base href="/zenit/build/">
@@ -60,63 +60,45 @@
   </header>
   <main class="page__content">
     <div class="grid__container">     
-      <h1 class="main-page__title"> <img src="img/main-logo.png">архитектурные гипсовые светильники.</h1>
-      <!-- Set true for controls left-right-->
-      <div class="u--vrt-md">
-        <section class="carousel">
-          <ul class="carousel__list">
-            <li class="carousel__item">
-              <div class="u--txt-center"><img src="img/carousel-1.jpg"></div>
-            </li>
-          </ul>
-          <div class="carousel__controls">
-            <button class="carousel__control carousel__control_prev" type="button"></button>
-            <button class="carousel__control carousel__control_next" type="button"></button>
-          </div>
-          <div class="carousel__dots">
-            <button class="carousel__dot carousel__dot_active" type="button"></button>
-            <button class="carousel__dot" type="button"></button>
-            <button class="carousel__dot" type="button"></button>
-          </div>
-        </section>
-      </div>
-      <div class="u--txt-center u--vrt-xsm"><a class="button" href="#">
-           Скачать брошюру</a></div>
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">Продукция&nbsp;>&nbsp;
+          </li>
+          <li class="breadcrumbs__item">Потолочные&nbsp;>&nbsp;
+          </li>
+          <li class="breadcrumbs__item">A56&nbsp;>&nbsp;
+          </li>
+          <li class="breadcrumbs__item">D200&nbsp;>&nbsp;
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">A56 D200 830</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="main-page__about-title">
-      <div class="grid__container">
-             О компании</div>
-    </div>
-    <div class="grid__container">     
-      <div class="main-page__about-description">
-        Компания «Зенит СТП» производит светодиодные гипсовые светильники, предназначенные для монтажа в гипсокартонный потолок. 
-        Преимуществом данных светильников является то, что после завершения всех отделочных работ светильник полностью сливается с потолком  - отсутствуют какие-либо 
-        пластиковые или металлические рамки.  При производстве большое значение уделяется подбору качественных комплектующих, выходному контролю - это позволяет 
-        предоставлять 5 лет гарантии на оборудование. 
-      </div>
-      <div class="u--vrt-sm">
-        <!-- Set true for controls left-right-->
-        <section class="carousel">
-          <ul class="carousel__list">
-            <li class="carousel__item">
-              <div class="grid">
-                <div class="grid__col-md-8"><img class="grid__cell-img" src="img/carousel-2.jpg"></div>
-                <div class="grid__col-md-4 grid--align-self-center"> 
-                  <h3 class="main-page__carousel-title"></h3>Пункт самовывоза
-                  <div class="main-page__carousel-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit laudantium, quibusdam pariatur minus vero ipsam iure eveniet tempore, inventore rem! 
-                    Consequuntur cum delectus magni minus dicta minima molestiae! Inventore, rem.
-                  </div><a class="button" href="#">Подробнее</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="carousel__dots">
-            <button class="carousel__dot carousel__dot_active" type="button"></button>
-            <button class="carousel__dot" type="button"></button>
-            <button class="carousel__dot" type="button"></button>
+    <div class="steps grid__container">
+      <ul class="steps__line">
+        <li class="steps__item">Ваш заказ: 3 товара, 15 670 руб.</li>
+        <li class="steps__item steps__item_active">Способ получения</li>
+        <li class="steps__item">Подтверждение</li>
+        <li class="steps__item">Заказ оформлен!</li>
+      </ul>
+      <div class="steps__step steps__step_1">
+        <h1 class="steps__title">Выберите способ получения заказа</h1>
+        <div class="grid">
+          <div class="grid__col-md-6 grid--justify-end">
+            <button class="button button_hollow button_active steps__button_lg grid--justify-center u--vrt-md" type="button">Самовывоз<i class="fa fa-check steps__check"></i></button>
+            <div class="steps__address-pickup grid__col-md-8 grid--align-self-end u--txt-right u--vrt-md">
+              * Россия, Ленинградская область, Ломоносовский район,
+              Аннинское сельское поселение, поселок Новоселье,
+              Институтская ул. д. 1
+            </div>
+            <div class="steps__end-price u--vrt-md">К оплате 15 670 руб.</div>
+            <button class="button button_primary steps__button grid__col-md-4 grid--align-center grid--align-self-end" type="button">Заберу отсюда</button>
           </div>
-        </section>
+          <div class="grid__col-md-6">
+            <button class="button button_hollow steps__button_lg" type="button">Заказать доставку</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
