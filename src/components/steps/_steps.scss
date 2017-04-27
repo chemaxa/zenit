@@ -1,0 +1,116 @@
+.steps {
+  &__title {
+    padding-left: $reflex-cell-spacing;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  &__check {}
+  &__end-price {}
+  &__address-pickup {
+    @include max-screen(map-get($breakpoints, md)) {
+      text-align: left!important;
+      text-align-last: auto!important;
+    }
+  }
+  /*Line*/
+  &__line {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: $reflex-cell-spacing;
+    @extend .u--clearfix;
+    margin-bottom: 3rem;
+  }
+  &__item {
+    position: relative;
+    float: left;
+    width: 25%;
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem 0;
+    background: $white;
+    border: 2px solid $black;
+    @include max-screen(map-get($breakpoints, md)) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  &__item:after,
+  &__item:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 5;
+    @include max-screen(map-get($breakpoints, md)) {
+      top: 100%;
+      left: 50%;
+    }
+  }
+  &__item:after,
+  &__item_active:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: $white;
+    border-width: 20px;
+    margin-top: -20px;
+    @include max-screen(map-get($breakpoints, md)) {
+      border-left-color: transparent;
+      border-top-color: $white;
+      margin-top: 0;
+      margin-left: -20px;
+    }
+  }
+  &__item:before,
+  &__item_active:before {
+    border-color: rgba(0, 174, 239, 0);
+    border-left-color: $black !important;
+    border-width: 22px;
+    margin-top: -22px;
+    @include max-screen(map-get($breakpoints, md)) {
+      border-left-color: transparent !important;
+      border-top-color: $black;
+      margin-top: 0;
+      margin-left: -22px;
+    }
+  }
+  &__item_active {
+    color: $primary;
+    border: 2px solid $primary !important;
+  }
+  &__item_active:before {
+    border-left-color: $primary !important;
+    @include max-screen(map-get($breakpoints, md)) {
+      border-left-color: transparent !important;
+      border-top-color: $primary;
+    }
+  }
+  &__item:last-child:before,
+  &__item:last-child:after {
+    display: none;
+  }
+  &__item+&__item,
+  &__item_active+&__item {
+    @include min-screen(map-get($breakpoints, md)) {
+      border-left: none;
+    }
+  }
+  &__item:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  &__item:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &__button_lg{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  &__step {}
+  &__step_1 {}
+}

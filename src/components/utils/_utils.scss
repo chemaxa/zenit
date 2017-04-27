@@ -25,13 +25,17 @@
   &--vrt-lg {
     margin-bottom: 5rem;
   }
+  &--txt-right {
+    text-align: right !important;
+    text-align-last: right !important;
+  }
   &--txt-left {
-    text-align: left;
-    text-align-last: left;
+    text-align: left !important;
+    text-align-last: left !important;
   }
   &--txt-center {
     text-align: center !important;
-    text-align-last: center;
+    text-align-last: center!important;
   }
   &--centered {
     display: block;
