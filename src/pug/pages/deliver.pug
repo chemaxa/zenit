@@ -1,0 +1,22 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+
+block pageTitle
+  title Доставка
+
+block content
+  main.page__content
+    +breadcrumbs
+    .grid__container
+      h1.contacts__title Контакты
+  .tabs
+    .tabs__head.delivery__tabs-head
+        span.delivery__subtitle.delivery__subtitle_tabs
+        |Размеры
+        a(href="#tab-1").tabs__title.tabs__title_active
+        |D200
+        a(href="#tab-2").tabs__title
+        |D100
+    .tabs__body.catalog__tabs-body(id="tab-1")
+            
