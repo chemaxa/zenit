@@ -1,42 +1,47 @@
 .footer {
-  border-top: 3px solid $black;
-  padding-top: 1rem;
-  @include max-screen(map-get($breakpoints, md)) {
-    padding-bottom: 1rem;
-  }
-  &__item:first-child {
-    text-indent: -30px;
-    margin-left: 30px;
-  }
-  &__item:first-child:before {
-    padding-right: 20px;
-  }
-  &__item {
-    color: $black;
-    text-indent: -25px;
-    margin-left: 25px;
-    margin-bottom: 9px;
-    font-family: $base-font-family;
-    font-weight: 100;
-  }
-  &__item:before {
-    font: 14px/1 FontAwesome;
-    padding-right: 15px;
-  }
-  &__icon:before {
-    font-size: 20px;
-  }
-  &__item:last-child {
-    text-indent: -20px;
-    margin-left: 20px;
-  }
-  &__item:last-child:before {
-    padding-right: 10px;
-  }
-  &__icon {
-    color: $black;
-  }
-  &__icon_share+&__icon_share {
-    margin-left: 25px;
-  }
+    border-top: 3px solid $black;
+    padding-top: 1rem;
+    padding-bottom: 70px; //Heoght of sticked notice
+    @include max-screen(map-get($breakpoints, md)) {
+        padding-bottom: calc(1rem + 60px); //Heoght of sticked notice
+    }
+    @include max-screen(480px) {
+      padding-bottom: 135px;
+    }
+    @include max-screen(map-get($breakpoints, xs)) {}
+    &__item:first-child {
+        text-indent: -30px;
+        margin-left: 30px;
+    }
+    &__item:first-child:before {
+        padding-right: 20px;
+    }
+    &__item {
+        color: $black;
+        text-indent: -25px;
+        margin-left: 25px;
+        margin-bottom: 9px;
+        font-family: $base-font-family;
+        font-weight: 100;
+    }
+    &__item:before {
+        font: 14px/1 FontAwesome;
+        padding-right: 15px;
+    }
+    &__icon:before {
+        font-size: 20px;
+    }
+    &__item:last-child {
+        text-indent: -20px;
+        margin-left: 20px;
+    }
+    &__item:last-child:before {
+        padding-right: 10px;
+    }
+    &__icon {
+        color: $black;
+    }
+    &__icon_share+&__icon_share {
+        margin-left: 25px;
+    }
 }
