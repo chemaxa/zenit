@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Контакты</title>
+    <title>Главная</title>
     <!--Bundle css-->
     <link rel="stylesheet" href="css/bundle.css">
     <base href="/zenit/build/">
@@ -60,43 +60,64 @@
   </header>
   <main class="page__content">
     <div class="grid__container">     
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">Продукция&nbsp;>&nbsp;
-          </li>
-          <li class="breadcrumbs__item">Потолочные&nbsp;>&nbsp;
-          </li>
-          <li class="breadcrumbs__item">A56&nbsp;>&nbsp;
-          </li>
-          <li class="breadcrumbs__item">D200&nbsp;>&nbsp;
-          </li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">A56 D200 830</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="grid__container">
-      <h1 class="contacts__title">Контакты</h1>
-      <section class="grid contacts">
-        <div class="grid__col-md-8 grid--offset-right-1 grid__col-sm-12 grid__col-xs-12"><img class="grid__cell-img" src="img/contacts/map.jpg"></div>
-        <form class="grid__col-md-3 grid__col-sm-12 grid__col-xs-12">
-          <label class="form__label">Написать сообщение
-            <textarea class="form__textarea contacts__textarea form__input_full" type="text"></textarea>
-          </label>
-          <label class="form__label contacts__label">Ваше имя
-            <input class="form__input contacts__input form__input_full" type="text">
-          </label>
-          <label class="form__label contacts__label">Электронная почта
-            <input class="form__input contacts__input form__input_full" type="email">
-          </label>
-          <label class="form__label contacts__label">Телефон
-            <input class="form__input contacts__input form__input_full" type="tel">
-          </label>
-          <div class="grid__col-md-6 grid--align-self-end grid__col--bleed">
-            <button class="button button_primary u--txt-center contacts__button" type="submit">Отправить</button>
+      <h1 class="main-page__title"> <img src="img/main-logo.png">архитектурные гипсовые светильники.</h1>
+      <!-- Set true for controls left-right-->
+      <div class="u--vrt-md">
+        <section class="carousel">
+          <ul class="carousel__list">
+            <li class="carousel__item">
+              <div class="u--txt-center"><img src="img/carousel-1.jpg"></div>
+            </li>
+          </ul>
+          <div class="carousel__controls">
+            <button class="carousel__control carousel__control_prev" type="button"></button>
+            <button class="carousel__control carousel__control_next" type="button"></button>
           </div>
-        </form>
-      </section>
+          <div class="carousel__dots">
+            <button class="carousel__dot carousel__dot_active" type="button"></button>
+            <button class="carousel__dot" type="button"></button>
+            <button class="carousel__dot" type="button"></button>
+          </div>
+        </section>
+      </div>
+      <div class="u--txt-center u--vrt-xsm"><a class="button" href="#">
+           Скачать брошюру</a></div>
+    </div>
+    <div class="main-page__about-title">
+      <div class="grid__container">
+             О компании</div>
+    </div>
+    <div class="grid__container">     
+      <div class="main-page__about-description">
+        Компания «Зенит СТП» производит светодиодные гипсовые светильники, предназначенные для монтажа в гипсокартонный потолок. 
+        Преимуществом данных светильников является то, что после завершения всех отделочных работ светильник полностью сливается с потолком  - отсутствуют какие-либо 
+        пластиковые или металлические рамки.  При производстве большое значение уделяется подбору качественных комплектующих, выходному контролю - это позволяет 
+        предоставлять 5 лет гарантии на оборудование. 
+      </div>
+      <div class="u--vrt-sm">
+        <!-- Set true for controls left-right-->
+        <section class="carousel">
+          <ul class="carousel__list">
+            <li class="carousel__item">
+              <div class="grid">
+                <div class="grid__col-md-8"><img class="grid__cell-img" src="img/carousel-2.jpg"></div>
+                <div class="grid__col-md-4 grid--align-self-center"> 
+                  <h3 class="main-page__carousel-title"></h3>Пункт самовывоза
+                  <div class="main-page__carousel-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit laudantium, quibusdam pariatur minus vero ipsam iure eveniet tempore, inventore rem! 
+                    Consequuntur cum delectus magni minus dicta minima molestiae! Inventore, rem.
+                  </div><a class="button" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="carousel__dots">
+            <button class="carousel__dot carousel__dot_active" type="button"></button>
+            <button class="carousel__dot" type="button"></button>
+            <button class="carousel__dot" type="button"></button>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
   <footer class="page__footer footer">
@@ -109,6 +130,21 @@
       </div>
     </div>
   </footer>
+  <aside class="notice">
+    <div class="grid__container">
+      <div class="grid grid--justify-space-between"> 
+        <div class="grid__col-md-2 grid__col-sm-4 grid__col-xs-5">
+          <div class="grid__cell"><a class="button notice__button" href="#">
+              <div class="icon-envelope icon-envelope-dims"></div>&nbsp;Обратная связь</a></div>
+        </div>
+        <div class="grid__col-md-8 grid__col-sm-6 grid__col-xs-7">
+          <div class="grid--align-self-end"><span class="notice__title">Корзина</span><span class="notice__qty">
+               1</span><span class="notice__price">
+               8594,80 руб</span><a class="button notice__button" href="#">Оформить заказ</a></div>
+        </div>
+      </div>
+    </div>
+  </aside>
   <!-- Bundle JS-->
   <script src="js/bundle.js"></script>
 </body>

@@ -1,6 +1,7 @@
 include head
 include /components/footer/footer
 include /components/header/header
+include /components/notice/notice
 
 body.page
   block header
@@ -8,5 +9,6 @@ body.page
   block content
   block footer
     +footer
+  +notice
   // Bundle JS
   script(src='js/bundle.js')

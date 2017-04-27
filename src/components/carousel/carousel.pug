@@ -1,0 +1,16 @@
+mixin carousel(controls)
+  section.carousel
+    ul.carousel__list
+      li.carousel__item
+        if block
+          block
+        else
+          |No content provided :(
+    if controls
+      .carousel__controls
+        button(type="button").carousel__control.carousel__control_prev
+        button(type="button").carousel__control.carousel__control_next
+    .carousel__dots
+      button(type="button").carousel__dot.carousel__dot_active
+      button(type="button").carousel__dot
+      button(type="button").carousel__dot
