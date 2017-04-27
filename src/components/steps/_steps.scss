@@ -5,9 +5,20 @@
     font-weight: 400;
     margin-bottom: 3rem;
   }
-  &__check {}
+  &__check {
+    width: 19px;
+    height: 19px;
+    color: $white;
+    background-color: $primary;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 1.5rem;
+    font-size: 16px;
+  }
   &__end-price {}
   &__address-pickup {
+    font-weight: 100;
     @include max-screen(map-get($breakpoints, md)) {
       text-align: left!important;
       text-align-last: auto!important;
@@ -107,7 +118,9 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  &__button_lg{
+  &__button_lg {
+    font-size: 24px;
+    font-weight: 500;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
