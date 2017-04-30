@@ -82,24 +82,162 @@
         <li class="steps__item">Подтверждение</li>
         <li class="steps__item">Заказ оформлен!</li>
       </ul>
-      <div class="steps__step steps__step_1">
+      <!--include /components/steps/step-1-->
+      <div class="steps__step steps__step_2">
         <h1 class="steps__title">Выберите способ получения заказа</h1>
         <div class="grid">
           <div class="grid__col-md-6 grid--justify-end">
-            <button class="button button_hollow button_active steps__button_lg grid--justify-center u--vrt-md" type="button">Самовывоз<i class="fa fa-check steps__check"></i></button>
-            <div class="steps__address-pickup grid__col-md-8 grid--align-self-end u--txt-right u--vrt-md">
-              * Россия, Ленинградская область, Ломоносовский район,
-              Аннинское сельское поселение, поселок Новоселье,
-              Институтская ул. д. 1
-            </div>
-            <div class="steps__end-price u--vrt-md">К оплате 15 670 руб.</div>
-            <button class="button button_primary steps__button grid__col-md-4 grid--align-center grid--align-self-end" type="button">Заберу отсюда</button>
+            <button class="button button_hollow steps__button_lg grid--justify-center u--vrt-md" type="button">Самовывоз</button>
           </div>
           <div class="grid__col-md-6">
-            <button class="button button_hollow steps__button_lg" type="button">Заказать доставку</button>
+            <button class="button button_hollow steps__button_lg grid--justify-center button_active" type="button">Заказать доставку<i class="fa fa-check steps__check"></i></button>
+          </div>
+          <div class="grid">
+            <div class="grid__col-md-6">
+              <label class="form__label steps__label" for="city">
+                 Населенный пункт (город, поселок)*</label>
+              <label class="form__label steps__label" for="street">
+                 Улица*</label>
+              <p>
+                *Доставка в удобное для вас место и время. Оплата наличными прямо на месте.
+                * Доставка по Санкт-Петербургу 
+                осуществляется бесплатно, по 
+                регионам транспортными компаниями. 
+                Доставка до транспортной компании 
+                бесплатно.
+              </p>
+            </div>
+            <div class="grid__col-md-6">
+              <input class="form__input steps__input" id="city" type="text"/>
+              <input class="form__input steps__input" id="street" type="text"/>
+              <div class="grid">
+                <div class="grid__col-md-6 grid__col--bleed-left">
+                  <div class="grid__cell u--clearfix">
+                    <label class="form__label steps__label" for="home">
+                       Дом*</label>
+                    <input class="form__input steps__input u--fl-right" id="home" type="text"/>
+                  </div>
+                </div>
+                <div class="grid__col-md-6 grid__col--bleed-right">
+                  <div class="grid__cell u--clearfix">
+                    <label class="form__label steps__label" for="home-part">
+                       Корпус*   </label>
+                    <input class="form__input steps__input u--fl-right" id="home-part" type="text"/>
+                  </div>
+                </div>
+                <div class="grid__col-md-6 grid__col--bleed-left">
+                  <div class="grid__cell u--clearfix">
+                    <label class="form__label steps__label form__label" for="flat">Квартира*   </label>
+                    <input class="form__input steps__input u--fl-right" id="flat" type="text"/>
+                  </div>
+                </div>
+                <div class="grid__col-md-6 grid__col--bleed-right">
+                  <div class="grid__cell u--clearfix">
+                    <label class="form__label steps__label" for="postcode">
+                       Индекс*</label>
+                    <input class="form__input steps__input u--fl-right" id="postcode" type="text"/>
+                  </div>
+                </div>
+                <div class="grid__col-md-12 grid__col--bleed grid--direction-row button__group">
+                  <button class="button button_hollow steps__button grid__col-md-4 grid--align-center" type="button">Сегодня</button>
+                  <button class="button button_hollow steps__button grid__col-md-4 grid--align-center" type="button">Завтра</button>
+                  <button class="button button_hollow steps__button grid__col-md-4 grid--align-center" type="button">Другая дата</button>
+                </div>
+                <div class="grid grid--justify-end">
+                  <div class="grid__col-md-8">
+                    <div class="datepicker">
+                      <div class="datepicker__years"><span class="datepicker__year_prev">2017</span><span class="datepicker__year_next">2018</span></div>
+                      <table class="datepicker__tbl">
+                        <caption class="datepicker__caption">Январь</caption>
+                        <thead class="datepicker__head">
+                          <tr class="datepicker__row">
+                            <th class="datepicker__cell">Пн</th>
+                            <th class="datepicker__cell">Вт</th>
+                            <th class="datepicker__cell">Ср</th>
+                            <th class="datepicker__cell">Чт</th>
+                            <th class="datepicker__cell">Пт</th>
+                            <th class="datepicker__cell">Сб</th>
+                            <th class="datepicker__cell">Вс</th>
+                          </tr>
+                        </thead>
+                        <tbody class="datepicker__body"><tr class="datepicker__row">
+                          <td class="datepicker__cell">1
+                          </td>
+                          <td class="datepicker__cell">2
+                          </td>
+                          <td class="datepicker__cell">3
+                          </td>
+                          <td class="datepicker__cell">4
+                          </td>
+                          <td class="datepicker__cell">5
+                          </td>
+                          <td class="datepicker__cell">6
+                          </td>
+                          <td class="datepicker__cell">7
+                          </td></tr>
+<tr class="datepicker__row">
+                          <td class="datepicker__cell">8
+                          </td>
+                          <td class="datepicker__cell">9
+                          </td>
+                          <td class="datepicker__cell">10
+                          </td>
+                          <td class="datepicker__cell">11
+                          </td>
+                          <td class="datepicker__cell">12
+                          </td>
+                          <td class="datepicker__cell">13
+                          </td>
+                          <td class="datepicker__cell">14
+                          </td></tr>
+<tr class="datepicker__row">
+                          <td class="datepicker__cell">15
+                          </td>
+                          <td class="datepicker__cell">16
+                          </td>
+                          <td class="datepicker__cell">17
+                          </td>
+                          <td class="datepicker__cell">18
+                          </td>
+                          <td class="datepicker__cell">19
+                          </td>
+                          <td class="datepicker__cell">20
+                          </td>
+                          <td class="datepicker__cell">21
+                          </td></tr>
+<tr class="datepicker__row">
+                          <td class="datepicker__cell">22
+                          </td>
+                          <td class="datepicker__cell">23
+                          </td>
+                          <td class="datepicker__cell">24
+                          </td>
+                          <td class="datepicker__cell">25
+                          </td>
+                          <td class="datepicker__cell">26
+                          </td>
+                          <td class="datepicker__cell">27
+                          </td>
+                          <td class="datepicker__cell">28
+                          </td></tr>
+<tr class="datepicker__row">
+                          <td class="datepicker__cell">29
+                          </td>
+                          <td class="datepicker__cell">30
+                          </td>
+                          <td class="datepicker__cell">31
+                          </td>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!--include /components/steps/step-3-->
     </div>
   </main>
   <footer class="page__footer footer">
@@ -112,21 +250,7 @@
       </div>
     </div>
   </footer>
-  <aside class="notice">
-    <div class="grid__container">
-      <div class="grid grid--justify-space-between"> 
-        <div class="grid__col-md-2 grid__col-sm-4 grid__col-xs-5">
-          <div class="grid__cell"><a class="button notice__button" href="#">
-              <div class="icon-envelope icon-envelope-dims"></div>&nbsp;Обратная связь</a></div>
-        </div>
-        <div class="grid__col-md-8 grid__col-sm-6 grid__col-xs-7">
-          <div class="grid--align-self-end"><span class="notice__title">Корзина</span><span class="notice__qty">
-               1</span><span class="notice__price">
-               8594,80 руб</span><a class="button notice__button" href="#">Оформить заказ</a></div>
-        </div>
-      </div>
-    </div>
-  </aside>
+  <!--+notice-->
   <!-- Bundle JS-->
   <script src="js/bundle.js"></script>
 </body>

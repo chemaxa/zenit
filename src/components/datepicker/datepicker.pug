@@ -1,0 +1,38 @@
+mixin datepicker
+ -var date=1;
+  .datepicker
+    .datepicker__years
+      span.datepicker__year_prev
+        |2017
+      span.datepicker__year_next
+        |2018
+    table.datepicker__tbl
+      caption.datepicker__caption
+        |Январь
+      thead.datepicker__head
+        tr.datepicker__row
+          th.datepicker__cell
+            |Пн
+          th.datepicker__cell
+            |Вт
+          th.datepicker__cell
+            |Ср
+          th.datepicker__cell
+            |Чт
+          th.datepicker__cell
+            |Пт
+          th.datepicker__cell
+            |Сб
+          th.datepicker__cell
+            |Вс
+      tbody.datepicker__body
+        <tr class="datepicker__row">
+          while date < 32
+            if date%7==0
+              td.datepicker__cell
+                =date++ 
+              </tr>
+              <tr class="datepicker__row">
+            else
+                td.datepicker__cell
+                  =date++

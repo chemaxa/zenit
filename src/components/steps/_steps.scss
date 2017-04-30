@@ -124,6 +124,16 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  //*Labels*//
+  &__label{
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  &__input{
+    display: inline-block;
+  }
   &__step {}
   &__step_1 {}
 }

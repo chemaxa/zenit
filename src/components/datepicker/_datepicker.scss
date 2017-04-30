@@ -1,0 +1,9 @@
+.datepicker {
+  border: 2px solid $primary;
+  padding: 2.5rem;
+  &__years {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
