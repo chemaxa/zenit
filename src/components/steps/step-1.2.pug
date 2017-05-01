@@ -1,0 +1,61 @@
+.steps__step.steps__step_1-2
+  h1.steps__title
+    |Выберите способ получения заказа
+  .grid
+    .grid__col-md-6.grid--justify-end
+      button(type="button").button.button_hollow.steps__button_lg.grid--justify-center.u--vrt-md
+        |Самовывоз
+    .grid__col-md-6
+      button(type="button").button.button_hollow.steps__button_lg.grid--justify-center.button_active
+        |Заказать доставку
+        i.fa.fa-check.steps__check
+    .grid
+      .grid__col-md-6
+        label.form__label.steps__label(for="city") 
+          |Населенный пункт (город, поселок)*
+        label.form__label.steps__label(for="street") 
+          |Улица*
+        p.
+          *Доставка в удобное для вас место и время. Оплата наличными прямо на месте.
+          * Доставка по Санкт-Петербургу 
+          осуществляется бесплатно, по 
+          регионам транспортными компаниями. 
+          Доставка до транспортной компании 
+          бесплатно.
+      .grid__col-md-6
+        input#city(type="text").form__input.steps__input
+        input#street(type="text").form__input.steps__input
+        .grid
+          .grid__col-md-6.grid__col--bleed-left
+            .grid__cell.u--clearfix
+              label.form__label.steps__label(for="home") 
+                |Дом*
+              input#home(type="text").form__input.steps__input.u--fl-right
+          .grid__col-md-6.grid__col--bleed-right
+            .grid__cell.u--clearfix
+              label.form__label.steps__label(for="home-part") 
+                |Корпус*   
+              input#home-part(type="text").form__input.steps__input.u--fl-right
+          .grid__col-md-6.grid__col--bleed-left
+            .grid__cell.u--clearfix
+              label.form__label.steps__label(for="flat").form__label
+                |Квартира*   
+              input#flat(type="text").form__input.steps__input.u--fl-right
+          .grid__col-md-6.grid__col--bleed-right
+            .grid__cell.u--clearfix
+              label.form__label.steps__label(for="postcode") 
+                |Индекс*
+              input#postcode(type="text").form__input.steps__input.u--fl-right
+          .grid__col-md-12.grid__col--bleed.grid--direction-row.button__group
+            button(type="button").button.button_hollow.steps__button.grid__col-md-4.grid--align-center
+              |Сегодня
+            button(type="button").button.button_hollow.steps__button.grid__col-md-4.grid--align-center
+              |Завтра
+            button(type="button").button.button_hollow.steps__button.button_active.grid__col-md-4.grid--align-center
+              |Другая дата
+          .grid.grid--justify-end
+            .grid__col-md-8
+              .u--vrt-md
+                +datepicker()
+              button(type="button").button.steps__button.button_primary.grid__col-md-6.grid--align-self-end.grid--align-center.u--vrt-md
+                |Продолжить

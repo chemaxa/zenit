@@ -82,135 +82,38 @@
         <li class="steps__item">Подтверждение</li>
         <li class="steps__item">Заказ оформлен!</li>
       </ul>
-      <!--include /components/steps/step-1-->
+      <!--include /components/steps/step-1.1-->
+      <!--include /components/steps/step-1.2-->
       <div class="steps__step steps__step_2">
-        <h1 class="steps__title">Выберите способ получения заказа</h1>
+        <h1 class="steps__title">Подтвердите заказ</h1>
         <div class="grid">
-          <div class="grid__col-md-6 grid--justify-end">
-            <button class="button button_hollow steps__button_lg grid--justify-center u--vrt-md" type="button">Самовывоз</button>
+          <div class="grid__col-md-6">
+            <h3 class="steps__subtitle">Личные данные получателя заказа</h3>
+            <div class="grid">
+              <label class="form__label steps__label grid__col-md-4 u--txt-right grid--align-self-center" for="fio">
+                 ФИО</label>
+              <input class="form__input steps__input grid__col-md-8" id="fio" type="text"/>
+              <label class="form__label steps__label grid__col-md-4 u--txt-right grid--align-self-center" for="email">
+                 Электронная почта</label>
+              <input class="form__input steps__input grid__col-md-8" id="email" type="email"/>
+              <label class="form__label steps__label grid__col-md-4 u--txt-right grid--align-self-center" for="tel">
+                 Телефон</label>
+              <input class="form__input steps__input grid__col-md-8" id="tel" type="tel"/>
+              <label class="form__label steps__label grid__col-md-4 u--txt-right grid--align-self-center" for="info">
+                 Примечание</label>
+              <textarea class="form__textarea steps__textarea grid__col-md-8" id="tel" type="info"></textarea>
+            </div>
           </div>
           <div class="grid__col-md-6">
-            <button class="button button_hollow steps__button_lg grid--justify-center button_active" type="button">Заказать доставку<i class="fa fa-check steps__check"></i></button>
-          </div>
-          <div class="grid">
-            <div class="grid__col-md-6">
-              <label class="form__label steps__label" for="city">
-                 Населенный пункт (город, поселок)*</label>
-              <label class="form__label steps__label" for="street">
-                 Улица*</label>
-              <p>
-                *Доставка в удобное для вас место и время. Оплата наличными прямо на месте.
-                * Доставка по Санкт-Петербургу 
-                осуществляется бесплатно, по 
-                регионам транспортными компаниями. 
-                Доставка до транспортной компании 
-                бесплатно.
-              </p>
-            </div>
-            <div class="grid__col-md-6">
-              <input class="form__input steps__input" id="city" type="text"/>
-              <input class="form__input steps__input" id="street" type="text"/>
-              <div class="grid">
-                <div class="grid__col-md-6 grid__col--bleed-left">
-                  <div class="grid__cell u--clearfix">
-                    <label class="form__label steps__label" for="home">
-                       Дом*</label>
-                    <input class="form__input steps__input u--fl-right" id="home" type="text"/>
-                  </div>
-                </div>
-                <div class="grid__col-md-6 grid__col--bleed-right">
-                  <div class="grid__cell u--clearfix">
-                    <label class="form__label steps__label" for="home-part">
-                       Корпус*   </label>
-                    <input class="form__input steps__input u--fl-right" id="home-part" type="text"/>
-                  </div>
-                </div>
-                <div class="grid__col-md-6 grid__col--bleed-left">
-                  <div class="grid__cell u--clearfix">
-                    <label class="form__label steps__label form__label" for="flat">Квартира*   </label>
-                    <input class="form__input steps__input u--fl-right" id="flat" type="text"/>
-                  </div>
-                </div>
-                <div class="grid__col-md-6 grid__col--bleed-right">
-                  <div class="grid__cell u--clearfix">
-                    <label class="form__label steps__label" for="postcode">
-                       Индекс*</label>
-                    <input class="form__input steps__input u--fl-right" id="postcode" type="text"/>
-                  </div>
-                </div>
-                <div class="grid__col-md-12 grid__col--bleed grid--direction-row button__group">
-                  <button class="button button_hollow steps__button grid__col-md-4 grid--align-center" type="button">Сегодня</button>
-                  <button class="button button_hollow steps__button grid__col-md-4 grid--align-center" type="button">Завтра</button>
-                  <button class="button button_hollow steps__button button_active grid__col-md-4 grid--align-center" type="button">Другая дата</button>
-                </div>
-                <div class="grid grid--justify-end">
-                  <div class="grid__col-md-8">
-                    <div class="u--vrt-md">
-                      <div class="datepicker">
-                        <div class="datepicker__years"><a class="datepicker__year datepicker__year_prev" href="#"><i class="fa fa-chevron-left datepicker__icon"></i>&nbsp;2017</a><a class="datepicker__year datepicker__year_next" href="#">2018&nbsp;<i class="fa fa-chevron-right datepicker__icon"></i></a></div>
-                        <div class="datepicker__months"><a class="datepicker__month datepicker__month_prev" href="#"><i class="fa fa-chevron-left datepicker__icon"></i>&nbsp;Январь</a><a class="datepicker__month datepicker__month_next" href="#">Февраль&nbsp;<i class="fa fa-chevron-right datepicker__icon"></i></a></div>
-                        <table class="datepicker__tbl">
-                          <caption class="datepicker__caption">Январь 01</caption>
-                          <thead class="datepicker__head">
-                            <tr class="datepicker__row">
-                              <th class="datepicker__cell">Пн</th>
-                              <th class="datepicker__cell">Вт</th>
-                              <th class="datepicker__cell">Ср</th>
-                              <th class="datepicker__cell">Чт</th>
-                              <th class="datepicker__cell">Пт</th>
-                              <th class="datepicker__cell">Сб</th>
-                              <th class="datepicker__cell">Вс</th>
-                            </tr>
-                          </thead>
-                          <tbody class="datepicker__body"><tr class="datepicker__row">
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">1</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">2</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">3</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">4</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">5</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">6</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">7</a></td></tr>
-<tr class="datepicker__row">
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">8</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">9</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">10</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">11</a></td>
-                            <td class="datepicker__cell datepicker__cell_active"><a class="datepicker__link" href="#">12</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">13</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">14</a></td></tr>
-<tr class="datepicker__row">
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">15</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">16</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">17</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">18</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">19</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">20</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">21</a></td></tr>
-<tr class="datepicker__row">
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">22</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">23</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">24</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">25</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">26</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">27</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">28</a></td></tr>
-<tr class="datepicker__row">
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">29</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">30</a></td>
-                            <td class="datepicker__cell"><a class="datepicker__link" href="#">31</a></td>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <button class="button steps__button button_primary grid__col-md-6 grid--align-self-end grid--align-center u--vrt-md" type="button">Продолжить</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="steps__confirm-address">
+              Доставка 15 октября по адресу:
+              191187, Санкт-Петербург, ул. Чайковского, д. 42, 
+              кв. 2
+              Итоговая стоимость: 17 567 руб. 
+            </div><a class="button button_hollow steps__button" href="#">Изменить адрес и способ получения</a>
           </div>
         </div>
       </div>
-      <!--include /components/steps/step-3-->
     </div>
   </main>
   <footer class="page__footer footer">
