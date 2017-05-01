@@ -1,0 +1,33 @@
+.steps__step.steps__step_2
+  h1.steps__title
+    |Подтвердите заказ
+  h5.steps__subtitle.u--vrt-md
+      |Личные данные получателя заказа
+  .grid
+    .grid__col-md-6
+      .grid
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="fio") 
+          |ФИО
+        input#fio(type="text").form__input.steps__input.grid__col-md-9
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="email") 
+          |Электронная почта
+        input#email(type="email").form__input.steps__input.grid__col-md-9
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="tel") 
+          |Телефон
+        input#tel(type="tel").form__input.steps__input.grid__col-md-9
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="info") 
+          |Примечание
+        textarea#tel(type="info").form__textarea.steps__textarea.grid__col-md-9
+    .grid__col-md-6
+      .steps__confirm-address
+        |Доставка 15 октября по адресу:
+        br
+        |191187, Санкт-Петербург, ул. Чайковского, д. 42, 
+        |кв. 2
+        .steps__final-cost
+          |Итоговая стоимость: 17 567 руб. 
+      a(href="#").button.button_hollow.steps__button.grid--justify-center
+        |Изменить адрес и способ получения
+    .grid__col-md-6.grid--offset-left-6 
+      button(type="button").button.steps__button.button_primary.grid--justify-center.grid--align-center.grid__col-md-3
+        |Продолжить
