@@ -2,13 +2,22 @@ mixin datepicker
  -var date=1;
   .datepicker
     .datepicker__years
-      span.datepicker__year_prev
-        |2017
-      span.datepicker__year_next
-        |2018
+      a(href="#").datepicker__year.datepicker__year_prev
+        i.fa.fa-chevron-left.datepicker__icon
+        |&nbsp;2017
+      a(href="#").datepicker__year.datepicker__year_next
+        |2018&nbsp;
+        i.fa.fa-chevron-right.datepicker__icon
+    .datepicker__months
+      a(href="#").datepicker__month.datepicker__month_prev
+        i.fa.fa-chevron-left.datepicker__icon
+        |&nbsp;Январь
+      a(href="#").datepicker__month.datepicker__month_next
+        |Февраль&nbsp;
+        i.fa.fa-chevron-right.datepicker__icon
     table.datepicker__tbl
       caption.datepicker__caption
-        |Январь
+        |Январь 01
       thead.datepicker__head
         tr.datepicker__row
           th.datepicker__cell
@@ -30,9 +39,11 @@ mixin datepicker
           while date < 32
             if date%7==0
               td.datepicker__cell
-                =date++ 
+                a.datepicker__link(href="#")
+                    =date++
               </tr>
               <tr class="datepicker__row">
             else
-                td.datepicker__cell
-                  =date++
+                td.datepicker__cell(class=(date==12?'datepicker__cell_active':''))
+                  a.datepicker__link(href="#")
+                    =date++

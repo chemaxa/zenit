@@ -1,9 +1,37 @@
 .datepicker {
   border: 2px solid $primary;
   padding: 2.5rem;
-  &__years {
+  text-align: center;
+  border-radius: 5px;
+  a.datepicker__year,
+  a.datepicker__month {
+    color: $primary;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  &__years,
+  &__months {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+  &__tbl {
+    display: inline-block;
+    text-align: left;
+  }
+  &__caption {
+    color: $primary;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 10px;
+  }
+  &__row {}
+  &__cell {
+    padding: 4px 10px;
+    text-align: center;
+  }
+  &__cell_active>&__link {
+    color: $primary;
   }
 }

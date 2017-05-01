@@ -52,8 +52,11 @@
               |Сегодня
             button(type="button").button.button_hollow.steps__button.grid__col-md-4.grid--align-center
               |Завтра
-            button(type="button").button.button_hollow.steps__button.grid__col-md-4.grid--align-center
+            button(type="button").button.button_hollow.steps__button.button_active.grid__col-md-4.grid--align-center
               |Другая дата
           .grid.grid--justify-end
             .grid__col-md-8
-              +datepicker()
+              .u--vrt-md
+                +datepicker()
+              button(type="button").button.steps__button.button_primary.grid__col-md-6.grid--align-self-end.grid--align-center.u--vrt-md
+                |Продолжить
