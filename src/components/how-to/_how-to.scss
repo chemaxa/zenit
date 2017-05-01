@@ -12,17 +12,9 @@
     margin-right: 5rem;
     font-size: 3rem;
   }
-  &__icon:hover {
-    color: $primary;
-  }
   &__icon.icon-car {
     width: 31px;
     height: 26px;
     background-size: contain;
   }
-  // &__icon.icon-envelope {
-  //   width: 30px;
-  //   height: 30px;
-  //   background-size: contain;
-  // }
 }
