@@ -1,0 +1,41 @@
+extends /pug/layout.pug
+
+include /components/breadcrumbs/breadcrumbs
+
+block pageTitle
+  title Как оплатить
+
+block content
+  main.page__content
+    +breadcrumbs
+    .grid__container
+      h1.how-to__title Как заказать
+      section.grid.how-to.grid
+        .grid__col-md-10.grid__col-sm-12.grid__col-xs-12
+          .grid
+            .grid__col-md-2
+            .grid__col-md-10.how-to__description
+              span.u--txt-bold Вы можете заказать наши товары любым удобным для вас способом:
+          .grid
+            .grid__col-md-2
+              i.fa.fa-hand-pointer-o.how-to__icon
+            .grid__col-md-10.how-to__description
+              span.u--txt-bold На сайте. 
+              span.u--txt-thin Для этого достаточно выбрать понравившийся вам товар в каталоге, положить его в виртуальную корзину и оформить покупку.
+          .grid
+            .grid__col-md-2        
+              i.fa.fa-phone.how-to__icon
+            .grid__col-md-10.how-to__description
+              span.u--txt-bold По телефону.
+              span.u--txt-thin Наши операторы проконсультируют вас по вопросам, связанным с техническими характеристиками и потребительскими свойствами товаров, и примут ваш заказ.
+          .grid
+            .grid__col-md-2        
+              i.icon-envelope.how-to__icon
+            .grid__col-md-10.how-to__description
+              span.u--txt-bold По электронной почте.
+              span.u--txt-thin В письме необходимо указать наименования (коды) выбранных вами товаров и их количество, а также данные о себе - имя, фамилию, телефон, персональную скидку (если она у вас есть).
+        .grid__col-md-2.grid__col-sm-12.grid__col-xs-12.grid--justify-end
+          a(href="#").button.button_primary.u--txt-center.u--vrt-lg Перейти к каталогу
+
+    
+    
