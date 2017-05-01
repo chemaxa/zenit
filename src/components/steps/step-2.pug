@@ -1,28 +1,30 @@
 .steps__step.steps__step_2
   h1.steps__title
     |Подтвердите заказ
-  .grid
-    h3.grid__col-md-12.steps__subtitle.grid--offset-left-2
+  h5.steps__subtitle.u--vrt-md
       |Личные данные получателя заказа
+  .grid
     .grid__col-md-6
       .grid
-        label.form__label.steps__label.grid__col-md-4.u--txt-right.grid--align-self-center(for="fio") 
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="fio") 
           |ФИО
-        input#fio(type="text").form__input.steps__input.grid__col-md-8
-        label.form__label.steps__label.grid__col-md-4.u--txt-right.grid--align-self-center(for="email") 
+        input#fio(type="text").form__input.steps__input.grid__col-md-9
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="email") 
           |Электронная почта
-        input#email(type="email").form__input.steps__input.grid__col-md-8
-        label.form__label.steps__label.grid__col-md-4.u--txt-right.grid--align-self-center(for="tel") 
+        input#email(type="email").form__input.steps__input.grid__col-md-9
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="tel") 
           |Телефон
-        input#tel(type="tel").form__input.steps__input.grid__col-md-8
-        label.form__label.steps__label.grid__col-md-4.u--txt-right.grid--align-self-center(for="info") 
+        input#tel(type="tel").form__input.steps__input.grid__col-md-9
+        label.form__label.steps__label.grid__col-md-3.u--txt-right(for="info") 
           |Примечание
-        textarea#tel(type="info").form__textarea.steps__textarea.grid__col-md-8
+        textarea#tel(type="info").form__textarea.steps__textarea.grid__col-md-9
     .grid__col-md-6
-      .steps__confirm-address.
-        Доставка 15 октября по адресу:
-        191187, Санкт-Петербург, ул. Чайковского, д. 42, 
-        кв. 2
-        Итоговая стоимость: 17 567 руб. 
-      a(href="#").button.button_hollow.steps__button.
-        Изменить адрес и способ получения
+      .steps__confirm-address
+        |Доставка 15 октября по адресу:
+        br
+        |191187, Санкт-Петербург, ул. Чайковского, д. 42, 
+        |кв. 2
+        .steps__final-cost
+          |Итоговая стоимость: 17 567 руб. 
+      a(href="#").button.button_hollow.steps__button.grid--justify-center
+        |Изменить адрес и способ получения
